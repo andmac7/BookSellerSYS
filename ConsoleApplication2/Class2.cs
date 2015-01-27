@@ -8,6 +8,7 @@ namespace ConsoleApplication2
 {
     class DataBaseConnect
     {
-
+        private string sqlString;
+        private string strCon;
     }
 }
