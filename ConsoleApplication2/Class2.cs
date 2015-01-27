@@ -10,5 +10,6 @@ namespace ConsoleApplication2
     {
         private string sqlString;
         private string strCon;
+        private string lol;
     }
 }
