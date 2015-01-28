@@ -11,10 +11,10 @@ namespace BookSeller
 {
     class DataBaseConnect 
     {
-        const string conString = "user id=SverkerJerker;" +
-            "password=; server=ANDREAS-PC\\SQLEXPRESS;" +
+        const string conString = "user id=Administrator;" +
+            "password=SYSB13; server=VAIOPRO11;" +
             "Trusted_Connection=yes;" +
-            "database=BookSeller; " +
+            "database=BookAd; " +
             "connection timeout=5";
 
         public static SqlConnection conn = null;

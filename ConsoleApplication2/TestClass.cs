@@ -14,7 +14,7 @@ namespace BookSeller
             Console.WriteLine("Writing existing books..");
             foreach (BookAd i in books)
             {
-                Console.WriteLine(i.title);
+                Console.WriteLine(i.title + " " + i.date);
             }
             Console.ReadLine();
         }
