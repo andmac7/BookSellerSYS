@@ -7,7 +7,6 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Diagnostics;
 
-
 namespace BookSeller
 {
     class Program
