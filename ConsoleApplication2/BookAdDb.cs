@@ -14,7 +14,7 @@ namespace BookSeller
             BookAd b = new BookAd();
             b.title = r["Title"].ToString();
             b.author = r["Author"].ToString();
-            b.price = r["Price"].ToString();
+            b.price = (int)r["Price"];
             b.isbn = r["Isbn"].ToString();
             b.date = r["Date"].ToString();
             b.adText = r["AdText"].ToString();

@@ -21,7 +21,7 @@ namespace BookSeller
         public String isbn { get; set; }
         public String author { get; set; }
         public String date { get; set; }
-        public String price { get; set; }
+        public int price { get; set; }
         public String adText { get; set; }
     }
 
