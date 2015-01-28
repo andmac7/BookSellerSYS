@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Diagnostics;
 
-namespace ConsoleApplication2
+namespace BookSeller
 {
     class Program
     {
@@ -16,7 +16,6 @@ namespace ConsoleApplication2
             DataBaseConnect dbConn = new DataBaseConnect();
             //dbConn.ConnectDb();
             TestClass.TestBooksRead();
-
         }
     }
 }

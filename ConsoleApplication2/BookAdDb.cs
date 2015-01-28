@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using ConsoleApplication2;
 
-namespace ConsoleApplication2
+namespace BookSeller
 {
     class BookAdDb
     {
