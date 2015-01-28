@@ -8,7 +8,7 @@ namespace BookSeller
 {
     class Seller
     {
-        public String fName { get; set; }
+        public String fName { get; set; } 
         public String lName { get; set; }
         public String phoneNbr { get; set; }
         public String mail { get; set; }

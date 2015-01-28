@@ -11,7 +11,7 @@ namespace BookSeller
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             DataBaseConnect dbConn = new DataBaseConnect();
             //dbConn.ConnectDb();

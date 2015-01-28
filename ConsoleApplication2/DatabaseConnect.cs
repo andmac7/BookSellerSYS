@@ -9,7 +9,7 @@ using System.Data;
 
 namespace BookSeller
 {
-    class DataBaseConnect
+    class DataBaseConnect 
     {
         const string conString = "user id=SverkerJerker;" +
             "password=; server=ANDREAS-PC\\SQLEXPRESS;" +
