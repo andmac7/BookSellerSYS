@@ -9,7 +9,7 @@ namespace BookSeller
 {
     class BookAdDb
     {
-        public static BookAd MapBook(DataRow r) 
+        public static BookAd MapBook(DataRow r)
         {
             BookAd b = new BookAd();
             b.title = r["Title"].ToString();
@@ -17,7 +17,7 @@ namespace BookSeller
             b.price = r["Price"].ToString();
             b.isbn = r["Isbn"].ToString();
             b.date = r["Date"].ToString();
-            b.addText = r["AddText"].ToString();
+            b.adText = r["AdText"].ToString();
             
             return b;
         }

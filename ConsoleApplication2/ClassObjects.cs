@@ -22,7 +22,7 @@ namespace BookSeller
         public String author { get; set; }
         public String date { get; set; }
         public String price { get; set; }
-        public String addText { get; set; }
+        public String adText { get; set; }
     }
 
     public class Course
