@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Data;
+using System.Diagnostics;
 
 namespace ConsoleApplication2
 {
@@ -10,11 +13,10 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            Seller seller = new Seller();
-            seller.fName = "Bengt";
-            seller.lName = "Bengtsson";
-            System.Console.WriteLine("{0} {1}", seller.fName, seller.lName);
-            System.Console.Read();
+            DataBaseConnect dbConn = new DataBaseConnect();
+            //dbConn.ConnectDb();
+            TestClass.TestBooksRead();
+
         }
     }
 }
