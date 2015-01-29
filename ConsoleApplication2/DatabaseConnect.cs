@@ -12,7 +12,7 @@ namespace BookSeller
     class DataBaseConnect 
     {
         const string conString = "user id=Administrator;" +
-            "password=SYSB13; server=VAIOPRO11;" +
+            "password=SYSA14; server=VAIOPRO11;" +
             "Trusted_Connection=yes;" +
             "database=BookAd; " +
             "connection timeout=5";
