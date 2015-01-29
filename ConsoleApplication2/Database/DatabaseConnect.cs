@@ -9,12 +9,13 @@ using System.Data;
 
 namespace BookSeller
 {
-    class DataBaseConnect 
+    class DataBaseConnect
     {
         static readonly string[] conString = {"user id = Administrator; password=SYSA14; server=VAIOPRO11; Trusted_Connection=yes; database=BookAd; connection timeout=5", 
             "user id=ramy; password=123456; server=Ramy; Trusted_Connection=yes; database=BookAd; connection timeout=5",
             "user id=SverkerJerker; password=; server=ANDREAS-PC\\SQLEXPRESS; Trusted_Connection=yes; database=BookSeller; connection timeout=5",
             "user id=SverkerJerker; password=; server=WIN-08GPCVO901J; Trusted_Connection=yes; database=BookAd; connection timeout=5"};
+        static int i = Program.i;
         /*
         const string conString[1] =  "user id=ramy;" +
             "password=123456; server=Ramy;" +
@@ -36,9 +37,6 @@ namespace BookSeller
 
         public static DataTable ExecuteSelectCommand(string cmdName, CommandType cmdType)
         {
-            System.Console.WriteLine("0 = Thomas, 1 = Ramy, 2 = Andreas, 3 = Robin");
-            int i = int.Parse(Console.ReadLine());
-            
             DataTable table = null;
             using (SqlConnection con = new SqlConnection(conString[i]))
             {

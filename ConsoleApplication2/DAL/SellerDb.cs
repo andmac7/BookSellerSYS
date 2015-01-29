@@ -12,9 +12,9 @@ namespace BookSeller
         public static Seller MapSellers(DataRow r)
         {
             Seller s = new Seller();
-            s.lName = r["LastName"].ToString();
-            s.fName = r["FirstName"].ToString();
-            s.phoneNbr =r["PhoneNumber"].ToString();
+            s.lName = r["LName"].ToString();
+            s.fName = r["FName"].ToString();
+            s.phoneNbr =r["PhoneNbr"].ToString();
             s.mail = r["Mail"].ToString();
             s.city = r["City"].ToString();
             s.password = r["Password"].ToString();

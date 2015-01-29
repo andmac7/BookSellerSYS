@@ -16,7 +16,6 @@ namespace BookSeller
             {
                 Console.WriteLine("{0} av {1}, ISBN: {2}", i.title, i.author, i.isbn);
             }
-            Console.ReadLine();
         }
 
         public static void TestSellerRead()
@@ -27,7 +26,6 @@ namespace BookSeller
             {
                 Console.WriteLine("{0} {1}, City: {2}, Phone Number: {3}", i.fName, i.lName, i.city, i.phoneNbr);
             }
-            Console.ReadLine();
         }
 
         public static void TestCourseRead()
@@ -38,7 +36,6 @@ namespace BookSeller
             {
                 Console.WriteLine("{0}, {1}", i.cCode, i.cName );
             }
-            Console.ReadLine();
         }
 
         public static void TestInstRead()
@@ -49,7 +46,6 @@ namespace BookSeller
             {
                 Console.WriteLine("{0}", i.instName);
             }
-            Console.ReadLine();
         }
     }
 }
