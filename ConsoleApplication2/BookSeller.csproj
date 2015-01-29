@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\BookAdDb.cs" />
+    <Compile Include="DAL\CourseDb.cs" />
+    <Compile Include="DAL\InstDb.cs" />
+    <Compile Include="DAL\SellerDb.cs" />
     <Compile Include="Model\ClassObjects.cs" />
     <Compile Include="Database\DatabaseConnect.cs" />
     <Compile Include="View\Form1.cs">
