@@ -11,18 +11,36 @@ namespace BookSeller
 {
     class DataBaseConnect 
     {
-        const string conString = "user id=Administrator;" +
-            "password=SYSA14; server=VAIOPRO11;" +
+        static readonly string[] conString = {"user id = Administrator; password=SYSA14; server=VAIOPRO11; Trusted_Connection=yes; database=BookAd; connection timeout=5", 
+            "user id=ramy; password=123456; server=Ramy; Trusted_Connection=yes; database=BookAd; connection timeout=5",
+            "user id=SverkerJerker; password=; server=ANDREAS-PC\\SQLEXPRESS; Trusted_Connection=yes; database=BookSeller; connection timeout=5",
+            "user id=SverkerJerker; password=; server=WIN-08GPCVO901J; Trusted_Connection=yes; database=BookAd; connection timeout=5"};
+        /*
+        const string conString[1] =  "user id=ramy;" +
+            "password=123456; server=Ramy;" +
             "Trusted_Connection=yes;" +
             "database=BookAd; " +
+            "connection timeout=5"; // Ramys inloggning
+        const string conString[2] = "user id=SverkerJerker;" +
+            "password=; server=ANDREAS-PC\\SQLEXPRESS;" +
+            "Trusted_Connection=yes;" +
+            "database=BookSeller; " +
             "connection timeout=5";
-
+        const string conString[3] = "user id=SverkerJerker;" +
+            "password=; server=ANDREAS-PC\\SQLEXPRESS;" +
+            "Trusted_Connection=yes;" +
+            "database=BookSeller; " +
+            "connection timeout=5";
+        */
         public static SqlConnection conn = null;
 
         public static DataTable ExecuteSelectCommand(string cmdName, CommandType cmdType)
         {
+            System.Console.WriteLine("0 = Thomas, 1 = Ramy, 2 = Andreas, 3 = Robin");
+            int i = int.Parse(Console.ReadLine());
+            
             DataTable table = null;
-            using (SqlConnection con = new SqlConnection(conString))
+            using (SqlConnection con = new SqlConnection(conString[i]))
             {
                 using (SqlCommand cmd = con.CreateCommand())
                 {
@@ -51,6 +69,7 @@ namespace BookSeller
             return table;
         }
 
+        /*
         public void ConnectDb()
         {
             conn = new SqlConnection(conString);
@@ -68,6 +87,6 @@ namespace BookSeller
                 System.Console.WriteLine("Couldn't establish connection.");
                 System.Console.Read();
             }
-        }
+        }*/
     }
 }
