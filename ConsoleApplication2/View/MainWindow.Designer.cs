@@ -30,79 +30,79 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tabControl = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.searchBox = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bookListTabPage = new System.Windows.Forms.TabPage();
+            this.bookListBtnReset = new System.Windows.Forms.Button();
+            this.bookListLabelTop = new System.Windows.Forms.Label();
+            this.bookListBtnLogin = new System.Windows.Forms.Button();
+            this.bookListBtnSearch = new System.Windows.Forms.Button();
+            this.bookListSearchBox = new System.Windows.Forms.TextBox();
+            this.bookListFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.userActabPage = new System.Windows.Forms.TabPage();
+            this.userAcButtonCreateUsr = new System.Windows.Forms.Button();
+            this.userAcButtonRefresh = new System.Windows.Forms.Button();
+            this.userAcLabelAds = new System.Windows.Forms.Label();
+            this.userAcButtonRemoveAc = new System.Windows.Forms.Button();
+            this.userAcButtonUpdateInfo = new System.Windows.Forms.Button();
+            this.userAcButtonCreateAd = new System.Windows.Forms.Button();
+            this.userAcButtonRemoveAd = new System.Windows.Forms.Button();
+            this.userAcFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.userAcButtonLogin = new System.Windows.Forms.Button();
+            this.userAcLabelCity = new System.Windows.Forms.Label();
+            this.userAcLabelPnbr = new System.Windows.Forms.Label();
+            this.userAcLabelLname = new System.Windows.Forms.Label();
+            this.userAcLabelFname = new System.Windows.Forms.Label();
+            this.userAcTextBoxCity = new System.Windows.Forms.TextBox();
+            this.userAcTextBoxPnbr = new System.Windows.Forms.TextBox();
+            this.userAcTextBoxLname = new System.Windows.Forms.TextBox();
+            this.userAcTextBoxFname = new System.Windows.Forms.TextBox();
+            this.userAcLabelPassw = new System.Windows.Forms.Label();
+            this.userAcLabelMail = new System.Windows.Forms.Label();
+            this.userAcTextBoxPassw = new System.Windows.Forms.TextBox();
+            this.userAcTextBoxMail = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.viewAdComboBoxCourse = new System.Windows.Forms.ComboBox();
+            this.viewAdTextBoxCity = new System.Windows.Forms.TextBox();
+            this.viewAdTextBoxPnbr = new System.Windows.Forms.TextBox();
+            this.viewAdTextBoxMail = new System.Windows.Forms.TextBox();
+            this.viewAdLabelCity = new System.Windows.Forms.Label();
+            this.viewAdLabelPnbr = new System.Windows.Forms.Label();
+            this.viewAdLabelMail = new System.Windows.Forms.Label();
+            this.viewAdTextBoxDate = new System.Windows.Forms.TextBox();
+            this.viewAdTextBoxSeller = new System.Windows.Forms.TextBox();
+            this.viewAdTextBoxText = new System.Windows.Forms.TextBox();
+            this.viewAdTextBoxPrice = new System.Windows.Forms.TextBox();
+            this.viewAdTextBoxInst = new System.Windows.Forms.TextBox();
+            this.viewAdLabelSeller = new System.Windows.Forms.Label();
+            this.viewAdLabelDate = new System.Windows.Forms.Label();
+            this.viewAdLabelText = new System.Windows.Forms.Label();
+            this.viewAdLabelPrice = new System.Windows.Forms.Label();
+            this.viewAdLabelInst = new System.Windows.Forms.Label();
+            this.viewAdButtonRemoveAd = new System.Windows.Forms.Button();
+            this.viewAdButtonContactSeller = new System.Windows.Forms.Button();
+            this.viewAdLabelCourse = new System.Windows.Forms.Label();
+            this.viewAdLabelIsbn = new System.Windows.Forms.Label();
+            this.viewAdLabelAuthor = new System.Windows.Forms.Label();
+            this.viewAdLabelTitle = new System.Windows.Forms.Label();
+            this.viewAdTextBoxIsbn = new System.Windows.Forms.TextBox();
+            this.viewAdTextBoxAuthor = new System.Windows.Forms.TextBox();
+            this.viewAdTextBoxTitle = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.userAcPictureTree = new System.Windows.Forms.PictureBox();
+            this.bookListPictureTree = new System.Windows.Forms.PictureBox();
+            this.viewAdPictureTree = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.bookListTabPage.SuspendLayout();
+            this.userActabPage.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewAdPictureTree)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
             // 
-            this.tabControl.Controls.Add(this.tabPage1);
-            this.tabControl.Controls.Add(this.tabPage2);
+            this.tabControl.Controls.Add(this.bookListTabPage);
+            this.tabControl.Controls.Add(this.userActabPage);
             this.tabControl.Controls.Add(this.tabPage3);
             this.tabControl.Location = new System.Drawing.Point(12, 12);
             this.tabControl.Name = "tabControl";
@@ -110,322 +110,323 @@
             this.tabControl.Size = new System.Drawing.Size(916, 584);
             this.tabControl.TabIndex = 0;
             // 
-            // tabPage1
+            // bookListTabPage
             // 
-            this.tabPage1.Controls.Add(this.pictureBox3);
-            this.tabPage1.Controls.Add(this.btnReset);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.searchBox);
-            this.tabPage1.Controls.Add(this.flowLayoutPanel1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(908, 558);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "List of Books";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            this.bookListTabPage.Controls.Add(this.bookListPictureTree);
+            this.bookListTabPage.Controls.Add(this.bookListBtnReset);
+            this.bookListTabPage.Controls.Add(this.bookListLabelTop);
+            this.bookListTabPage.Controls.Add(this.bookListBtnLogin);
+            this.bookListTabPage.Controls.Add(this.bookListBtnSearch);
+            this.bookListTabPage.Controls.Add(this.bookListSearchBox);
+            this.bookListTabPage.Controls.Add(this.bookListFlowLayoutPanel);
+            this.bookListTabPage.Location = new System.Drawing.Point(4, 22);
+            this.bookListTabPage.Name = "bookListTabPage";
+            this.bookListTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.bookListTabPage.Size = new System.Drawing.Size(908, 558);
+            this.bookListTabPage.TabIndex = 0;
+            this.bookListTabPage.Text = "List of Books";
+            this.bookListTabPage.UseVisualStyleBackColor = true;
+            this.bookListTabPage.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // btnReset
+            // bookListBtnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(371, 532);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(143, 20);
-            this.btnReset.TabIndex = 23;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.bookListBtnReset.Location = new System.Drawing.Point(371, 532);
+            this.bookListBtnReset.Name = "bookListBtnReset";
+            this.bookListBtnReset.Size = new System.Drawing.Size(143, 20);
+            this.bookListBtnReset.TabIndex = 23;
+            this.bookListBtnReset.Text = "Reset";
+            this.bookListBtnReset.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // bookListLabelTop
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(360, 63);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(154, 18);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "Viewing all current ads";
+            this.bookListLabelTop.AutoSize = true;
+            this.bookListLabelTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bookListLabelTop.Location = new System.Drawing.Point(360, 63);
+            this.bookListLabelTop.Name = "bookListLabelTop";
+            this.bookListLabelTop.Size = new System.Drawing.Size(154, 18);
+            this.bookListLabelTop.TabIndex = 22;
+            this.bookListLabelTop.Text = "Viewing all current ads";
             // 
-            // button3
+            // bookListBtnLogin
             // 
-            this.button3.Location = new System.Drawing.Point(653, 6);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(143, 20);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Login";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bookListBtnLogin.Location = new System.Drawing.Point(653, 6);
+            this.bookListBtnLogin.Name = "bookListBtnLogin";
+            this.bookListBtnLogin.Size = new System.Drawing.Size(143, 20);
+            this.bookListBtnLogin.TabIndex = 4;
+            this.bookListBtnLogin.Text = "Login";
+            this.bookListBtnLogin.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // bookListBtnSearch
             // 
-            this.button1.Location = new System.Drawing.Point(504, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 20);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bookListBtnSearch.Location = new System.Drawing.Point(504, 6);
+            this.bookListBtnSearch.Name = "bookListBtnSearch";
+            this.bookListBtnSearch.Size = new System.Drawing.Size(143, 20);
+            this.bookListBtnSearch.TabIndex = 2;
+            this.bookListBtnSearch.Text = "Search";
+            this.bookListBtnSearch.UseVisualStyleBackColor = true;
             // 
-            // searchBox
+            // bookListSearchBox
             // 
-            this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBox.Location = new System.Drawing.Point(6, 6);
-            this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(492, 20);
-            this.searchBox.TabIndex = 1;
+            this.bookListSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bookListSearchBox.Location = new System.Drawing.Point(6, 6);
+            this.bookListSearchBox.Name = "bookListSearchBox";
+            this.bookListSearchBox.Size = new System.Drawing.Size(492, 20);
+            this.bookListSearchBox.TabIndex = 1;
             // 
-            // flowLayoutPanel1
+            // bookListFlowLayoutPanel
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 87);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(896, 439);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.bookListFlowLayoutPanel.AutoScroll = true;
+            this.bookListFlowLayoutPanel.Location = new System.Drawing.Point(6, 87);
+            this.bookListFlowLayoutPanel.Name = "bookListFlowLayoutPanel";
+            this.bookListFlowLayoutPanel.Size = new System.Drawing.Size(896, 439);
+            this.bookListFlowLayoutPanel.TabIndex = 0;
             // 
-            // tabPage2
+            // userActabPage
             // 
-            this.tabPage2.Controls.Add(this.pictureBox2);
-            this.tabPage2.Controls.Add(this.button13);
-            this.tabPage2.Controls.Add(this.button9);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.button8);
-            this.tabPage2.Controls.Add(this.button7);
-            this.tabPage2.Controls.Add(this.button6);
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.flowLayoutPanel2);
-            this.tabPage2.Controls.Add(this.button4);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.textBox6);
-            this.tabPage2.Controls.Add(this.textBox5);
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(908, 558);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "User Account";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            this.userActabPage.Controls.Add(this.userAcPictureTree);
+            this.userActabPage.Controls.Add(this.userAcButtonCreateUsr);
+            this.userActabPage.Controls.Add(this.userAcButtonRefresh);
+            this.userActabPage.Controls.Add(this.userAcLabelAds);
+            this.userActabPage.Controls.Add(this.userAcButtonRemoveAc);
+            this.userActabPage.Controls.Add(this.userAcButtonUpdateInfo);
+            this.userActabPage.Controls.Add(this.userAcButtonCreateAd);
+            this.userActabPage.Controls.Add(this.userAcButtonRemoveAd);
+            this.userActabPage.Controls.Add(this.userAcFlowLayoutPanel);
+            this.userActabPage.Controls.Add(this.userAcButtonLogin);
+            this.userActabPage.Controls.Add(this.userAcLabelCity);
+            this.userActabPage.Controls.Add(this.userAcLabelPnbr);
+            this.userActabPage.Controls.Add(this.userAcLabelLname);
+            this.userActabPage.Controls.Add(this.userAcLabelFname);
+            this.userActabPage.Controls.Add(this.userAcTextBoxCity);
+            this.userActabPage.Controls.Add(this.userAcTextBoxPnbr);
+            this.userActabPage.Controls.Add(this.userAcTextBoxLname);
+            this.userActabPage.Controls.Add(this.userAcTextBoxFname);
+            this.userActabPage.Controls.Add(this.userAcLabelPassw);
+            this.userActabPage.Controls.Add(this.userAcLabelMail);
+            this.userActabPage.Controls.Add(this.userAcTextBoxPassw);
+            this.userActabPage.Controls.Add(this.userAcTextBoxMail);
+            this.userActabPage.Location = new System.Drawing.Point(4, 22);
+            this.userActabPage.Name = "userActabPage";
+            this.userActabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.userActabPage.Size = new System.Drawing.Size(908, 558);
+            this.userActabPage.TabIndex = 1;
+            this.userActabPage.Text = "User Account";
+            this.userActabPage.UseVisualStyleBackColor = true;
+            this.userActabPage.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // button13
+            // userAcButtonCreateUsr
             // 
-            this.button13.Location = new System.Drawing.Point(451, 86);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(99, 23);
-            this.button13.TabIndex = 23;
-            this.button13.Text = "Create New";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.userAcButtonCreateUsr.Location = new System.Drawing.Point(451, 86);
+            this.userAcButtonCreateUsr.Name = "userAcButtonCreateUsr";
+            this.userAcButtonCreateUsr.Size = new System.Drawing.Size(99, 23);
+            this.userAcButtonCreateUsr.TabIndex = 23;
+            this.userAcButtonCreateUsr.Text = "New User";
+            this.userAcButtonCreateUsr.UseVisualStyleBackColor = true;
+            this.userAcButtonCreateUsr.Click += new System.EventHandler(this.button13_Click);
             // 
-            // button9
+            // userAcButtonRefresh
             // 
-            this.button9.Location = new System.Drawing.Point(493, 509);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(143, 20);
-            this.button9.TabIndex = 22;
-            this.button9.Text = "Refresh";
-            this.button9.UseVisualStyleBackColor = true;
+            this.userAcButtonRefresh.Location = new System.Drawing.Point(493, 509);
+            this.userAcButtonRefresh.Name = "userAcButtonRefresh";
+            this.userAcButtonRefresh.Size = new System.Drawing.Size(143, 20);
+            this.userAcButtonRefresh.TabIndex = 22;
+            this.userAcButtonRefresh.Text = "Refresh";
+            this.userAcButtonRefresh.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // userAcLabelAds
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(341, 325);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(142, 18);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "All users current ads";
+            this.userAcLabelAds.AutoSize = true;
+            this.userAcLabelAds.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userAcLabelAds.Location = new System.Drawing.Point(341, 325);
+            this.userAcLabelAds.Name = "userAcLabelAds";
+            this.userAcLabelAds.Size = new System.Drawing.Size(142, 18);
+            this.userAcLabelAds.TabIndex = 21;
+            this.userAcLabelAds.Text = "All users current ads";
             // 
-            // button8
+            // userAcButtonRemoveAc
             // 
-            this.button8.Location = new System.Drawing.Point(445, 259);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(143, 20);
-            this.button8.TabIndex = 20;
-            this.button8.Text = "Remove Account";
-            this.button8.UseVisualStyleBackColor = true;
+            this.userAcButtonRemoveAc.Location = new System.Drawing.Point(445, 259);
+            this.userAcButtonRemoveAc.Name = "userAcButtonRemoveAc";
+            this.userAcButtonRemoveAc.Size = new System.Drawing.Size(143, 20);
+            this.userAcButtonRemoveAc.TabIndex = 20;
+            this.userAcButtonRemoveAc.Text = "Remove Account";
+            this.userAcButtonRemoveAc.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // userAcButtonUpdateInfo
             // 
-            this.button7.Location = new System.Drawing.Point(296, 259);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(143, 20);
-            this.button7.TabIndex = 19;
-            this.button7.Text = "Update Info";
-            this.button7.UseVisualStyleBackColor = true;
+            this.userAcButtonUpdateInfo.Location = new System.Drawing.Point(296, 259);
+            this.userAcButtonUpdateInfo.Name = "userAcButtonUpdateInfo";
+            this.userAcButtonUpdateInfo.Size = new System.Drawing.Size(143, 20);
+            this.userAcButtonUpdateInfo.TabIndex = 19;
+            this.userAcButtonUpdateInfo.Text = "Update Info";
+            this.userAcButtonUpdateInfo.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // userAcButtonCreateAd
             // 
-            this.button6.Location = new System.Drawing.Point(195, 509);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(143, 20);
-            this.button6.TabIndex = 18;
-            this.button6.Text = "Create New Ad";
-            this.button6.UseVisualStyleBackColor = true;
+            this.userAcButtonCreateAd.Location = new System.Drawing.Point(195, 509);
+            this.userAcButtonCreateAd.Name = "userAcButtonCreateAd";
+            this.userAcButtonCreateAd.Size = new System.Drawing.Size(143, 20);
+            this.userAcButtonCreateAd.TabIndex = 18;
+            this.userAcButtonCreateAd.Text = "Create New Ad";
+            this.userAcButtonCreateAd.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // userAcButtonRemoveAd
             // 
-            this.button5.Location = new System.Drawing.Point(344, 509);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(143, 20);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Remove Ad";
-            this.button5.UseVisualStyleBackColor = true;
+            this.userAcButtonRemoveAd.Location = new System.Drawing.Point(344, 509);
+            this.userAcButtonRemoveAd.Name = "userAcButtonRemoveAd";
+            this.userAcButtonRemoveAd.Size = new System.Drawing.Size(143, 20);
+            this.userAcButtonRemoveAd.TabIndex = 17;
+            this.userAcButtonRemoveAd.Text = "Remove Ad";
+            this.userAcButtonRemoveAd.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel2
+            // userAcFlowLayoutPanel
             // 
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(6, 346);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(896, 147);
-            this.flowLayoutPanel2.TabIndex = 16;
+            this.userAcFlowLayoutPanel.Location = new System.Drawing.Point(6, 346);
+            this.userAcFlowLayoutPanel.Name = "userAcFlowLayoutPanel";
+            this.userAcFlowLayoutPanel.Size = new System.Drawing.Size(896, 147);
+            this.userAcFlowLayoutPanel.TabIndex = 16;
             // 
-            // button4
+            // userAcButtonLogin
             // 
-            this.button4.Location = new System.Drawing.Point(346, 86);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(99, 23);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Login";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.userAcButtonLogin.Location = new System.Drawing.Point(346, 86);
+            this.userAcButtonLogin.Name = "userAcButtonLogin";
+            this.userAcButtonLogin.Size = new System.Drawing.Size(99, 23);
+            this.userAcButtonLogin.TabIndex = 15;
+            this.userAcButtonLogin.Text = "Login";
+            this.userAcButtonLogin.UseVisualStyleBackColor = true;
+            this.userAcButtonLogin.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label7
+            // userAcLabelCity
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(228, 236);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "City:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.userAcLabelCity.AutoSize = true;
+            this.userAcLabelCity.Location = new System.Drawing.Point(228, 236);
+            this.userAcLabelCity.Name = "userAcLabelCity";
+            this.userAcLabelCity.Size = new System.Drawing.Size(27, 13);
+            this.userAcLabelCity.TabIndex = 14;
+            this.userAcLabelCity.Text = "City:";
+            this.userAcLabelCity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label5
+            // userAcLabelPnbr
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(176, 210);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 13);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Phone number:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.userAcLabelPnbr.AutoSize = true;
+            this.userAcLabelPnbr.Location = new System.Drawing.Point(176, 210);
+            this.userAcLabelPnbr.Name = "userAcLabelPnbr";
+            this.userAcLabelPnbr.Size = new System.Drawing.Size(79, 13);
+            this.userAcLabelPnbr.TabIndex = 12;
+            this.userAcLabelPnbr.Text = "Phone number:";
+            this.userAcLabelPnbr.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label4
+            // userAcLabelLname
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(196, 184);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Last name:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.userAcLabelLname.AutoSize = true;
+            this.userAcLabelLname.Location = new System.Drawing.Point(196, 184);
+            this.userAcLabelLname.Name = "userAcLabelLname";
+            this.userAcLabelLname.Size = new System.Drawing.Size(59, 13);
+            this.userAcLabelLname.TabIndex = 11;
+            this.userAcLabelLname.Text = "Last name:";
+            this.userAcLabelLname.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.userAcLabelLname.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label3
+            // userAcLabelFname
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(197, 158);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "First name:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.userAcLabelFname.AutoSize = true;
+            this.userAcLabelFname.Location = new System.Drawing.Point(197, 158);
+            this.userAcLabelFname.Name = "userAcLabelFname";
+            this.userAcLabelFname.Size = new System.Drawing.Size(58, 13);
+            this.userAcLabelFname.TabIndex = 10;
+            this.userAcLabelFname.Text = "First name:";
+            this.userAcLabelFname.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox6
+            // userAcTextBoxCity
             // 
-            this.textBox6.Location = new System.Drawing.Point(261, 233);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(354, 20);
-            this.textBox6.TabIndex = 7;
+            this.userAcTextBoxCity.Location = new System.Drawing.Point(261, 233);
+            this.userAcTextBoxCity.Name = "userAcTextBoxCity";
+            this.userAcTextBoxCity.Size = new System.Drawing.Size(354, 20);
+            this.userAcTextBoxCity.TabIndex = 7;
             // 
-            // textBox5
+            // userAcTextBoxPnbr
             // 
-            this.textBox5.Location = new System.Drawing.Point(261, 207);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(354, 20);
-            this.textBox5.TabIndex = 6;
+            this.userAcTextBoxPnbr.Location = new System.Drawing.Point(261, 207);
+            this.userAcTextBoxPnbr.Name = "userAcTextBoxPnbr";
+            this.userAcTextBoxPnbr.Size = new System.Drawing.Size(354, 20);
+            this.userAcTextBoxPnbr.TabIndex = 6;
             // 
-            // textBox4
+            // userAcTextBoxLname
             // 
-            this.textBox4.Location = new System.Drawing.Point(261, 181);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(354, 20);
-            this.textBox4.TabIndex = 5;
+            this.userAcTextBoxLname.Location = new System.Drawing.Point(261, 181);
+            this.userAcTextBoxLname.Name = "userAcTextBoxLname";
+            this.userAcTextBoxLname.Size = new System.Drawing.Size(354, 20);
+            this.userAcTextBoxLname.TabIndex = 5;
             // 
-            // textBox3
+            // userAcTextBoxFname
             // 
-            this.textBox3.Location = new System.Drawing.Point(261, 155);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(354, 20);
-            this.textBox3.TabIndex = 4;
+            this.userAcTextBoxFname.Location = new System.Drawing.Point(261, 155);
+            this.userAcTextBoxFname.Name = "userAcTextBoxFname";
+            this.userAcTextBoxFname.Size = new System.Drawing.Size(354, 20);
+            this.userAcTextBoxFname.TabIndex = 4;
             // 
-            // label2
+            // userAcLabelPassw
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(284, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Password:";
+            this.userAcLabelPassw.AutoSize = true;
+            this.userAcLabelPassw.Location = new System.Drawing.Point(284, 63);
+            this.userAcLabelPassw.Name = "userAcLabelPassw";
+            this.userAcLabelPassw.Size = new System.Drawing.Size(56, 13);
+            this.userAcLabelPassw.TabIndex = 3;
+            this.userAcLabelPassw.Text = "Password:";
             // 
-            // label1
+            // userAcLabelMail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(302, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "E-mail:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.userAcLabelMail.AutoSize = true;
+            this.userAcLabelMail.Location = new System.Drawing.Point(302, 37);
+            this.userAcLabelMail.Name = "userAcLabelMail";
+            this.userAcLabelMail.Size = new System.Drawing.Size(38, 13);
+            this.userAcLabelMail.TabIndex = 2;
+            this.userAcLabelMail.Text = "E-mail:";
+            this.userAcLabelMail.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox2
+            // userAcTextBoxPassw
             // 
-            this.textBox2.Location = new System.Drawing.Point(346, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(204, 20);
-            this.textBox2.TabIndex = 1;
+            this.userAcTextBoxPassw.Location = new System.Drawing.Point(346, 60);
+            this.userAcTextBoxPassw.Name = "userAcTextBoxPassw";
+            this.userAcTextBoxPassw.Size = new System.Drawing.Size(204, 20);
+            this.userAcTextBoxPassw.TabIndex = 1;
             // 
-            // textBox1
+            // userAcTextBoxMail
             // 
-            this.textBox1.Location = new System.Drawing.Point(346, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 20);
-            this.textBox1.TabIndex = 0;
+            this.userAcTextBoxMail.Location = new System.Drawing.Point(346, 34);
+            this.userAcTextBoxMail.Name = "userAcTextBoxMail";
+            this.userAcTextBoxMail.Size = new System.Drawing.Size(204, 20);
+            this.userAcTextBoxMail.TabIndex = 0;
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.pictureBox1);
-            this.tabPage3.Controls.Add(this.comboBox1);
-            this.tabPage3.Controls.Add(this.textBox15);
-            this.tabPage3.Controls.Add(this.textBox17);
-            this.tabPage3.Controls.Add(this.textBox18);
-            this.tabPage3.Controls.Add(this.label18);
-            this.tabPage3.Controls.Add(this.label19);
-            this.tabPage3.Controls.Add(this.label20);
-            this.tabPage3.Controls.Add(this.textBox14);
-            this.tabPage3.Controls.Add(this.textBox7);
-            this.tabPage3.Controls.Add(this.textBox16);
-            this.tabPage3.Controls.Add(this.textBox11);
-            this.tabPage3.Controls.Add(this.textBox12);
-            this.tabPage3.Controls.Add(this.label17);
-            this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.button11);
-            this.tabPage3.Controls.Add(this.button12);
-            this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.label12);
-            this.tabPage3.Controls.Add(this.textBox8);
-            this.tabPage3.Controls.Add(this.textBox9);
-            this.tabPage3.Controls.Add(this.textBox10);
+            this.tabPage3.Controls.Add(this.viewAdPictureTree);
+            this.tabPage3.Controls.Add(this.viewAdComboBoxCourse);
+            this.tabPage3.Controls.Add(this.viewAdTextBoxCity);
+            this.tabPage3.Controls.Add(this.viewAdTextBoxPnbr);
+            this.tabPage3.Controls.Add(this.viewAdTextBoxMail);
+            this.tabPage3.Controls.Add(this.viewAdLabelCity);
+            this.tabPage3.Controls.Add(this.viewAdLabelPnbr);
+            this.tabPage3.Controls.Add(this.viewAdLabelMail);
+            this.tabPage3.Controls.Add(this.viewAdTextBoxDate);
+            this.tabPage3.Controls.Add(this.viewAdTextBoxSeller);
+            this.tabPage3.Controls.Add(this.viewAdTextBoxText);
+            this.tabPage3.Controls.Add(this.viewAdTextBoxPrice);
+            this.tabPage3.Controls.Add(this.viewAdTextBoxInst);
+            this.tabPage3.Controls.Add(this.viewAdLabelSeller);
+            this.tabPage3.Controls.Add(this.viewAdLabelDate);
+            this.tabPage3.Controls.Add(this.viewAdLabelText);
+            this.tabPage3.Controls.Add(this.viewAdLabelPrice);
+            this.tabPage3.Controls.Add(this.viewAdLabelInst);
+            this.tabPage3.Controls.Add(this.viewAdButtonRemoveAd);
+            this.tabPage3.Controls.Add(this.viewAdButtonContactSeller);
+            this.tabPage3.Controls.Add(this.viewAdLabelCourse);
+            this.tabPage3.Controls.Add(this.viewAdLabelIsbn);
+            this.tabPage3.Controls.Add(this.viewAdLabelAuthor);
+            this.tabPage3.Controls.Add(this.viewAdLabelTitle);
+            this.tabPage3.Controls.Add(this.viewAdTextBoxIsbn);
+            this.tabPage3.Controls.Add(this.viewAdTextBoxAuthor);
+            this.tabPage3.Controls.Add(this.viewAdTextBoxTitle);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -435,266 +436,266 @@
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
-            // comboBox1
+            // viewAdComboBoxCourse
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(276, 174);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(354, 21);
-            this.comboBox1.TabIndex = 48;
+            this.viewAdComboBoxCourse.FormattingEnabled = true;
+            this.viewAdComboBoxCourse.Location = new System.Drawing.Point(276, 174);
+            this.viewAdComboBoxCourse.Name = "viewAdComboBoxCourse";
+            this.viewAdComboBoxCourse.Size = new System.Drawing.Size(354, 21);
+            this.viewAdComboBoxCourse.TabIndex = 48;
             // 
-            // textBox15
+            // viewAdTextBoxCity
             // 
-            this.textBox15.Location = new System.Drawing.Point(367, 429);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(212, 20);
-            this.textBox15.TabIndex = 47;
+            this.viewAdTextBoxCity.Location = new System.Drawing.Point(367, 429);
+            this.viewAdTextBoxCity.Name = "viewAdTextBoxCity";
+            this.viewAdTextBoxCity.Size = new System.Drawing.Size(212, 20);
+            this.viewAdTextBoxCity.TabIndex = 47;
             // 
-            // textBox17
+            // viewAdTextBoxPnbr
             // 
-            this.textBox17.Location = new System.Drawing.Point(367, 403);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(212, 20);
-            this.textBox17.TabIndex = 46;
+            this.viewAdTextBoxPnbr.Location = new System.Drawing.Point(367, 403);
+            this.viewAdTextBoxPnbr.Name = "viewAdTextBoxPnbr";
+            this.viewAdTextBoxPnbr.Size = new System.Drawing.Size(212, 20);
+            this.viewAdTextBoxPnbr.TabIndex = 46;
             // 
-            // textBox18
+            // viewAdTextBoxMail
             // 
-            this.textBox18.Location = new System.Drawing.Point(367, 377);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(212, 20);
-            this.textBox18.TabIndex = 45;
+            this.viewAdTextBoxMail.Location = new System.Drawing.Point(367, 377);
+            this.viewAdTextBoxMail.Name = "viewAdTextBoxMail";
+            this.viewAdTextBoxMail.Size = new System.Drawing.Size(212, 20);
+            this.viewAdTextBoxMail.TabIndex = 45;
             // 
-            // label18
+            // viewAdLabelCity
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(334, 432);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(27, 13);
-            this.label18.TabIndex = 44;
-            this.label18.Text = "City:";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewAdLabelCity.AutoSize = true;
+            this.viewAdLabelCity.Location = new System.Drawing.Point(334, 432);
+            this.viewAdLabelCity.Name = "viewAdLabelCity";
+            this.viewAdLabelCity.Size = new System.Drawing.Size(27, 13);
+            this.viewAdLabelCity.TabIndex = 44;
+            this.viewAdLabelCity.Text = "City:";
+            this.viewAdLabelCity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label19
+            // viewAdLabelPnbr
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(282, 406);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(79, 13);
-            this.label19.TabIndex = 43;
-            this.label19.Text = "Phone number:";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewAdLabelPnbr.AutoSize = true;
+            this.viewAdLabelPnbr.Location = new System.Drawing.Point(282, 406);
+            this.viewAdLabelPnbr.Name = "viewAdLabelPnbr";
+            this.viewAdLabelPnbr.Size = new System.Drawing.Size(79, 13);
+            this.viewAdLabelPnbr.TabIndex = 43;
+            this.viewAdLabelPnbr.Text = "Phone number:";
+            this.viewAdLabelPnbr.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label20
+            // viewAdLabelMail
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(323, 380);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(38, 13);
-            this.label20.TabIndex = 42;
-            this.label20.Text = "E-mail:";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewAdLabelMail.AutoSize = true;
+            this.viewAdLabelMail.Location = new System.Drawing.Point(323, 380);
+            this.viewAdLabelMail.Name = "viewAdLabelMail";
+            this.viewAdLabelMail.Size = new System.Drawing.Size(38, 13);
+            this.viewAdLabelMail.TabIndex = 42;
+            this.viewAdLabelMail.Text = "E-mail:";
+            this.viewAdLabelMail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox14
+            // viewAdTextBoxDate
             // 
-            this.textBox14.Location = new System.Drawing.Point(312, 70);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(77, 20);
-            this.textBox14.TabIndex = 41;
+            this.viewAdTextBoxDate.Location = new System.Drawing.Point(312, 70);
+            this.viewAdTextBoxDate.Name = "viewAdTextBoxDate";
+            this.viewAdTextBoxDate.Size = new System.Drawing.Size(77, 20);
+            this.viewAdTextBoxDate.TabIndex = 41;
             // 
-            // textBox7
+            // viewAdTextBoxSeller
             // 
-            this.textBox7.Location = new System.Drawing.Point(437, 70);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(193, 20);
-            this.textBox7.TabIndex = 40;
+            this.viewAdTextBoxSeller.Location = new System.Drawing.Point(437, 70);
+            this.viewAdTextBoxSeller.Name = "viewAdTextBoxSeller";
+            this.viewAdTextBoxSeller.Size = new System.Drawing.Size(193, 20);
+            this.viewAdTextBoxSeller.TabIndex = 40;
             // 
-            // textBox16
+            // viewAdTextBoxText
             // 
-            this.textBox16.Location = new System.Drawing.Point(276, 252);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(354, 86);
-            this.textBox16.TabIndex = 39;
+            this.viewAdTextBoxText.Location = new System.Drawing.Point(276, 252);
+            this.viewAdTextBoxText.Multiline = true;
+            this.viewAdTextBoxText.Name = "viewAdTextBoxText";
+            this.viewAdTextBoxText.Size = new System.Drawing.Size(354, 86);
+            this.viewAdTextBoxText.TabIndex = 39;
             // 
-            // textBox11
+            // viewAdTextBoxPrice
             // 
-            this.textBox11.Location = new System.Drawing.Point(276, 226);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(354, 20);
-            this.textBox11.TabIndex = 38;
-            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
+            this.viewAdTextBoxPrice.Location = new System.Drawing.Point(276, 226);
+            this.viewAdTextBoxPrice.Name = "viewAdTextBoxPrice";
+            this.viewAdTextBoxPrice.Size = new System.Drawing.Size(354, 20);
+            this.viewAdTextBoxPrice.TabIndex = 38;
+            this.viewAdTextBoxPrice.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
-            // textBox12
+            // viewAdTextBoxInst
             // 
-            this.textBox12.Location = new System.Drawing.Point(276, 200);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(354, 20);
-            this.textBox12.TabIndex = 37;
-            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            this.viewAdTextBoxInst.Location = new System.Drawing.Point(276, 200);
+            this.viewAdTextBoxInst.Name = "viewAdTextBoxInst";
+            this.viewAdTextBoxInst.Size = new System.Drawing.Size(354, 20);
+            this.viewAdTextBoxInst.TabIndex = 37;
+            this.viewAdTextBoxInst.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
-            // label17
+            // viewAdLabelSeller
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(395, 73);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(36, 13);
-            this.label17.TabIndex = 35;
-            this.label17.Text = "Seller:";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewAdLabelSeller.AutoSize = true;
+            this.viewAdLabelSeller.Location = new System.Drawing.Point(395, 73);
+            this.viewAdLabelSeller.Name = "viewAdLabelSeller";
+            this.viewAdLabelSeller.Size = new System.Drawing.Size(36, 13);
+            this.viewAdLabelSeller.TabIndex = 35;
+            this.viewAdLabelSeller.Text = "Seller:";
+            this.viewAdLabelSeller.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label13
+            // viewAdLabelDate
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(273, 73);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(33, 13);
-            this.label13.TabIndex = 34;
-            this.label13.Text = "Date:";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewAdLabelDate.AutoSize = true;
+            this.viewAdLabelDate.Location = new System.Drawing.Point(273, 73);
+            this.viewAdLabelDate.Name = "viewAdLabelDate";
+            this.viewAdLabelDate.Size = new System.Drawing.Size(33, 13);
+            this.viewAdLabelDate.TabIndex = 34;
+            this.viewAdLabelDate.Text = "Date:";
+            this.viewAdLabelDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label14
+            // viewAdLabelText
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(235, 255);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(31, 13);
-            this.label14.TabIndex = 33;
-            this.label14.Text = "Text:";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewAdLabelText.AutoSize = true;
+            this.viewAdLabelText.Location = new System.Drawing.Point(235, 255);
+            this.viewAdLabelText.Name = "viewAdLabelText";
+            this.viewAdLabelText.Size = new System.Drawing.Size(31, 13);
+            this.viewAdLabelText.TabIndex = 33;
+            this.viewAdLabelText.Text = "Text:";
+            this.viewAdLabelText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label15
+            // viewAdLabelPrice
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(235, 229);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(34, 13);
-            this.label15.TabIndex = 32;
-            this.label15.Text = "Price:";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewAdLabelPrice.AutoSize = true;
+            this.viewAdLabelPrice.Location = new System.Drawing.Point(235, 229);
+            this.viewAdLabelPrice.Name = "viewAdLabelPrice";
+            this.viewAdLabelPrice.Size = new System.Drawing.Size(34, 13);
+            this.viewAdLabelPrice.TabIndex = 32;
+            this.viewAdLabelPrice.Text = "Price:";
+            this.viewAdLabelPrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label16
+            // viewAdLabelInst
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(215, 203);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(55, 13);
-            this.label16.TabIndex = 31;
-            this.label16.Text = "Institution:";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewAdLabelInst.AutoSize = true;
+            this.viewAdLabelInst.Location = new System.Drawing.Point(215, 203);
+            this.viewAdLabelInst.Name = "viewAdLabelInst";
+            this.viewAdLabelInst.Size = new System.Drawing.Size(55, 13);
+            this.viewAdLabelInst.TabIndex = 31;
+            this.viewAdLabelInst.Text = "Institution:";
+            this.viewAdLabelInst.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // button11
+            // viewAdButtonRemoveAd
             // 
-            this.button11.Location = new System.Drawing.Point(461, 465);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(143, 20);
-            this.button11.TabIndex = 30;
-            this.button11.Text = "Remove Ad";
-            this.button11.UseVisualStyleBackColor = true;
+            this.viewAdButtonRemoveAd.Location = new System.Drawing.Point(461, 465);
+            this.viewAdButtonRemoveAd.Name = "viewAdButtonRemoveAd";
+            this.viewAdButtonRemoveAd.Size = new System.Drawing.Size(143, 20);
+            this.viewAdButtonRemoveAd.TabIndex = 30;
+            this.viewAdButtonRemoveAd.Text = "Remove Ad";
+            this.viewAdButtonRemoveAd.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // viewAdButtonContactSeller
             // 
-            this.button12.Location = new System.Drawing.Point(312, 465);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(143, 20);
-            this.button12.TabIndex = 29;
-            this.button12.Text = "Contact Seller";
-            this.button12.UseVisualStyleBackColor = true;
+            this.viewAdButtonContactSeller.Location = new System.Drawing.Point(312, 465);
+            this.viewAdButtonContactSeller.Name = "viewAdButtonContactSeller";
+            this.viewAdButtonContactSeller.Size = new System.Drawing.Size(143, 20);
+            this.viewAdButtonContactSeller.TabIndex = 29;
+            this.viewAdButtonContactSeller.Text = "Contact Seller";
+            this.viewAdButtonContactSeller.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // viewAdLabelCourse
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(227, 177);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 13);
-            this.label9.TabIndex = 28;
-            this.label9.Text = "Course:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewAdLabelCourse.AutoSize = true;
+            this.viewAdLabelCourse.Location = new System.Drawing.Point(227, 177);
+            this.viewAdLabelCourse.Name = "viewAdLabelCourse";
+            this.viewAdLabelCourse.Size = new System.Drawing.Size(43, 13);
+            this.viewAdLabelCourse.TabIndex = 28;
+            this.viewAdLabelCourse.Text = "Course:";
+            this.viewAdLabelCourse.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label10
+            // viewAdLabelIsbn
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(235, 151);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(35, 13);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "ISBN:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewAdLabelIsbn.AutoSize = true;
+            this.viewAdLabelIsbn.Location = new System.Drawing.Point(235, 151);
+            this.viewAdLabelIsbn.Name = "viewAdLabelIsbn";
+            this.viewAdLabelIsbn.Size = new System.Drawing.Size(35, 13);
+            this.viewAdLabelIsbn.TabIndex = 27;
+            this.viewAdLabelIsbn.Text = "ISBN:";
+            this.viewAdLabelIsbn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label11
+            // viewAdLabelAuthor
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(229, 125);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 13);
-            this.label11.TabIndex = 26;
-            this.label11.Text = "Author:";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewAdLabelAuthor.AutoSize = true;
+            this.viewAdLabelAuthor.Location = new System.Drawing.Point(229, 125);
+            this.viewAdLabelAuthor.Name = "viewAdLabelAuthor";
+            this.viewAdLabelAuthor.Size = new System.Drawing.Size(41, 13);
+            this.viewAdLabelAuthor.TabIndex = 26;
+            this.viewAdLabelAuthor.Text = "Author:";
+            this.viewAdLabelAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label12
+            // viewAdLabelTitle
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(240, 99);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(30, 13);
-            this.label12.TabIndex = 25;
-            this.label12.Text = "Title:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.viewAdLabelTitle.AutoSize = true;
+            this.viewAdLabelTitle.Location = new System.Drawing.Point(240, 99);
+            this.viewAdLabelTitle.Name = "viewAdLabelTitle";
+            this.viewAdLabelTitle.Size = new System.Drawing.Size(30, 13);
+            this.viewAdLabelTitle.TabIndex = 25;
+            this.viewAdLabelTitle.Text = "Title:";
+            this.viewAdLabelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox8
+            // viewAdTextBoxIsbn
             // 
-            this.textBox8.Location = new System.Drawing.Point(276, 148);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(354, 20);
-            this.textBox8.TabIndex = 23;
+            this.viewAdTextBoxIsbn.Location = new System.Drawing.Point(276, 148);
+            this.viewAdTextBoxIsbn.Name = "viewAdTextBoxIsbn";
+            this.viewAdTextBoxIsbn.Size = new System.Drawing.Size(354, 20);
+            this.viewAdTextBoxIsbn.TabIndex = 23;
             // 
-            // textBox9
+            // viewAdTextBoxAuthor
             // 
-            this.textBox9.Location = new System.Drawing.Point(276, 122);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(354, 20);
-            this.textBox9.TabIndex = 22;
+            this.viewAdTextBoxAuthor.Location = new System.Drawing.Point(276, 122);
+            this.viewAdTextBoxAuthor.Name = "viewAdTextBoxAuthor";
+            this.viewAdTextBoxAuthor.Size = new System.Drawing.Size(354, 20);
+            this.viewAdTextBoxAuthor.TabIndex = 22;
             // 
-            // textBox10
+            // viewAdTextBoxTitle
             // 
-            this.textBox10.Location = new System.Drawing.Point(276, 96);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(354, 20);
-            this.textBox10.TabIndex = 21;
+            this.viewAdTextBoxTitle.Location = new System.Drawing.Point(276, 96);
+            this.viewAdTextBoxTitle.Name = "viewAdTextBoxTitle";
+            this.viewAdTextBoxTitle.Size = new System.Drawing.Size(354, 20);
+            this.viewAdTextBoxTitle.TabIndex = 21;
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // pictureBox2
+            // userAcPictureTree
             // 
-            this.pictureBox2.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
-            this.pictureBox2.Location = new System.Drawing.Point(802, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 75);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 76;
-            this.pictureBox2.TabStop = false;
+            this.userAcPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
+            this.userAcPictureTree.Location = new System.Drawing.Point(802, 6);
+            this.userAcPictureTree.Name = "userAcPictureTree";
+            this.userAcPictureTree.Size = new System.Drawing.Size(100, 75);
+            this.userAcPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userAcPictureTree.TabIndex = 76;
+            this.userAcPictureTree.TabStop = false;
             // 
-            // pictureBox3
+            // bookListPictureTree
             // 
-            this.pictureBox3.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
-            this.pictureBox3.Location = new System.Drawing.Point(802, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 75);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 76;
-            this.pictureBox3.TabStop = false;
+            this.bookListPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
+            this.bookListPictureTree.Location = new System.Drawing.Point(802, 6);
+            this.bookListPictureTree.Name = "bookListPictureTree";
+            this.bookListPictureTree.Size = new System.Drawing.Size(100, 75);
+            this.bookListPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bookListPictureTree.TabIndex = 76;
+            this.bookListPictureTree.TabStop = false;
             // 
-            // pictureBox1
+            // viewAdPictureTree
             // 
-            this.pictureBox1.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
-            this.pictureBox1.Location = new System.Drawing.Point(802, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 75);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 76;
-            this.pictureBox1.TabStop = false;
+            this.viewAdPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
+            this.viewAdPictureTree.Location = new System.Drawing.Point(802, 6);
+            this.viewAdPictureTree.Name = "viewAdPictureTree";
+            this.viewAdPictureTree.Size = new System.Drawing.Size(100, 75);
+            this.viewAdPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.viewAdPictureTree.TabIndex = 76;
+            this.viewAdPictureTree.TabStop = false;
             // 
             // Form1
             // 
@@ -707,15 +708,15 @@
             this.Text = "BookAd";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.bookListTabPage.ResumeLayout(false);
+            this.bookListTabPage.PerformLayout();
+            this.userActabPage.ResumeLayout(false);
+            this.userActabPage.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewAdPictureTree)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -723,65 +724,65 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox searchBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TabPage bookListTabPage;
+        private System.Windows.Forms.TabPage userActabPage;
+        private System.Windows.Forms.FlowLayoutPanel bookListFlowLayoutPanel;
+        private System.Windows.Forms.Button bookListBtnLogin;
+        private System.Windows.Forms.Button bookListBtnSearch;
+        private System.Windows.Forms.TextBox bookListSearchBox;
+        private System.Windows.Forms.Label userAcLabelPassw;
+        private System.Windows.Forms.Label userAcLabelMail;
+        private System.Windows.Forms.TextBox userAcTextBoxPassw;
+        private System.Windows.Forms.TextBox userAcTextBoxMail;
+        private System.Windows.Forms.Label userAcLabelCity;
+        private System.Windows.Forms.Label userAcLabelPnbr;
+        private System.Windows.Forms.Label userAcLabelLname;
+        private System.Windows.Forms.Label userAcLabelFname;
+        private System.Windows.Forms.TextBox userAcTextBoxCity;
+        private System.Windows.Forms.TextBox userAcTextBoxPnbr;
+        private System.Windows.Forms.TextBox userAcTextBoxLname;
+        private System.Windows.Forms.TextBox userAcTextBoxFname;
+        private System.Windows.Forms.Button userAcButtonCreateAd;
+        private System.Windows.Forms.Button userAcButtonRemoveAd;
+        private System.Windows.Forms.FlowLayoutPanel userAcFlowLayoutPanel;
+        private System.Windows.Forms.Button userAcButtonLogin;
+        private System.Windows.Forms.Label userAcLabelAds;
+        private System.Windows.Forms.Button userAcButtonRemoveAc;
+        private System.Windows.Forms.Button userAcButtonUpdateInfo;
+        private System.Windows.Forms.Button userAcButtonRefresh;
+        private System.Windows.Forms.Button bookListBtnReset;
+        private System.Windows.Forms.Label bookListLabelTop;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox viewAdTextBoxText;
+        private System.Windows.Forms.TextBox viewAdTextBoxPrice;
+        private System.Windows.Forms.TextBox viewAdTextBoxInst;
+        private System.Windows.Forms.Label viewAdLabelSeller;
+        private System.Windows.Forms.Label viewAdLabelDate;
+        private System.Windows.Forms.Label viewAdLabelText;
+        private System.Windows.Forms.Label viewAdLabelPrice;
+        private System.Windows.Forms.Label viewAdLabelInst;
+        private System.Windows.Forms.Button viewAdButtonRemoveAd;
+        private System.Windows.Forms.Button viewAdButtonContactSeller;
+        private System.Windows.Forms.Label viewAdLabelCourse;
+        private System.Windows.Forms.Label viewAdLabelIsbn;
+        private System.Windows.Forms.Label viewAdLabelAuthor;
+        private System.Windows.Forms.Label viewAdLabelTitle;
+        private System.Windows.Forms.TextBox viewAdTextBoxIsbn;
+        private System.Windows.Forms.TextBox viewAdTextBoxAuthor;
+        private System.Windows.Forms.TextBox viewAdTextBoxTitle;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox viewAdTextBoxDate;
+        private System.Windows.Forms.TextBox viewAdTextBoxSeller;
+        private System.Windows.Forms.TextBox viewAdTextBoxCity;
+        private System.Windows.Forms.TextBox viewAdTextBoxPnbr;
+        private System.Windows.Forms.TextBox viewAdTextBoxMail;
+        private System.Windows.Forms.Label viewAdLabelCity;
+        private System.Windows.Forms.Label viewAdLabelPnbr;
+        private System.Windows.Forms.Label viewAdLabelMail;
+        private System.Windows.Forms.Button userAcButtonCreateUsr;
+        private System.Windows.Forms.ComboBox viewAdComboBoxCourse;
+        private System.Windows.Forms.PictureBox bookListPictureTree;
+        private System.Windows.Forms.PictureBox userAcPictureTree;
+        private System.Windows.Forms.PictureBox viewAdPictureTree;
     }
 }
