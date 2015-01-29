@@ -12,6 +12,7 @@ namespace BookSeller
         public static Course MapCourses(DataRow r)
         {
             Course c = new Course();
+            c.cCode = r["CourseCode"].ToString();
             c.cName = r["CourseName"].ToString();
 
             return c;
