@@ -49,22 +49,31 @@
     <Compile Include="DAL\SellerDb.cs" />
     <Compile Include="Model\ClassObjects.cs" />
     <Compile Include="Database\DatabaseConnect.cs" />
-    <Compile Include="View\Form1.cs">
+    <Compile Include="View\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controller\TestClass.cs" />
+    <Compile Include="View\DialogNewAd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DialogNewAd.Designer.cs">
+      <DependentUpon>DialogNewAd.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="View\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="View\DialogNewAd.resx">
+      <DependentUpon>DialogNewAd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
