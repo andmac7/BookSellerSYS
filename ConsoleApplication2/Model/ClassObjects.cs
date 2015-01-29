@@ -31,7 +31,7 @@ namespace BookSeller
         public String cName { get; set; }
     }
 
-    public class Institution
+    public class Inst
     {
         public String instName { get; set; }
     }
