@@ -26,5 +26,10 @@ namespace ConsoleApplication2.View
         {
 
         }
+
+        private void createAdTextBoxDate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

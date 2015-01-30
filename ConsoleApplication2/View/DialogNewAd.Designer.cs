@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.createAdPanel = new System.Windows.Forms.Panel();
+            this.createAdPictureTree = new System.Windows.Forms.PictureBox();
             this.createAdComboBoxCourse = new System.Windows.Forms.ComboBox();
             this.createAdTextBoxCity = new System.Windows.Forms.TextBox();
             this.createAdTextBoxPnbr = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@
             this.createAdTextBoxIsbn = new System.Windows.Forms.TextBox();
             this.createAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.createAdTextBoxTitle = new System.Windows.Forms.TextBox();
-            this.createAdPictureTree = new System.Windows.Forms.PictureBox();
             this.createAdPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.createAdPictureTree)).BeginInit();
             this.SuspendLayout();
@@ -94,6 +94,16 @@
             this.createAdPanel.Name = "createAdPanel";
             this.createAdPanel.Size = new System.Drawing.Size(620, 576);
             this.createAdPanel.TabIndex = 0;
+            // 
+            // createAdPictureTree
+            // 
+            this.createAdPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
+            this.createAdPictureTree.Location = new System.Drawing.Point(517, 3);
+            this.createAdPictureTree.Name = "createAdPictureTree";
+            this.createAdPictureTree.Size = new System.Drawing.Size(100, 75);
+            this.createAdPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.createAdPictureTree.TabIndex = 75;
+            this.createAdPictureTree.TabStop = false;
             // 
             // createAdComboBoxCourse
             // 
@@ -160,6 +170,7 @@
             this.createAdTextBoxDate.Name = "createAdTextBoxDate";
             this.createAdTextBoxDate.Size = new System.Drawing.Size(77, 20);
             this.createAdTextBoxDate.TabIndex = 67;
+            this.createAdTextBoxDate.TextChanged += new System.EventHandler(this.createAdTextBoxDate_TextChanged);
             // 
             // createAdTextBoxSeller
             // 
@@ -318,16 +329,6 @@
             this.createAdTextBoxTitle.Name = "createAdTextBoxTitle";
             this.createAdTextBoxTitle.Size = new System.Drawing.Size(354, 20);
             this.createAdTextBoxTitle.TabIndex = 49;
-            // 
-            // createAdPictureTree
-            // 
-            this.createAdPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
-            this.createAdPictureTree.Location = new System.Drawing.Point(517, 3);
-            this.createAdPictureTree.Name = "createAdPictureTree";
-            this.createAdPictureTree.Size = new System.Drawing.Size(100, 75);
-            this.createAdPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.createAdPictureTree.TabIndex = 75;
-            this.createAdPictureTree.TabStop = false;
             // 
             // DialogNewAd
             // 
