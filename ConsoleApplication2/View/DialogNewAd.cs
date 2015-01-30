@@ -17,19 +17,17 @@ namespace ConsoleApplication2.View
             InitializeComponent();
         }
 
-        private void textBox11_TextChanged(object sender, EventArgs e)
+        private void createAdButtonCreateAd_Click(object sender, EventArgs e)
         {
 
+            //Stänger fönster
+            this.Close();
         }
 
-        private void textBox12_TextChanged(object sender, EventArgs e)
+        private void createAdButtonCancel_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void createAdTextBoxDate_TextChanged(object sender, EventArgs e)
-        {
-
+            //Stänger fönster
+            this.Close();
         }
     }
 }

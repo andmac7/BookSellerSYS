@@ -56,6 +56,7 @@
             this.createAdTextBoxIsbn = new System.Windows.Forms.TextBox();
             this.createAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.createAdTextBoxTitle = new System.Windows.Forms.TextBox();
+            this.createAdButtonCancel = new System.Windows.Forms.Button();
             this.createAdPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.createAdPictureTree)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +64,7 @@
             // createAdPanel
             // 
             this.createAdPanel.BackColor = System.Drawing.SystemColors.Window;
+            this.createAdPanel.Controls.Add(this.createAdButtonCancel);
             this.createAdPanel.Controls.Add(this.createAdPictureTree);
             this.createAdPanel.Controls.Add(this.createAdComboBoxCourse);
             this.createAdPanel.Controls.Add(this.createAdTextBoxCity);
@@ -170,7 +172,6 @@
             this.createAdTextBoxDate.Name = "createAdTextBoxDate";
             this.createAdTextBoxDate.Size = new System.Drawing.Size(77, 20);
             this.createAdTextBoxDate.TabIndex = 67;
-            this.createAdTextBoxDate.TextChanged += new System.EventHandler(this.createAdTextBoxDate_TextChanged);
             // 
             // createAdTextBoxSeller
             // 
@@ -268,6 +269,7 @@
             this.createAdButtonCreateAd.TabIndex = 56;
             this.createAdButtonCreateAd.Text = "Create Ad";
             this.createAdButtonCreateAd.UseVisualStyleBackColor = true;
+            this.createAdButtonCreateAd.Click += new System.EventHandler(this.createAdButtonCreateAd_Click);
             // 
             // createAdLabelCourse
             // 
@@ -330,6 +332,16 @@
             this.createAdTextBoxTitle.Size = new System.Drawing.Size(354, 20);
             this.createAdTextBoxTitle.TabIndex = 49;
             // 
+            // createAdButtonCancel
+            // 
+            this.createAdButtonCancel.Location = new System.Drawing.Point(254, 487);
+            this.createAdButtonCancel.Name = "createAdButtonCancel";
+            this.createAdButtonCancel.Size = new System.Drawing.Size(143, 20);
+            this.createAdButtonCancel.TabIndex = 76;
+            this.createAdButtonCancel.Text = "Cancel";
+            this.createAdButtonCancel.UseVisualStyleBackColor = true;
+            this.createAdButtonCancel.Click += new System.EventHandler(this.createAdButtonCancel_Click);
+            // 
             // DialogNewAd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,5 +388,6 @@
         private System.Windows.Forms.TextBox createAdTextBoxAuthor;
         private System.Windows.Forms.TextBox createAdTextBoxTitle;
         private System.Windows.Forms.PictureBox createAdPictureTree;
+        private System.Windows.Forms.Button createAdButtonCancel;
     }
 }
