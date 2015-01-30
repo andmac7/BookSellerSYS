@@ -8,16 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Data.SqlClient;
+using BookSeller;
 
 namespace ConsoleApplication2
 {
     public partial class MainWindow : Form
     {
+        private DataGridView dataGridView = new DataGridView();
+        private BindingSource bindingSource1 = new BindingSource();
+        private SqlDataAdapter dataAdapter = new SqlDataAdapter();
+        
         public MainWindow()
         {
             InitializeComponent();
         }
-        static void ain()
+        static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
@@ -26,7 +32,13 @@ namespace ConsoleApplication2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-        
+            string cm = "Select * From BookAd";
+            bookListDataGridView.DataSource = BookAdDb.Read(cm);
+        }
+
+        private void GetData(string cmd)
+        {
+            
         }
 
         private void bookListFlowLayOutPanel(object sender, PaintEventArgs e)

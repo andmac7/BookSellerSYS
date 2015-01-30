@@ -15,24 +15,8 @@ namespace BookSeller
             "user id=ramy; password=123456; server=Ramy; Trusted_Connection=yes; database=BookAd; connection timeout=5",
             "user id=SverkerJerker; password=; server=ANDREAS-PC\\SQLEXPRESS; Trusted_Connection=yes; database=BookSeller; connection timeout=5",
             "user id=SverkerJerker; password=; server=WIN-08GPCVO901J; Trusted_Connection=yes; database=BookAd; connection timeout=5"};
-        static int i = Program.i;
-        /*
-        const string conString[1] =  "user id=ramy;" +
-            "password=123456; server=Ramy;" +
-            "Trusted_Connection=yes;" +
-            "database=BookAd; " +
-            "connection timeout=5"; // Ramys inloggning
-        const string conString[2] = "user id=SverkerJerker;" +
-            "password=; server=ANDREAS-PC\\SQLEXPRESS;" +
-            "Trusted_Connection=yes;" +
-            "database=BookSeller; " +
-            "connection timeout=5";
-        const string conString[3] = "user id=SverkerJerker;" +
-            "password=; server=ANDREAS-PC\\SQLEXPRESS;" +
-            "Trusted_Connection=yes;" +
-            "database=BookSeller; " +
-            "connection timeout=5";
-        */
+        static int i = 2; // 0 = Thomas, 1 = Ramy, 2 = Andreas, 3 = Robin
+  
         public static SqlConnection conn = null;
 
         public static DataTable ExecuteSelectCommand(string cmdName, CommandType cmdType)
