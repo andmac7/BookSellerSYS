@@ -57,6 +57,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="View\DialogRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DialogRegister.Designer.cs">
+      <DependentUpon>DialogRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\DialogNewAd.resx">
       <DependentUpon>DialogNewAd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DialogRegister.resx">
+      <DependentUpon>DialogRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>

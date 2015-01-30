@@ -79,13 +79,16 @@ namespace ConsoleApplication2
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonLogin_Click(object sender, EventArgs e)
         {
-
+            userAcTextBoxFname.Visible = true;
+            userAcLabelFname.Visible = true;
+            userAcTextBoxLname.Visible = true;
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
+            
 
         }
 

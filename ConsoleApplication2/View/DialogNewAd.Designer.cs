@@ -92,13 +92,13 @@
             this.createAdPanel.Controls.Add(this.createAdTextBoxTitle);
             this.createAdPanel.Location = new System.Drawing.Point(12, 12);
             this.createAdPanel.Name = "createAdPanel";
-            this.createAdPanel.Size = new System.Drawing.Size(620, 576);
+            this.createAdPanel.Size = new System.Drawing.Size(680, 537);
             this.createAdPanel.TabIndex = 0;
             // 
             // createAdPictureTree
             // 
             this.createAdPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
-            this.createAdPictureTree.Location = new System.Drawing.Point(517, 3);
+            this.createAdPictureTree.Location = new System.Drawing.Point(577, 3);
             this.createAdPictureTree.Name = "createAdPictureTree";
             this.createAdPictureTree.Size = new System.Drawing.Size(100, 75);
             this.createAdPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -108,28 +108,28 @@
             // createAdComboBoxCourse
             // 
             this.createAdComboBoxCourse.FormattingEnabled = true;
-            this.createAdComboBoxCourse.Location = new System.Drawing.Point(114, 191);
+            this.createAdComboBoxCourse.Location = new System.Drawing.Point(149, 156);
             this.createAdComboBoxCourse.Name = "createAdComboBoxCourse";
             this.createAdComboBoxCourse.Size = new System.Drawing.Size(354, 21);
             this.createAdComboBoxCourse.TabIndex = 74;
             // 
             // createAdTextBoxCity
             // 
-            this.createAdTextBoxCity.Location = new System.Drawing.Point(206, 435);
+            this.createAdTextBoxCity.Location = new System.Drawing.Point(241, 400);
             this.createAdTextBoxCity.Name = "createAdTextBoxCity";
             this.createAdTextBoxCity.Size = new System.Drawing.Size(212, 20);
             this.createAdTextBoxCity.TabIndex = 73;
             // 
             // createAdTextBoxPnbr
             // 
-            this.createAdTextBoxPnbr.Location = new System.Drawing.Point(206, 409);
+            this.createAdTextBoxPnbr.Location = new System.Drawing.Point(241, 374);
             this.createAdTextBoxPnbr.Name = "createAdTextBoxPnbr";
             this.createAdTextBoxPnbr.Size = new System.Drawing.Size(212, 20);
             this.createAdTextBoxPnbr.TabIndex = 72;
             // 
             // createAdTextBoxMail
             // 
-            this.createAdTextBoxMail.Location = new System.Drawing.Point(206, 383);
+            this.createAdTextBoxMail.Location = new System.Drawing.Point(241, 348);
             this.createAdTextBoxMail.Name = "createAdTextBoxMail";
             this.createAdTextBoxMail.Size = new System.Drawing.Size(212, 20);
             this.createAdTextBoxMail.TabIndex = 71;
@@ -137,7 +137,7 @@
             // createAdLabelCity
             // 
             this.createAdLabelCity.AutoSize = true;
-            this.createAdLabelCity.Location = new System.Drawing.Point(173, 438);
+            this.createAdLabelCity.Location = new System.Drawing.Point(208, 403);
             this.createAdLabelCity.Name = "createAdLabelCity";
             this.createAdLabelCity.Size = new System.Drawing.Size(27, 13);
             this.createAdLabelCity.TabIndex = 70;
@@ -147,7 +147,7 @@
             // createAdLabelPnbr
             // 
             this.createAdLabelPnbr.AutoSize = true;
-            this.createAdLabelPnbr.Location = new System.Drawing.Point(121, 412);
+            this.createAdLabelPnbr.Location = new System.Drawing.Point(156, 377);
             this.createAdLabelPnbr.Name = "createAdLabelPnbr";
             this.createAdLabelPnbr.Size = new System.Drawing.Size(79, 13);
             this.createAdLabelPnbr.TabIndex = 69;
@@ -157,7 +157,7 @@
             // createAdLabelMail
             // 
             this.createAdLabelMail.AutoSize = true;
-            this.createAdLabelMail.Location = new System.Drawing.Point(162, 386);
+            this.createAdLabelMail.Location = new System.Drawing.Point(197, 351);
             this.createAdLabelMail.Name = "createAdLabelMail";
             this.createAdLabelMail.Size = new System.Drawing.Size(38, 13);
             this.createAdLabelMail.TabIndex = 68;
@@ -166,7 +166,7 @@
             // 
             // createAdTextBoxDate
             // 
-            this.createAdTextBoxDate.Location = new System.Drawing.Point(150, 87);
+            this.createAdTextBoxDate.Location = new System.Drawing.Point(185, 52);
             this.createAdTextBoxDate.Name = "createAdTextBoxDate";
             this.createAdTextBoxDate.Size = new System.Drawing.Size(77, 20);
             this.createAdTextBoxDate.TabIndex = 67;
@@ -174,14 +174,14 @@
             // 
             // createAdTextBoxSeller
             // 
-            this.createAdTextBoxSeller.Location = new System.Drawing.Point(275, 87);
+            this.createAdTextBoxSeller.Location = new System.Drawing.Point(310, 52);
             this.createAdTextBoxSeller.Name = "createAdTextBoxSeller";
             this.createAdTextBoxSeller.Size = new System.Drawing.Size(193, 20);
             this.createAdTextBoxSeller.TabIndex = 66;
             // 
             // createAdTextBoxText
             // 
-            this.createAdTextBoxText.Location = new System.Drawing.Point(114, 269);
+            this.createAdTextBoxText.Location = new System.Drawing.Point(149, 234);
             this.createAdTextBoxText.Multiline = true;
             this.createAdTextBoxText.Name = "createAdTextBoxText";
             this.createAdTextBoxText.Size = new System.Drawing.Size(354, 86);
@@ -189,14 +189,14 @@
             // 
             // createAdTextBoxPrice
             // 
-            this.createAdTextBoxPrice.Location = new System.Drawing.Point(114, 243);
+            this.createAdTextBoxPrice.Location = new System.Drawing.Point(149, 208);
             this.createAdTextBoxPrice.Name = "createAdTextBoxPrice";
             this.createAdTextBoxPrice.Size = new System.Drawing.Size(354, 20);
             this.createAdTextBoxPrice.TabIndex = 64;
             // 
             // createAdTextBoxInst
             // 
-            this.createAdTextBoxInst.Location = new System.Drawing.Point(114, 217);
+            this.createAdTextBoxInst.Location = new System.Drawing.Point(149, 182);
             this.createAdTextBoxInst.Name = "createAdTextBoxInst";
             this.createAdTextBoxInst.Size = new System.Drawing.Size(354, 20);
             this.createAdTextBoxInst.TabIndex = 63;
@@ -204,7 +204,7 @@
             // createAdlabelSeller
             // 
             this.createAdlabelSeller.AutoSize = true;
-            this.createAdlabelSeller.Location = new System.Drawing.Point(233, 90);
+            this.createAdlabelSeller.Location = new System.Drawing.Point(268, 55);
             this.createAdlabelSeller.Name = "createAdlabelSeller";
             this.createAdlabelSeller.Size = new System.Drawing.Size(36, 13);
             this.createAdlabelSeller.TabIndex = 62;
@@ -214,7 +214,7 @@
             // createAdLabelDate
             // 
             this.createAdLabelDate.AutoSize = true;
-            this.createAdLabelDate.Location = new System.Drawing.Point(111, 90);
+            this.createAdLabelDate.Location = new System.Drawing.Point(146, 55);
             this.createAdLabelDate.Name = "createAdLabelDate";
             this.createAdLabelDate.Size = new System.Drawing.Size(33, 13);
             this.createAdLabelDate.TabIndex = 61;
@@ -224,7 +224,7 @@
             // createAdLabelText
             // 
             this.createAdLabelText.AutoSize = true;
-            this.createAdLabelText.Location = new System.Drawing.Point(73, 272);
+            this.createAdLabelText.Location = new System.Drawing.Point(108, 237);
             this.createAdLabelText.Name = "createAdLabelText";
             this.createAdLabelText.Size = new System.Drawing.Size(31, 13);
             this.createAdLabelText.TabIndex = 60;
@@ -234,7 +234,7 @@
             // createAdLabelPrice
             // 
             this.createAdLabelPrice.AutoSize = true;
-            this.createAdLabelPrice.Location = new System.Drawing.Point(73, 246);
+            this.createAdLabelPrice.Location = new System.Drawing.Point(108, 211);
             this.createAdLabelPrice.Name = "createAdLabelPrice";
             this.createAdLabelPrice.Size = new System.Drawing.Size(34, 13);
             this.createAdLabelPrice.TabIndex = 59;
@@ -244,7 +244,7 @@
             // createAdLabelInst
             // 
             this.createAdLabelInst.AutoSize = true;
-            this.createAdLabelInst.Location = new System.Drawing.Point(53, 220);
+            this.createAdLabelInst.Location = new System.Drawing.Point(88, 185);
             this.createAdLabelInst.Name = "createAdLabelInst";
             this.createAdLabelInst.Size = new System.Drawing.Size(55, 13);
             this.createAdLabelInst.TabIndex = 58;
@@ -253,7 +253,7 @@
             // 
             // createAdButtonAnotherAd
             // 
-            this.createAdButtonAnotherAd.Location = new System.Drawing.Point(222, 522);
+            this.createAdButtonAnotherAd.Location = new System.Drawing.Point(254, 461);
             this.createAdButtonAnotherAd.Name = "createAdButtonAnotherAd";
             this.createAdButtonAnotherAd.Size = new System.Drawing.Size(143, 20);
             this.createAdButtonAnotherAd.TabIndex = 57;
@@ -262,7 +262,7 @@
             // 
             // createAdButtonCreateAd
             // 
-            this.createAdButtonCreateAd.Location = new System.Drawing.Point(222, 496);
+            this.createAdButtonCreateAd.Location = new System.Drawing.Point(254, 435);
             this.createAdButtonCreateAd.Name = "createAdButtonCreateAd";
             this.createAdButtonCreateAd.Size = new System.Drawing.Size(143, 20);
             this.createAdButtonCreateAd.TabIndex = 56;
@@ -272,7 +272,7 @@
             // createAdLabelCourse
             // 
             this.createAdLabelCourse.AutoSize = true;
-            this.createAdLabelCourse.Location = new System.Drawing.Point(65, 194);
+            this.createAdLabelCourse.Location = new System.Drawing.Point(100, 159);
             this.createAdLabelCourse.Name = "createAdLabelCourse";
             this.createAdLabelCourse.Size = new System.Drawing.Size(43, 13);
             this.createAdLabelCourse.TabIndex = 55;
@@ -282,7 +282,7 @@
             // createAdLabelIsbn
             // 
             this.createAdLabelIsbn.AutoSize = true;
-            this.createAdLabelIsbn.Location = new System.Drawing.Point(73, 168);
+            this.createAdLabelIsbn.Location = new System.Drawing.Point(108, 133);
             this.createAdLabelIsbn.Name = "createAdLabelIsbn";
             this.createAdLabelIsbn.Size = new System.Drawing.Size(35, 13);
             this.createAdLabelIsbn.TabIndex = 54;
@@ -292,7 +292,7 @@
             // createAdLabelAuthor
             // 
             this.createAdLabelAuthor.AutoSize = true;
-            this.createAdLabelAuthor.Location = new System.Drawing.Point(67, 142);
+            this.createAdLabelAuthor.Location = new System.Drawing.Point(102, 107);
             this.createAdLabelAuthor.Name = "createAdLabelAuthor";
             this.createAdLabelAuthor.Size = new System.Drawing.Size(41, 13);
             this.createAdLabelAuthor.TabIndex = 53;
@@ -302,7 +302,7 @@
             // createAdLabelTitle
             // 
             this.createAdLabelTitle.AutoSize = true;
-            this.createAdLabelTitle.Location = new System.Drawing.Point(78, 116);
+            this.createAdLabelTitle.Location = new System.Drawing.Point(113, 81);
             this.createAdLabelTitle.Name = "createAdLabelTitle";
             this.createAdLabelTitle.Size = new System.Drawing.Size(30, 13);
             this.createAdLabelTitle.TabIndex = 52;
@@ -311,21 +311,21 @@
             // 
             // createAdTextBoxIsbn
             // 
-            this.createAdTextBoxIsbn.Location = new System.Drawing.Point(114, 165);
+            this.createAdTextBoxIsbn.Location = new System.Drawing.Point(149, 130);
             this.createAdTextBoxIsbn.Name = "createAdTextBoxIsbn";
             this.createAdTextBoxIsbn.Size = new System.Drawing.Size(354, 20);
             this.createAdTextBoxIsbn.TabIndex = 51;
             // 
             // createAdTextBoxAuthor
             // 
-            this.createAdTextBoxAuthor.Location = new System.Drawing.Point(114, 139);
+            this.createAdTextBoxAuthor.Location = new System.Drawing.Point(149, 104);
             this.createAdTextBoxAuthor.Name = "createAdTextBoxAuthor";
             this.createAdTextBoxAuthor.Size = new System.Drawing.Size(354, 20);
             this.createAdTextBoxAuthor.TabIndex = 50;
             // 
             // createAdTextBoxTitle
             // 
-            this.createAdTextBoxTitle.Location = new System.Drawing.Point(114, 113);
+            this.createAdTextBoxTitle.Location = new System.Drawing.Point(149, 78);
             this.createAdTextBoxTitle.Name = "createAdTextBoxTitle";
             this.createAdTextBoxTitle.Size = new System.Drawing.Size(354, 20);
             this.createAdTextBoxTitle.TabIndex = 49;
@@ -335,10 +335,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(644, 600);
+            this.ClientSize = new System.Drawing.Size(704, 561);
             this.Controls.Add(this.createAdPanel);
             this.Name = "DialogNewAd";
-            this.Text = "Create New Ad";
+            this.Text = "BookAd - Create New Ad";
             this.createAdPanel.ResumeLayout(false);
             this.createAdPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.createAdPictureTree)).EndInit();
