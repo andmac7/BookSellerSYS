@@ -28,114 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bookListPictureTree = new System.Windows.Forms.PictureBox();
-            this.userAcLabelCity = new System.Windows.Forms.Label();
-            this.userAcLabelPnbr = new System.Windows.Forms.Label();
-            this.userAcTextBoxCity = new System.Windows.Forms.TextBox();
-            this.userAcTextBoxPnbr = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).BeginInit();
+            this.newUserPanel = new System.Windows.Forms.Panel();
+            this.newUserLabelLname = new System.Windows.Forms.Label();
+            this.newUserLabelFname = new System.Windows.Forms.Label();
+            this.newUserTextBoxLname = new System.Windows.Forms.TextBox();
+            this.newUserTextBoxFname = new System.Windows.Forms.TextBox();
+            this.newUserLabelCity = new System.Windows.Forms.Label();
+            this.newUserLabelPnbr = new System.Windows.Forms.Label();
+            this.newUserTextBoxCity = new System.Windows.Forms.TextBox();
+            this.newUserTextBoxPnbr = new System.Windows.Forms.TextBox();
+            this.newUserPictureTree = new System.Windows.Forms.PictureBox();
+            this.newUserButtonCancel = new System.Windows.Forms.Button();
+            this.newUserPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.newUserPictureTree)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // newUserPanel
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Window;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.userAcLabelCity);
-            this.panel1.Controls.Add(this.userAcLabelPnbr);
-            this.panel1.Controls.Add(this.userAcTextBoxCity);
-            this.panel1.Controls.Add(this.userAcTextBoxPnbr);
-            this.panel1.Controls.Add(this.bookListPictureTree);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(680, 537);
-            this.panel1.TabIndex = 0;
+            this.newUserPanel.BackColor = System.Drawing.SystemColors.Window;
+            this.newUserPanel.Controls.Add(this.newUserButtonCancel);
+            this.newUserPanel.Controls.Add(this.newUserLabelLname);
+            this.newUserPanel.Controls.Add(this.newUserLabelFname);
+            this.newUserPanel.Controls.Add(this.newUserTextBoxLname);
+            this.newUserPanel.Controls.Add(this.newUserTextBoxFname);
+            this.newUserPanel.Controls.Add(this.newUserLabelCity);
+            this.newUserPanel.Controls.Add(this.newUserLabelPnbr);
+            this.newUserPanel.Controls.Add(this.newUserTextBoxCity);
+            this.newUserPanel.Controls.Add(this.newUserTextBoxPnbr);
+            this.newUserPanel.Controls.Add(this.newUserPictureTree);
+            this.newUserPanel.Location = new System.Drawing.Point(12, 12);
+            this.newUserPanel.Name = "newUserPanel";
+            this.newUserPanel.Size = new System.Drawing.Size(680, 537);
+            this.newUserPanel.TabIndex = 0;
             // 
-            // bookListPictureTree
+            // newUserLabelLname
             // 
-            this.bookListPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
-            this.bookListPictureTree.Location = new System.Drawing.Point(577, 3);
-            this.bookListPictureTree.Name = "bookListPictureTree";
-            this.bookListPictureTree.Size = new System.Drawing.Size(100, 75);
-            this.bookListPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bookListPictureTree.TabIndex = 77;
-            this.bookListPictureTree.TabStop = false;
+            this.newUserLabelLname.AutoSize = true;
+            this.newUserLabelLname.Location = new System.Drawing.Point(102, 201);
+            this.newUserLabelLname.Name = "newUserLabelLname";
+            this.newUserLabelLname.Size = new System.Drawing.Size(59, 13);
+            this.newUserLabelLname.TabIndex = 85;
+            this.newUserLabelLname.Text = "Last name:";
+            this.newUserLabelLname.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // userAcLabelCity
+            // newUserLabelFname
             // 
-            this.userAcLabelCity.AutoSize = true;
-            this.userAcLabelCity.Location = new System.Drawing.Point(134, 253);
-            this.userAcLabelCity.Name = "userAcLabelCity";
-            this.userAcLabelCity.Size = new System.Drawing.Size(27, 13);
-            this.userAcLabelCity.TabIndex = 81;
-            this.userAcLabelCity.Text = "City:";
-            this.userAcLabelCity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.newUserLabelFname.AutoSize = true;
+            this.newUserLabelFname.Location = new System.Drawing.Point(102, 174);
+            this.newUserLabelFname.Name = "newUserLabelFname";
+            this.newUserLabelFname.Size = new System.Drawing.Size(58, 13);
+            this.newUserLabelFname.TabIndex = 84;
+            this.newUserLabelFname.Text = "First name:";
+            this.newUserLabelFname.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // userAcLabelPnbr
+            // newUserTextBoxLname
             // 
-            this.userAcLabelPnbr.AutoSize = true;
-            this.userAcLabelPnbr.Location = new System.Drawing.Point(82, 227);
-            this.userAcLabelPnbr.Name = "userAcLabelPnbr";
-            this.userAcLabelPnbr.Size = new System.Drawing.Size(79, 13);
-            this.userAcLabelPnbr.TabIndex = 80;
-            this.userAcLabelPnbr.Text = "Phone number:";
-            this.userAcLabelPnbr.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.newUserTextBoxLname.Location = new System.Drawing.Point(167, 198);
+            this.newUserTextBoxLname.Name = "newUserTextBoxLname";
+            this.newUserTextBoxLname.Size = new System.Drawing.Size(354, 20);
+            this.newUserTextBoxLname.TabIndex = 83;
             // 
-            // userAcTextBoxCity
+            // newUserTextBoxFname
             // 
-            this.userAcTextBoxCity.Location = new System.Drawing.Point(167, 250);
-            this.userAcTextBoxCity.Name = "userAcTextBoxCity";
-            this.userAcTextBoxCity.Size = new System.Drawing.Size(354, 20);
-            this.userAcTextBoxCity.TabIndex = 79;
+            this.newUserTextBoxFname.Location = new System.Drawing.Point(167, 171);
+            this.newUserTextBoxFname.Name = "newUserTextBoxFname";
+            this.newUserTextBoxFname.Size = new System.Drawing.Size(354, 20);
+            this.newUserTextBoxFname.TabIndex = 82;
             // 
-            // userAcTextBoxPnbr
+            // newUserLabelCity
             // 
-            this.userAcTextBoxPnbr.Location = new System.Drawing.Point(167, 224);
-            this.userAcTextBoxPnbr.Name = "userAcTextBoxPnbr";
-            this.userAcTextBoxPnbr.Size = new System.Drawing.Size(354, 20);
-            this.userAcTextBoxPnbr.TabIndex = 78;
+            this.newUserLabelCity.AutoSize = true;
+            this.newUserLabelCity.Location = new System.Drawing.Point(134, 253);
+            this.newUserLabelCity.Name = "newUserLabelCity";
+            this.newUserLabelCity.Size = new System.Drawing.Size(27, 13);
+            this.newUserLabelCity.TabIndex = 81;
+            this.newUserLabelCity.Text = "City:";
+            this.newUserLabelCity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label1
+            // newUserLabelPnbr
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(102, 201);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
-            this.label1.TabIndex = 85;
-            this.label1.Text = "Last name:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.newUserLabelPnbr.AutoSize = true;
+            this.newUserLabelPnbr.Location = new System.Drawing.Point(82, 227);
+            this.newUserLabelPnbr.Name = "newUserLabelPnbr";
+            this.newUserLabelPnbr.Size = new System.Drawing.Size(79, 13);
+            this.newUserLabelPnbr.TabIndex = 80;
+            this.newUserLabelPnbr.Text = "Phone number:";
+            this.newUserLabelPnbr.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label2
+            // newUserTextBoxCity
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(102, 174);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 84;
-            this.label2.Text = "First name:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.newUserTextBoxCity.Location = new System.Drawing.Point(167, 250);
+            this.newUserTextBoxCity.Name = "newUserTextBoxCity";
+            this.newUserTextBoxCity.Size = new System.Drawing.Size(354, 20);
+            this.newUserTextBoxCity.TabIndex = 79;
             // 
-            // textBox1
+            // newUserTextBoxPnbr
             // 
-            this.textBox1.Location = new System.Drawing.Point(167, 198);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(354, 20);
-            this.textBox1.TabIndex = 83;
+            this.newUserTextBoxPnbr.Location = new System.Drawing.Point(167, 224);
+            this.newUserTextBoxPnbr.Name = "newUserTextBoxPnbr";
+            this.newUserTextBoxPnbr.Size = new System.Drawing.Size(354, 20);
+            this.newUserTextBoxPnbr.TabIndex = 78;
             // 
-            // textBox2
+            // newUserPictureTree
             // 
-            this.textBox2.Location = new System.Drawing.Point(167, 171);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(354, 20);
-            this.textBox2.TabIndex = 82;
+            this.newUserPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
+            this.newUserPictureTree.Location = new System.Drawing.Point(577, 3);
+            this.newUserPictureTree.Name = "newUserPictureTree";
+            this.newUserPictureTree.Size = new System.Drawing.Size(100, 75);
+            this.newUserPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.newUserPictureTree.TabIndex = 77;
+            this.newUserPictureTree.TabStop = false;
+            // 
+            // newUserButtonCancel
+            // 
+            this.newUserButtonCancel.Location = new System.Drawing.Point(262, 483);
+            this.newUserButtonCancel.Name = "newUserButtonCancel";
+            this.newUserButtonCancel.Size = new System.Drawing.Size(143, 20);
+            this.newUserButtonCancel.TabIndex = 86;
+            this.newUserButtonCancel.Text = "Cancel";
+            this.newUserButtonCancel.UseVisualStyleBackColor = true;
+            this.newUserButtonCancel.Click += new System.EventHandler(this.newUserButtonCancel_Click);
             // 
             // DialogRegister
             // 
@@ -143,27 +155,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(704, 561);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.newUserPanel);
             this.Name = "DialogRegister";
             this.Text = "BookAd - Register New User";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).EndInit();
+            this.newUserPanel.ResumeLayout(false);
+            this.newUserPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.newUserPictureTree)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox bookListPictureTree;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label userAcLabelCity;
-        private System.Windows.Forms.Label userAcLabelPnbr;
-        private System.Windows.Forms.TextBox userAcTextBoxCity;
-        private System.Windows.Forms.TextBox userAcTextBoxPnbr;
+        private System.Windows.Forms.Panel newUserPanel;
+        private System.Windows.Forms.PictureBox newUserPictureTree;
+        private System.Windows.Forms.Label newUserLabelLname;
+        private System.Windows.Forms.Label newUserLabelFname;
+        private System.Windows.Forms.TextBox newUserTextBoxLname;
+        private System.Windows.Forms.TextBox newUserTextBoxFname;
+        private System.Windows.Forms.Label newUserLabelCity;
+        private System.Windows.Forms.Label newUserLabelPnbr;
+        private System.Windows.Forms.TextBox newUserTextBoxCity;
+        private System.Windows.Forms.TextBox newUserTextBoxPnbr;
+        private System.Windows.Forms.Button newUserButtonCancel;
     }
 }

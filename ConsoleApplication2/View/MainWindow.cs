@@ -67,13 +67,13 @@ namespace ConsoleApplication2
         private void userAcButtonCreateUsr_Click(object sender, EventArgs e)
         {
             DialogRegister dialogRegister = new DialogRegister();
-            dialogRegister.Show();
+            dialogRegister.ShowDialog();
         }
 
         private void userAcButtonCreateAd_Click(object sender, EventArgs e)
         {
             DialogNewAd dialogNewAd = new DialogNewAd();
-            dialogNewAd.Show();
+            dialogNewAd.ShowDialog();
         }
     }
 }

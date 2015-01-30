@@ -16,5 +16,11 @@ namespace ConsoleApplication2.View
         {
             InitializeComponent();
         }
+
+        private void newUserButtonCancel_Click(object sender, EventArgs e)
+        {
+            //Cancel knapp stänger fönster
+            this.Close();
+        }
     }
 }
