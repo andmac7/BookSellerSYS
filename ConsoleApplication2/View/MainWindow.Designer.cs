@@ -133,9 +133,9 @@
             this.bookListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bookListDataGridView.Location = new System.Drawing.Point(6, 87);
             this.bookListDataGridView.Name = "bookListDataGridView";
+            this.bookListDataGridView.ReadOnly = true;
             this.bookListDataGridView.Size = new System.Drawing.Size(896, 439);
             this.bookListDataGridView.TabIndex = 77;
-            this.bookListDataGridView.ReadOnly = true;
             // 
             // bookListPictureTree
             // 
@@ -226,7 +226,7 @@
             // 
             // userAcButtonLogin
             // 
-            this.userAcButtonLogin.Location = new System.Drawing.Point(452, 87);
+            this.userAcButtonLogin.Location = new System.Drawing.Point(446, 97);
             this.userAcButtonLogin.Name = "userAcButtonLogin";
             this.userAcButtonLogin.Size = new System.Drawing.Size(98, 23);
             this.userAcButtonLogin.TabIndex = 77;
@@ -246,7 +246,7 @@
             // 
             // userAcButtonCreateUsr
             // 
-            this.userAcButtonCreateUsr.Location = new System.Drawing.Point(346, 86);
+            this.userAcButtonCreateUsr.Location = new System.Drawing.Point(340, 96);
             this.userAcButtonCreateUsr.Name = "userAcButtonCreateUsr";
             this.userAcButtonCreateUsr.Size = new System.Drawing.Size(99, 23);
             this.userAcButtonCreateUsr.TabIndex = 23;
@@ -403,7 +403,7 @@
             // userAcLabelPassw
             // 
             this.userAcLabelPassw.AutoSize = true;
-            this.userAcLabelPassw.Location = new System.Drawing.Point(284, 63);
+            this.userAcLabelPassw.Location = new System.Drawing.Point(199, 73);
             this.userAcLabelPassw.Name = "userAcLabelPassw";
             this.userAcLabelPassw.Size = new System.Drawing.Size(56, 13);
             this.userAcLabelPassw.TabIndex = 3;
@@ -412,7 +412,7 @@
             // userAcLabelMail
             // 
             this.userAcLabelMail.AutoSize = true;
-            this.userAcLabelMail.Location = new System.Drawing.Point(302, 37);
+            this.userAcLabelMail.Location = new System.Drawing.Point(217, 47);
             this.userAcLabelMail.Name = "userAcLabelMail";
             this.userAcLabelMail.Size = new System.Drawing.Size(38, 13);
             this.userAcLabelMail.TabIndex = 2;
@@ -420,17 +420,17 @@
             // 
             // userAcTextBoxPassw
             // 
-            this.userAcTextBoxPassw.Location = new System.Drawing.Point(346, 60);
+            this.userAcTextBoxPassw.Location = new System.Drawing.Point(261, 70);
             this.userAcTextBoxPassw.Name = "userAcTextBoxPassw";
-            this.userAcTextBoxPassw.Size = new System.Drawing.Size(204, 20);
+            this.userAcTextBoxPassw.Size = new System.Drawing.Size(354, 20);
             this.userAcTextBoxPassw.TabIndex = 1;
             this.userAcTextBoxPassw.UseSystemPasswordChar = true;
             // 
             // userAcTextBoxMail
             // 
-            this.userAcTextBoxMail.Location = new System.Drawing.Point(346, 34);
+            this.userAcTextBoxMail.Location = new System.Drawing.Point(261, 44);
             this.userAcTextBoxMail.Name = "userAcTextBoxMail";
-            this.userAcTextBoxMail.Size = new System.Drawing.Size(204, 20);
+            this.userAcTextBoxMail.Size = new System.Drawing.Size(354, 20);
             this.userAcTextBoxMail.TabIndex = 0;
             // 
             // tabPage3
