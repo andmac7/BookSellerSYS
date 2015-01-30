@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogRegister));
             this.newUserPanel = new System.Windows.Forms.Panel();
+            this.newUserLabelPassw = new System.Windows.Forms.Label();
+            this.newUserTextBoxPassw = new System.Windows.Forms.TextBox();
+            this.newUserLabelMail = new System.Windows.Forms.Label();
+            this.newUserTextBoxMail = new System.Windows.Forms.TextBox();
+            this.newUserButtonRegister = new System.Windows.Forms.Button();
             this.newUserButtonCancel = new System.Windows.Forms.Button();
             this.newUserLabelLname = new System.Windows.Forms.Label();
             this.newUserLabelFname = new System.Windows.Forms.Label();
@@ -39,11 +45,6 @@
             this.newUserTextBoxCity = new System.Windows.Forms.TextBox();
             this.newUserTextBoxPnbr = new System.Windows.Forms.TextBox();
             this.newUserPictureTree = new System.Windows.Forms.PictureBox();
-            this.newUserButtonRegister = new System.Windows.Forms.Button();
-            this.newUserLabelMail = new System.Windows.Forms.Label();
-            this.newUserTextBoxMail = new System.Windows.Forms.TextBox();
-            this.newUserLabelPassw = new System.Windows.Forms.Label();
-            this.newUserTextBoxPassw = new System.Windows.Forms.TextBox();
             this.newUserPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.newUserPictureTree)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +71,48 @@
             this.newUserPanel.Name = "newUserPanel";
             this.newUserPanel.Size = new System.Drawing.Size(680, 537);
             this.newUserPanel.TabIndex = 0;
+            // 
+            // newUserLabelPassw
+            // 
+            this.newUserLabelPassw.AutoSize = true;
+            this.newUserLabelPassw.Location = new System.Drawing.Point(112, 180);
+            this.newUserLabelPassw.Name = "newUserLabelPassw";
+            this.newUserLabelPassw.Size = new System.Drawing.Size(56, 13);
+            this.newUserLabelPassw.TabIndex = 91;
+            this.newUserLabelPassw.Text = "Password:";
+            // 
+            // newUserTextBoxPassw
+            // 
+            this.newUserTextBoxPassw.Location = new System.Drawing.Point(174, 177);
+            this.newUserTextBoxPassw.Name = "newUserTextBoxPassw";
+            this.newUserTextBoxPassw.Size = new System.Drawing.Size(354, 20);
+            this.newUserTextBoxPassw.TabIndex = 90;
+            this.newUserTextBoxPassw.UseSystemPasswordChar = true;
+            // 
+            // newUserLabelMail
+            // 
+            this.newUserLabelMail.AutoSize = true;
+            this.newUserLabelMail.Location = new System.Drawing.Point(130, 154);
+            this.newUserLabelMail.Name = "newUserLabelMail";
+            this.newUserLabelMail.Size = new System.Drawing.Size(38, 13);
+            this.newUserLabelMail.TabIndex = 89;
+            this.newUserLabelMail.Text = "E-mail:";
+            // 
+            // newUserTextBoxMail
+            // 
+            this.newUserTextBoxMail.Location = new System.Drawing.Point(174, 151);
+            this.newUserTextBoxMail.Name = "newUserTextBoxMail";
+            this.newUserTextBoxMail.Size = new System.Drawing.Size(354, 20);
+            this.newUserTextBoxMail.TabIndex = 88;
+            // 
+            // newUserButtonRegister
+            // 
+            this.newUserButtonRegister.Location = new System.Drawing.Point(201, 348);
+            this.newUserButtonRegister.Name = "newUserButtonRegister";
+            this.newUserButtonRegister.Size = new System.Drawing.Size(143, 20);
+            this.newUserButtonRegister.TabIndex = 87;
+            this.newUserButtonRegister.Text = "Register";
+            this.newUserButtonRegister.UseVisualStyleBackColor = true;
             // 
             // newUserButtonCancel
             // 
@@ -159,48 +202,6 @@
             this.newUserPictureTree.TabIndex = 77;
             this.newUserPictureTree.TabStop = false;
             // 
-            // newUserButtonRegister
-            // 
-            this.newUserButtonRegister.Location = new System.Drawing.Point(201, 348);
-            this.newUserButtonRegister.Name = "newUserButtonRegister";
-            this.newUserButtonRegister.Size = new System.Drawing.Size(143, 20);
-            this.newUserButtonRegister.TabIndex = 87;
-            this.newUserButtonRegister.Text = "Register";
-            this.newUserButtonRegister.UseVisualStyleBackColor = true;
-            // 
-            // newUserLabelMail
-            // 
-            this.newUserLabelMail.AutoSize = true;
-            this.newUserLabelMail.Location = new System.Drawing.Point(130, 154);
-            this.newUserLabelMail.Name = "newUserLabelMail";
-            this.newUserLabelMail.Size = new System.Drawing.Size(38, 13);
-            this.newUserLabelMail.TabIndex = 89;
-            this.newUserLabelMail.Text = "E-mail:";
-            // 
-            // newUserTextBoxMail
-            // 
-            this.newUserTextBoxMail.Location = new System.Drawing.Point(174, 151);
-            this.newUserTextBoxMail.Name = "newUserTextBoxMail";
-            this.newUserTextBoxMail.Size = new System.Drawing.Size(354, 20);
-            this.newUserTextBoxMail.TabIndex = 88;
-            // 
-            // newUserLabelPassw
-            // 
-            this.newUserLabelPassw.AutoSize = true;
-            this.newUserLabelPassw.Location = new System.Drawing.Point(112, 180);
-            this.newUserLabelPassw.Name = "newUserLabelPassw";
-            this.newUserLabelPassw.Size = new System.Drawing.Size(56, 13);
-            this.newUserLabelPassw.TabIndex = 91;
-            this.newUserLabelPassw.Text = "Password:";
-            // 
-            // newUserTextBoxPassw
-            // 
-            this.newUserTextBoxPassw.Location = new System.Drawing.Point(174, 177);
-            this.newUserTextBoxPassw.Name = "newUserTextBoxPassw";
-            this.newUserTextBoxPassw.Size = new System.Drawing.Size(354, 20);
-            this.newUserTextBoxPassw.TabIndex = 90;
-            this.newUserTextBoxPassw.UseSystemPasswordChar = true;
-            // 
             // DialogRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,7 +209,10 @@
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(704, 561);
             this.Controls.Add(this.newUserPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DialogRegister";
+            this.ShowIcon = false;
             this.Text = "BookAd - Register New User";
             this.newUserPanel.ResumeLayout(false);
             this.newUserPanel.PerformLayout();
