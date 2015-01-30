@@ -19,7 +19,8 @@ namespace ConsoleApplication2
         private DataGridView dataGridView = new DataGridView();
         private BindingSource bindingSource1 = new BindingSource();
         private SqlDataAdapter dataAdapter = new SqlDataAdapter();
-        
+        private Controller ctrl = new Controller();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -33,8 +34,10 @@ namespace ConsoleApplication2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            /*
             string cm = "Select * From BookAd";
-            bookListDataGridView.DataSource = BookAdDb.Read(cm);
+            bookListDataGridView.DataSource = BookAdDb.Read(cm);*/
+            bookListDataGridView.DataSource = ctrl.getAllBookAds();
         }
 
 
