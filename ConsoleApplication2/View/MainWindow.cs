@@ -87,5 +87,16 @@ namespace ConsoleApplication2
         {
 
         }
+
+        private void bookListFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
+        {
+                  
+        }
+
+        private void viewAdTextBoxSeller_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }
