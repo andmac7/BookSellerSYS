@@ -36,56 +36,23 @@ namespace ConsoleApplication2
             bookListDataGridView.DataSource = BookAdDb.Read(cm);
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox12_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox11_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void userAcButtonLogin_Click(object sender, EventArgs e)
         {
+
+            //Textrutor visas
             userAcTextBoxFname.Visible = true;
             userAcTextBoxLname.Visible = true; 
             userAcTextBoxPnbr.Visible = true;
             userAcTextBoxCity.Visible = true;
-
+            //Labels visas
             userAcLabelFname.Visible = true;
             userAcLabelLname.Visible = true;
             userAcLabelPnbr.Visible = true;
             userAcLabelCity.Visible = true;
-
+            //Knappar och annat visas
             userAcButtonUpdateInfo.Visible = true;
             userAcButtonRemoveAc.Visible = true;
-
             userAcLabelAds.Visible = true;
             userAcFlowLayoutPanel.Visible = true;
             userAcButtonCreateAd.Visible = true;

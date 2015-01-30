@@ -127,7 +127,6 @@
             this.bookListTabPage.TabIndex = 0;
             this.bookListTabPage.Text = "List of Books";
             this.bookListTabPage.UseVisualStyleBackColor = true;
-            this.bookListTabPage.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // bookListDataGridView
             // 
@@ -223,7 +222,6 @@
             this.userActabPage.TabIndex = 1;
             this.userActabPage.Text = "User Account";
             this.userActabPage.UseVisualStyleBackColor = true;
-            this.userActabPage.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // userAcPictureTree
             // 
@@ -345,7 +343,6 @@
             this.userAcLabelLname.Text = "Last name:";
             this.userAcLabelLname.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.userAcLabelLname.Visible = false;
-            this.userAcLabelLname.Click += new System.EventHandler(this.label4_Click);
             // 
             // userAcLabelFname
             // 
@@ -407,7 +404,6 @@
             this.userAcLabelMail.Size = new System.Drawing.Size(38, 13);
             this.userAcLabelMail.TabIndex = 2;
             this.userAcLabelMail.Text = "E-mail:";
-            this.userAcLabelMail.Click += new System.EventHandler(this.label1_Click);
             // 
             // userAcTextBoxPassw
             // 
@@ -460,7 +456,6 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "View Ad";
             this.tabPage3.UseVisualStyleBackColor = true;
-            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // viewAdPictureTree
             // 
@@ -568,7 +563,6 @@
             this.viewAdTextBoxPrice.ReadOnly = true;
             this.viewAdTextBoxPrice.Size = new System.Drawing.Size(354, 20);
             this.viewAdTextBoxPrice.TabIndex = 38;
-            this.viewAdTextBoxPrice.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // viewAdTextBoxInst
             // 
@@ -577,7 +571,6 @@
             this.viewAdTextBoxInst.ReadOnly = true;
             this.viewAdTextBoxInst.Size = new System.Drawing.Size(354, 20);
             this.viewAdTextBoxInst.TabIndex = 37;
-            this.viewAdTextBoxInst.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // viewAdLabelSeller
             // 
