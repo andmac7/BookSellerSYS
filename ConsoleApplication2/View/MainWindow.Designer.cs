@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApplication2
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,14 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.bookListTabPage = new System.Windows.Forms.TabPage();
+            this.bookListPictureTree = new System.Windows.Forms.PictureBox();
             this.bookListBtnReset = new System.Windows.Forms.Button();
             this.bookListLabelTop = new System.Windows.Forms.Label();
             this.bookListBtnLogin = new System.Windows.Forms.Button();
             this.bookListBtnSearch = new System.Windows.Forms.Button();
             this.bookListSearchBox = new System.Windows.Forms.TextBox();
-            this.bookListFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.userActabPage = new System.Windows.Forms.TabPage();
+            this.userAcPictureTree = new System.Windows.Forms.PictureBox();
             this.userAcButtonCreateUsr = new System.Windows.Forms.Button();
             this.userAcButtonRefresh = new System.Windows.Forms.Button();
             this.userAcLabelAds = new System.Windows.Forms.Label();
@@ -60,6 +61,7 @@
             this.userAcTextBoxPassw = new System.Windows.Forms.TextBox();
             this.userAcTextBoxMail = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.viewAdPictureTree = new System.Windows.Forms.PictureBox();
             this.viewAdComboBoxCourse = new System.Windows.Forms.ComboBox();
             this.viewAdTextBoxCity = new System.Windows.Forms.TextBox();
             this.viewAdTextBoxPnbr = new System.Windows.Forms.TextBox();
@@ -87,16 +89,15 @@
             this.viewAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.viewAdTextBoxTitle = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.userAcPictureTree = new System.Windows.Forms.PictureBox();
-            this.bookListPictureTree = new System.Windows.Forms.PictureBox();
-            this.viewAdPictureTree = new System.Windows.Forms.PictureBox();
+            this.bookListDataGridView = new System.Windows.Forms.DataGridView();
             this.tabControl.SuspendLayout();
             this.bookListTabPage.SuspendLayout();
-            this.userActabPage.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).BeginInit();
+            this.userActabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewAdPictureTree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -112,13 +113,13 @@
             // 
             // bookListTabPage
             // 
+            this.bookListTabPage.Controls.Add(this.bookListDataGridView);
             this.bookListTabPage.Controls.Add(this.bookListPictureTree);
             this.bookListTabPage.Controls.Add(this.bookListBtnReset);
             this.bookListTabPage.Controls.Add(this.bookListLabelTop);
             this.bookListTabPage.Controls.Add(this.bookListBtnLogin);
             this.bookListTabPage.Controls.Add(this.bookListBtnSearch);
             this.bookListTabPage.Controls.Add(this.bookListSearchBox);
-            this.bookListTabPage.Controls.Add(this.bookListFlowLayoutPanel);
             this.bookListTabPage.Location = new System.Drawing.Point(4, 22);
             this.bookListTabPage.Name = "bookListTabPage";
             this.bookListTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -127,6 +128,16 @@
             this.bookListTabPage.Text = "List of Books";
             this.bookListTabPage.UseVisualStyleBackColor = true;
             this.bookListTabPage.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // bookListPictureTree
+            // 
+            this.bookListPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
+            this.bookListPictureTree.Location = new System.Drawing.Point(802, 6);
+            this.bookListPictureTree.Name = "bookListPictureTree";
+            this.bookListPictureTree.Size = new System.Drawing.Size(100, 75);
+            this.bookListPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bookListPictureTree.TabIndex = 76;
+            this.bookListPictureTree.TabStop = false;
             // 
             // bookListBtnReset
             // 
@@ -173,14 +184,6 @@
             this.bookListSearchBox.Size = new System.Drawing.Size(492, 20);
             this.bookListSearchBox.TabIndex = 1;
             // 
-            // bookListFlowLayoutPanel
-            // 
-            this.bookListFlowLayoutPanel.AutoScroll = true;
-            this.bookListFlowLayoutPanel.Location = new System.Drawing.Point(6, 87);
-            this.bookListFlowLayoutPanel.Name = "bookListFlowLayoutPanel";
-            this.bookListFlowLayoutPanel.Size = new System.Drawing.Size(896, 439);
-            this.bookListFlowLayoutPanel.TabIndex = 0;
-            // 
             // userActabPage
             // 
             this.userActabPage.Controls.Add(this.userAcPictureTree);
@@ -213,6 +216,16 @@
             this.userActabPage.Text = "User Account";
             this.userActabPage.UseVisualStyleBackColor = true;
             this.userActabPage.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // userAcPictureTree
+            // 
+            this.userAcPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
+            this.userAcPictureTree.Location = new System.Drawing.Point(802, 6);
+            this.userAcPictureTree.Name = "userAcPictureTree";
+            this.userAcPictureTree.Size = new System.Drawing.Size(100, 75);
+            this.userAcPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userAcPictureTree.TabIndex = 76;
+            this.userAcPictureTree.TabStop = false;
             // 
             // userAcButtonCreateUsr
             // 
@@ -435,6 +448,16 @@
             this.tabPage3.Text = "View Ad";
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // viewAdPictureTree
+            // 
+            this.viewAdPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
+            this.viewAdPictureTree.Location = new System.Drawing.Point(802, 6);
+            this.viewAdPictureTree.Name = "viewAdPictureTree";
+            this.viewAdPictureTree.Size = new System.Drawing.Size(100, 75);
+            this.viewAdPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.viewAdPictureTree.TabIndex = 76;
+            this.viewAdPictureTree.TabStop = false;
             // 
             // viewAdComboBoxCourse
             // 
@@ -667,35 +690,13 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // userAcPictureTree
+            // bookListDataGridView
             // 
-            this.userAcPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
-            this.userAcPictureTree.Location = new System.Drawing.Point(802, 6);
-            this.userAcPictureTree.Name = "userAcPictureTree";
-            this.userAcPictureTree.Size = new System.Drawing.Size(100, 75);
-            this.userAcPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.userAcPictureTree.TabIndex = 76;
-            this.userAcPictureTree.TabStop = false;
-            // 
-            // bookListPictureTree
-            // 
-            this.bookListPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
-            this.bookListPictureTree.Location = new System.Drawing.Point(802, 6);
-            this.bookListPictureTree.Name = "bookListPictureTree";
-            this.bookListPictureTree.Size = new System.Drawing.Size(100, 75);
-            this.bookListPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bookListPictureTree.TabIndex = 76;
-            this.bookListPictureTree.TabStop = false;
-            // 
-            // viewAdPictureTree
-            // 
-            this.viewAdPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
-            this.viewAdPictureTree.Location = new System.Drawing.Point(802, 6);
-            this.viewAdPictureTree.Name = "viewAdPictureTree";
-            this.viewAdPictureTree.Size = new System.Drawing.Size(100, 75);
-            this.viewAdPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.viewAdPictureTree.TabIndex = 76;
-            this.viewAdPictureTree.TabStop = false;
+            this.bookListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bookListDataGridView.Location = new System.Drawing.Point(6, 87);
+            this.bookListDataGridView.Name = "bookListDataGridView";
+            this.bookListDataGridView.Size = new System.Drawing.Size(896, 439);
+            this.bookListDataGridView.TabIndex = 77;
             // 
             // Form1
             // 
@@ -710,13 +711,14 @@
             this.tabControl.ResumeLayout(false);
             this.bookListTabPage.ResumeLayout(false);
             this.bookListTabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).EndInit();
             this.userActabPage.ResumeLayout(false);
             this.userActabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewAdPictureTree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -726,7 +728,6 @@
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage bookListTabPage;
         private System.Windows.Forms.TabPage userActabPage;
-        private System.Windows.Forms.FlowLayoutPanel bookListFlowLayoutPanel;
         private System.Windows.Forms.Button bookListBtnLogin;
         private System.Windows.Forms.Button bookListBtnSearch;
         private System.Windows.Forms.TextBox bookListSearchBox;
@@ -784,5 +785,6 @@
         private System.Windows.Forms.PictureBox bookListPictureTree;
         private System.Windows.Forms.PictureBox userAcPictureTree;
         private System.Windows.Forms.PictureBox viewAdPictureTree;
+        private System.Windows.Forms.DataGridView bookListDataGridView;
     }
 }
