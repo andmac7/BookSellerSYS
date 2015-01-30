@@ -135,6 +135,7 @@
             this.bookListDataGridView.Name = "bookListDataGridView";
             this.bookListDataGridView.Size = new System.Drawing.Size(896, 439);
             this.bookListDataGridView.TabIndex = 77;
+            this.bookListDataGridView.ReadOnly = true;
             // 
             // bookListPictureTree
             // 
