@@ -17,7 +17,7 @@ namespace ConsoleApplication2
         {
             InitializeComponent();
         }
-        static void ain()
+        static void Main(string[] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);

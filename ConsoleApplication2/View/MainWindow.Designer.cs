@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.bookListTabPage = new System.Windows.Forms.TabPage();
+            this.bookListDataGridView = new System.Windows.Forms.DataGridView();
             this.bookListPictureTree = new System.Windows.Forms.PictureBox();
             this.bookListBtnReset = new System.Windows.Forms.Button();
             this.bookListLabelTop = new System.Windows.Forms.Label();
@@ -89,15 +90,14 @@
             this.viewAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.viewAdTextBoxTitle = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.bookListDataGridView = new System.Windows.Forms.DataGridView();
             this.tabControl.SuspendLayout();
             this.bookListTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).BeginInit();
             this.userActabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewAdPictureTree)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -128,6 +128,14 @@
             this.bookListTabPage.Text = "List of Books";
             this.bookListTabPage.UseVisualStyleBackColor = true;
             this.bookListTabPage.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // bookListDataGridView
+            // 
+            this.bookListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bookListDataGridView.Location = new System.Drawing.Point(6, 87);
+            this.bookListDataGridView.Name = "bookListDataGridView";
+            this.bookListDataGridView.Size = new System.Drawing.Size(896, 439);
+            this.bookListDataGridView.TabIndex = 77;
             // 
             // bookListPictureTree
             // 
@@ -461,16 +469,19 @@
             // 
             // viewAdComboBoxCourse
             // 
+            this.viewAdComboBoxCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.viewAdComboBoxCourse.FormattingEnabled = true;
             this.viewAdComboBoxCourse.Location = new System.Drawing.Point(276, 174);
             this.viewAdComboBoxCourse.Name = "viewAdComboBoxCourse";
             this.viewAdComboBoxCourse.Size = new System.Drawing.Size(354, 21);
+            this.viewAdComboBoxCourse.Sorted = true;
             this.viewAdComboBoxCourse.TabIndex = 48;
             // 
             // viewAdTextBoxCity
             // 
             this.viewAdTextBoxCity.Location = new System.Drawing.Point(367, 429);
             this.viewAdTextBoxCity.Name = "viewAdTextBoxCity";
+            this.viewAdTextBoxCity.ReadOnly = true;
             this.viewAdTextBoxCity.Size = new System.Drawing.Size(212, 20);
             this.viewAdTextBoxCity.TabIndex = 47;
             // 
@@ -478,6 +489,7 @@
             // 
             this.viewAdTextBoxPnbr.Location = new System.Drawing.Point(367, 403);
             this.viewAdTextBoxPnbr.Name = "viewAdTextBoxPnbr";
+            this.viewAdTextBoxPnbr.ReadOnly = true;
             this.viewAdTextBoxPnbr.Size = new System.Drawing.Size(212, 20);
             this.viewAdTextBoxPnbr.TabIndex = 46;
             // 
@@ -485,6 +497,7 @@
             // 
             this.viewAdTextBoxMail.Location = new System.Drawing.Point(367, 377);
             this.viewAdTextBoxMail.Name = "viewAdTextBoxMail";
+            this.viewAdTextBoxMail.ReadOnly = true;
             this.viewAdTextBoxMail.Size = new System.Drawing.Size(212, 20);
             this.viewAdTextBoxMail.TabIndex = 45;
             // 
@@ -522,6 +535,7 @@
             // 
             this.viewAdTextBoxDate.Location = new System.Drawing.Point(312, 70);
             this.viewAdTextBoxDate.Name = "viewAdTextBoxDate";
+            this.viewAdTextBoxDate.ReadOnly = true;
             this.viewAdTextBoxDate.Size = new System.Drawing.Size(77, 20);
             this.viewAdTextBoxDate.TabIndex = 41;
             // 
@@ -529,6 +543,7 @@
             // 
             this.viewAdTextBoxSeller.Location = new System.Drawing.Point(437, 70);
             this.viewAdTextBoxSeller.Name = "viewAdTextBoxSeller";
+            this.viewAdTextBoxSeller.ReadOnly = true;
             this.viewAdTextBoxSeller.Size = new System.Drawing.Size(193, 20);
             this.viewAdTextBoxSeller.TabIndex = 40;
             // 
@@ -537,6 +552,7 @@
             this.viewAdTextBoxText.Location = new System.Drawing.Point(276, 252);
             this.viewAdTextBoxText.Multiline = true;
             this.viewAdTextBoxText.Name = "viewAdTextBoxText";
+            this.viewAdTextBoxText.ReadOnly = true;
             this.viewAdTextBoxText.Size = new System.Drawing.Size(354, 86);
             this.viewAdTextBoxText.TabIndex = 39;
             // 
@@ -544,6 +560,7 @@
             // 
             this.viewAdTextBoxPrice.Location = new System.Drawing.Point(276, 226);
             this.viewAdTextBoxPrice.Name = "viewAdTextBoxPrice";
+            this.viewAdTextBoxPrice.ReadOnly = true;
             this.viewAdTextBoxPrice.Size = new System.Drawing.Size(354, 20);
             this.viewAdTextBoxPrice.TabIndex = 38;
             this.viewAdTextBoxPrice.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
@@ -552,6 +569,7 @@
             // 
             this.viewAdTextBoxInst.Location = new System.Drawing.Point(276, 200);
             this.viewAdTextBoxInst.Name = "viewAdTextBoxInst";
+            this.viewAdTextBoxInst.ReadOnly = true;
             this.viewAdTextBoxInst.Size = new System.Drawing.Size(354, 20);
             this.viewAdTextBoxInst.TabIndex = 37;
             this.viewAdTextBoxInst.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
@@ -668,6 +686,7 @@
             // 
             this.viewAdTextBoxIsbn.Location = new System.Drawing.Point(276, 148);
             this.viewAdTextBoxIsbn.Name = "viewAdTextBoxIsbn";
+            this.viewAdTextBoxIsbn.ReadOnly = true;
             this.viewAdTextBoxIsbn.Size = new System.Drawing.Size(354, 20);
             this.viewAdTextBoxIsbn.TabIndex = 23;
             // 
@@ -675,6 +694,7 @@
             // 
             this.viewAdTextBoxAuthor.Location = new System.Drawing.Point(276, 122);
             this.viewAdTextBoxAuthor.Name = "viewAdTextBoxAuthor";
+            this.viewAdTextBoxAuthor.ReadOnly = true;
             this.viewAdTextBoxAuthor.Size = new System.Drawing.Size(354, 20);
             this.viewAdTextBoxAuthor.TabIndex = 22;
             // 
@@ -682,6 +702,7 @@
             // 
             this.viewAdTextBoxTitle.Location = new System.Drawing.Point(276, 96);
             this.viewAdTextBoxTitle.Name = "viewAdTextBoxTitle";
+            this.viewAdTextBoxTitle.ReadOnly = true;
             this.viewAdTextBoxTitle.Size = new System.Drawing.Size(354, 20);
             this.viewAdTextBoxTitle.TabIndex = 21;
             // 
@@ -690,27 +711,20 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // bookListDataGridView
-            // 
-            this.bookListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bookListDataGridView.Location = new System.Drawing.Point(6, 87);
-            this.bookListDataGridView.Name = "bookListDataGridView";
-            this.bookListDataGridView.Size = new System.Drawing.Size(896, 439);
-            this.bookListDataGridView.TabIndex = 77;
-            // 
-            // Form1
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(940, 608);
             this.Controls.Add(this.tabControl);
-            this.Name = "Form1";
+            this.Name = "MainWindow";
             this.Text = "BookAd";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl.ResumeLayout(false);
             this.bookListTabPage.ResumeLayout(false);
             this.bookListTabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).EndInit();
             this.userActabPage.ResumeLayout(false);
             this.userActabPage.PerformLayout();
@@ -718,7 +732,6 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewAdPictureTree)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
