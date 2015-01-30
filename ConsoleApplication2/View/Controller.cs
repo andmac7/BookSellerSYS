@@ -17,8 +17,12 @@ namespace BookSeller
         {
             string cmd = "SELECT * FROM BookAd";
             List<BookAd> newList = new List<BookAd>(BookAdDb.Read(cmd));
-            //newList.AddRange(BookAdDb.Read(cmd));
             return newList;
+        }
+
+        public void addBookAd()
+        {
+
         }
     }
 }
