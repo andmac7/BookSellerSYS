@@ -752,6 +752,11 @@
 
         }
 
+        private void buttonLogin_Click(object sender, System.EventArgs e)
+        {
+            
+        }
+
         #endregion
 
         private System.Windows.Forms.TabControl tabControl;

@@ -15,7 +15,7 @@ namespace BookSeller
             "user id=ramy; password=123456; server=Ramy; Trusted_Connection=yes; database=BookAd; connection timeout=5",
             "user id=SverkerJerker; password=; server=ANDREAS-PC\\SQLEXPRESS; Trusted_Connection=yes; database=BookSeller; connection timeout=5",
             "user id=SverkerJerker; password=; server=WIN-08GPCVO901J; Trusted_Connection=yes; database=BookAd; connection timeout=5"};
-        static int i = 2; // 0 = Thomas, 1 = Ramy, 2 = Andreas, 3 = Robin
+        static int i = 0; // 0 = Thomas, 1 = Ramy, 2 = Andreas, 3 = Robin
   
         public static SqlConnection conn = null;
 
