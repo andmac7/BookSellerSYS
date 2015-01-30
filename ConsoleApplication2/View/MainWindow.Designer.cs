@@ -39,6 +39,7 @@
             this.bookListBtnSearch = new System.Windows.Forms.Button();
             this.bookListSearchBox = new System.Windows.Forms.TextBox();
             this.userActabPage = new System.Windows.Forms.TabPage();
+            this.userAcButtonLogin = new System.Windows.Forms.Button();
             this.userAcPictureTree = new System.Windows.Forms.PictureBox();
             this.userAcButtonCreateUsr = new System.Windows.Forms.Button();
             this.userAcButtonRefresh = new System.Windows.Forms.Button();
@@ -89,7 +90,6 @@
             this.viewAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.viewAdTextBoxTitle = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.userAcButtonLogin = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.bookListTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).BeginInit();
@@ -223,6 +223,16 @@
             this.userActabPage.Text = "User Account";
             this.userActabPage.UseVisualStyleBackColor = true;
             // 
+            // userAcButtonLogin
+            // 
+            this.userAcButtonLogin.Location = new System.Drawing.Point(452, 87);
+            this.userAcButtonLogin.Name = "userAcButtonLogin";
+            this.userAcButtonLogin.Size = new System.Drawing.Size(98, 23);
+            this.userAcButtonLogin.TabIndex = 77;
+            this.userAcButtonLogin.Text = "Login";
+            this.userAcButtonLogin.UseVisualStyleBackColor = true;
+            this.userAcButtonLogin.Click += new System.EventHandler(this.userAcButtonLogin_Click);
+            // 
             // userAcPictureTree
             // 
             this.userAcPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
@@ -241,6 +251,7 @@
             this.userAcButtonCreateUsr.TabIndex = 23;
             this.userAcButtonCreateUsr.Text = "Register";
             this.userAcButtonCreateUsr.UseVisualStyleBackColor = true;
+            this.userAcButtonCreateUsr.Click += new System.EventHandler(this.userAcButtonCreateUsr_Click);
             // 
             // userAcButtonRefresh
             // 
@@ -292,6 +303,7 @@
             this.userAcButtonCreateAd.Text = "Create New Ad";
             this.userAcButtonCreateAd.UseVisualStyleBackColor = true;
             this.userAcButtonCreateAd.Visible = false;
+            this.userAcButtonCreateAd.Click += new System.EventHandler(this.userAcButtonCreateAd_Click);
             // 
             // userAcButtonRemoveAd
             // 
@@ -708,16 +720,6 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // userAcButtonLogin
-            // 
-            this.userAcButtonLogin.Location = new System.Drawing.Point(452, 87);
-            this.userAcButtonLogin.Name = "userAcButtonLogin";
-            this.userAcButtonLogin.Size = new System.Drawing.Size(98, 23);
-            this.userAcButtonLogin.TabIndex = 77;
-            this.userAcButtonLogin.Text = "Login";
-            this.userAcButtonLogin.UseVisualStyleBackColor = true;
-            this.userAcButtonLogin.Click += new System.EventHandler(this.userAcButtonLogin_Click);
             // 
             // MainWindow
             // 

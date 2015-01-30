@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Data.SqlClient;
 using BookSeller;
+using ConsoleApplication2.View;
 
 namespace ConsoleApplication2
 {
@@ -58,6 +59,18 @@ namespace ConsoleApplication2
             userAcButtonCreateAd.Visible = true;
             userAcButtonRemoveAd.Visible = true;
             userAcButtonRefresh.Visible = true;
+        }
+
+        private void userAcButtonCreateUsr_Click(object sender, EventArgs e)
+        {
+            DialogRegister dialogRegister = new DialogRegister();
+            dialogRegister.Show();
+        }
+
+        private void userAcButtonCreateAd_Click(object sender, EventArgs e)
+        {
+            DialogNewAd dialogNewAd = new DialogNewAd();
+            dialogNewAd.Show();
         }
     }
 }
