@@ -89,6 +89,7 @@
             this.viewAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.viewAdTextBoxTitle = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.userAcButtonLogin = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.bookListTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).BeginInit();
@@ -193,6 +194,7 @@
             // 
             // userActabPage
             // 
+            this.userActabPage.Controls.Add(this.userAcButtonLogin);
             this.userActabPage.Controls.Add(this.userAcPictureTree);
             this.userActabPage.Controls.Add(this.userAcButtonCreateUsr);
             this.userActabPage.Controls.Add(this.userAcButtonRefresh);
@@ -241,7 +243,6 @@
             this.userAcButtonCreateUsr.TabIndex = 23;
             this.userAcButtonCreateUsr.Text = "Register";
             this.userAcButtonCreateUsr.UseVisualStyleBackColor = true;
-            this.userAcButtonCreateUsr.Click += new System.EventHandler(this.button13_Click);
             // 
             // userAcButtonRefresh
             // 
@@ -715,6 +716,16 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // userAcButtonLogin
+            // 
+            this.userAcButtonLogin.Location = new System.Drawing.Point(452, 87);
+            this.userAcButtonLogin.Name = "userAcButtonLogin";
+            this.userAcButtonLogin.Size = new System.Drawing.Size(98, 23);
+            this.userAcButtonLogin.TabIndex = 77;
+            this.userAcButtonLogin.Text = "Login";
+            this.userAcButtonLogin.UseVisualStyleBackColor = true;
+            this.userAcButtonLogin.Click += new System.EventHandler(this.userAcButtonLogin_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -802,5 +813,6 @@
         private System.Windows.Forms.PictureBox userAcPictureTree;
         private System.Windows.Forms.PictureBox viewAdPictureTree;
         private System.Windows.Forms.DataGridView bookListDataGridView;
+        private System.Windows.Forms.Button userAcButtonLogin;
     }
 }

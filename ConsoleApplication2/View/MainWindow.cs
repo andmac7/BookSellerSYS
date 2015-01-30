@@ -36,26 +36,6 @@ namespace ConsoleApplication2
             bookListDataGridView.DataSource = BookAdDb.Read(cm);
         }
 
-        private void GetData(string cmd)
-        {
-            
-        }
-
-        private void bookListFlowLayOutPanel(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
@@ -91,24 +71,26 @@ namespace ConsoleApplication2
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void userAcButtonLogin_Click(object sender, EventArgs e)
         {
+            userAcTextBoxFname.Visible = true;
+            userAcTextBoxLname.Visible = true; 
+            userAcTextBoxPnbr.Visible = true;
+            userAcTextBoxCity.Visible = true;
 
-        }
+            userAcLabelFname.Visible = true;
+            userAcLabelLname.Visible = true;
+            userAcLabelPnbr.Visible = true;
+            userAcLabelCity.Visible = true;
 
-        private void button13_Click(object sender, EventArgs e)
-        {
+            userAcButtonUpdateInfo.Visible = true;
+            userAcButtonRemoveAc.Visible = true;
 
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bookListFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
-        {
-
+            userAcLabelAds.Visible = true;
+            userAcFlowLayoutPanel.Visible = true;
+            userAcButtonCreateAd.Visible = true;
+            userAcButtonRemoveAd.Visible = true;
+            userAcButtonRefresh.Visible = true;
         }
     }
 }
