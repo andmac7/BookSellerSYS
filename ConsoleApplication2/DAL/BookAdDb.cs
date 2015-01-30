@@ -31,10 +31,10 @@ namespace BookSeller
             return books;
         }
 
-        public static List<BookAd> Read()
+        public static List<BookAd> Read(string cmd)
         {
             List<BookAd> bookAds = null;
-            using (DataTable table = DataBaseConnect.ExecuteSelectCommand("SELECT * FROM BookAd", CommandType.Text))
+            using (DataTable table = DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text))
             {
                 if (table.Rows.Count > 0)
                 {

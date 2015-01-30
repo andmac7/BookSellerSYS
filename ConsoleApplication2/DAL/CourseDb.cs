@@ -27,10 +27,10 @@ namespace BookSeller
             return courses;
         }
 
-        public static List<Course> Read()
+        public static List<Course> Read(string cmd)
         {
             List<Course> courses = null;
-            using (DataTable table = DataBaseConnect.ExecuteSelectCommand("SELECT * FROM Course", CommandType.Text))
+            using (DataTable table = DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text))
             {
                 if (table.Rows.Count > 0)
                 {
