@@ -60,7 +60,7 @@ namespace BookSeller
                     }
                     catch
                     {
-                        throw;
+                        //throw;
                     }
                 }
             }

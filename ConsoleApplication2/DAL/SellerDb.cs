@@ -31,10 +31,10 @@ namespace BookSeller
             return sellers;
         }
 
-        public static List<Seller> Read()
+        public static List<Seller> Read(string cmd)
         {
             List<Seller> sellers = null;
-            using (DataTable table = DataBaseConnect.ExecuteSelectCommand("SELECT * FROM Seller", CommandType.Text))
+            using (DataTable table = DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text))
             {
                 if (table.Rows.Count > 0)
                 {

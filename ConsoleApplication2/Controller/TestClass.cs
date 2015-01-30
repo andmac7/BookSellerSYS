@@ -10,7 +10,8 @@ namespace BookSeller
     {
         public static void TestBooksRead() 
         {
-            var books = BookAdDb.Read();
+            string cmd = "SELECT * FROM BookAd";
+            var books = BookAdDb.Read(cmd);
             Console.WriteLine("Writing existing books..");
             foreach (BookAd i in books)
             {
@@ -20,7 +21,8 @@ namespace BookSeller
 
         public static void TestSellerRead()
         {
-            var sellers = SellerDb.Read();
+            string cmd = "SELECT * FROM Seller";
+            var sellers = SellerDb.Read(cmd);
             Console.WriteLine("Writing existing sellers..");
             foreach (Seller i in sellers)
             {
@@ -30,7 +32,8 @@ namespace BookSeller
 
         public static void TestCourseRead()
         {
-            var courses = CourseDb.Read();
+            string cmd = "SELECT * FROM Course";
+            var courses = CourseDb.Read(cmd);
             Console.WriteLine("Writing existing courses..");
             foreach (Course i in courses)
             {
@@ -40,8 +43,9 @@ namespace BookSeller
 
         public static void TestInstRead()
         {
-            var insts = InstDb.Read();
-            Console.WriteLine("Writing existing courses..");
+            string cmd = "SELECT * FROM Institution";
+            var insts = InstDb.Read(cmd);
+            Console.WriteLine("Writing existing institutions..");
             foreach (Inst i in insts)
             {
                 Console.WriteLine("{0}", i.instName);

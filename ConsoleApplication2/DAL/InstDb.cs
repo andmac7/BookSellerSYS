@@ -26,10 +26,10 @@ namespace BookSeller
             return insts;
         }
 
-        public static List<Inst> Read()
+        public static List<Inst> Read(string cmd)
         {
             List<Inst> insts = null;
-            using (DataTable table = DataBaseConnect.ExecuteSelectCommand("SELECT * FROM Institution", CommandType.Text))
+            using (DataTable table = DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text))
             {
                 if (table.Rows.Count > 0)
                 {
