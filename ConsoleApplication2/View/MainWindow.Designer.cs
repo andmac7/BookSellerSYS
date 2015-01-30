@@ -31,14 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.bookListTabPage = new System.Windows.Forms.TabPage();
-            this.bookListPictureTree = new System.Windows.Forms.PictureBox();
+            this.bookListDataGridView = new System.Windows.Forms.DataGridView();
             this.bookListBtnReset = new System.Windows.Forms.Button();
             this.bookListLabelTop = new System.Windows.Forms.Label();
             this.bookListBtnLogin = new System.Windows.Forms.Button();
             this.bookListBtnSearch = new System.Windows.Forms.Button();
             this.bookListSearchBox = new System.Windows.Forms.TextBox();
             this.userActabPage = new System.Windows.Forms.TabPage();
-            this.userAcPictureTree = new System.Windows.Forms.PictureBox();
             this.userAcButtonCreateUsr = new System.Windows.Forms.Button();
             this.userAcButtonRefresh = new System.Windows.Forms.Button();
             this.userAcLabelAds = new System.Windows.Forms.Label();
@@ -61,7 +60,6 @@
             this.userAcTextBoxPassw = new System.Windows.Forms.TextBox();
             this.userAcTextBoxMail = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.viewAdPictureTree = new System.Windows.Forms.PictureBox();
             this.viewAdComboBoxCourse = new System.Windows.Forms.ComboBox();
             this.viewAdTextBoxCity = new System.Windows.Forms.TextBox();
             this.viewAdTextBoxPnbr = new System.Windows.Forms.TextBox();
@@ -89,15 +87,17 @@
             this.viewAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.viewAdTextBoxTitle = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.bookListDataGridView = new System.Windows.Forms.DataGridView();
+            this.bookListPictureTree = new System.Windows.Forms.PictureBox();
+            this.userAcPictureTree = new System.Windows.Forms.PictureBox();
+            this.viewAdPictureTree = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
             this.bookListTabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).BeginInit();
-            this.userActabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.viewAdPictureTree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).BeginInit();
+            this.userActabPage.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewAdPictureTree)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -129,15 +129,13 @@
             this.bookListTabPage.UseVisualStyleBackColor = true;
             this.bookListTabPage.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // bookListPictureTree
+            // bookListDataGridView
             // 
-            this.bookListPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
-            this.bookListPictureTree.Location = new System.Drawing.Point(802, 6);
-            this.bookListPictureTree.Name = "bookListPictureTree";
-            this.bookListPictureTree.Size = new System.Drawing.Size(100, 75);
-            this.bookListPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bookListPictureTree.TabIndex = 76;
-            this.bookListPictureTree.TabStop = false;
+            this.bookListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bookListDataGridView.Location = new System.Drawing.Point(6, 87);
+            this.bookListDataGridView.Name = "bookListDataGridView";
+            this.bookListDataGridView.Size = new System.Drawing.Size(896, 439);
+            this.bookListDataGridView.TabIndex = 77;
             // 
             // bookListBtnReset
             // 
@@ -217,23 +215,13 @@
             this.userActabPage.UseVisualStyleBackColor = true;
             this.userActabPage.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // userAcPictureTree
-            // 
-            this.userAcPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
-            this.userAcPictureTree.Location = new System.Drawing.Point(802, 6);
-            this.userAcPictureTree.Name = "userAcPictureTree";
-            this.userAcPictureTree.Size = new System.Drawing.Size(100, 75);
-            this.userAcPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.userAcPictureTree.TabIndex = 76;
-            this.userAcPictureTree.TabStop = false;
-            // 
             // userAcButtonCreateUsr
             // 
-            this.userAcButtonCreateUsr.Location = new System.Drawing.Point(451, 86);
+            this.userAcButtonCreateUsr.Location = new System.Drawing.Point(346, 86);
             this.userAcButtonCreateUsr.Name = "userAcButtonCreateUsr";
             this.userAcButtonCreateUsr.Size = new System.Drawing.Size(99, 23);
             this.userAcButtonCreateUsr.TabIndex = 23;
-            this.userAcButtonCreateUsr.Text = "New User";
+            this.userAcButtonCreateUsr.Text = "Register";
             this.userAcButtonCreateUsr.UseVisualStyleBackColor = true;
             this.userAcButtonCreateUsr.Click += new System.EventHandler(this.button13_Click);
             // 
@@ -245,6 +233,7 @@
             this.userAcButtonRefresh.TabIndex = 22;
             this.userAcButtonRefresh.Text = "Refresh";
             this.userAcButtonRefresh.UseVisualStyleBackColor = true;
+            this.userAcButtonRefresh.Visible = false;
             // 
             // userAcLabelAds
             // 
@@ -255,6 +244,7 @@
             this.userAcLabelAds.Size = new System.Drawing.Size(142, 18);
             this.userAcLabelAds.TabIndex = 21;
             this.userAcLabelAds.Text = "All users current ads";
+            this.userAcLabelAds.Visible = false;
             // 
             // userAcButtonRemoveAc
             // 
@@ -264,6 +254,7 @@
             this.userAcButtonRemoveAc.TabIndex = 20;
             this.userAcButtonRemoveAc.Text = "Remove Account";
             this.userAcButtonRemoveAc.UseVisualStyleBackColor = true;
+            this.userAcButtonRemoveAc.Visible = false;
             // 
             // userAcButtonUpdateInfo
             // 
@@ -273,6 +264,7 @@
             this.userAcButtonUpdateInfo.TabIndex = 19;
             this.userAcButtonUpdateInfo.Text = "Update Info";
             this.userAcButtonUpdateInfo.UseVisualStyleBackColor = true;
+            this.userAcButtonUpdateInfo.Visible = false;
             // 
             // userAcButtonCreateAd
             // 
@@ -282,6 +274,7 @@
             this.userAcButtonCreateAd.TabIndex = 18;
             this.userAcButtonCreateAd.Text = "Create New Ad";
             this.userAcButtonCreateAd.UseVisualStyleBackColor = true;
+            this.userAcButtonCreateAd.Visible = false;
             // 
             // userAcButtonRemoveAd
             // 
@@ -291,6 +284,7 @@
             this.userAcButtonRemoveAd.TabIndex = 17;
             this.userAcButtonRemoveAd.Text = "Remove Ad";
             this.userAcButtonRemoveAd.UseVisualStyleBackColor = true;
+            this.userAcButtonRemoveAd.Visible = false;
             // 
             // userAcFlowLayoutPanel
             // 
@@ -298,16 +292,17 @@
             this.userAcFlowLayoutPanel.Name = "userAcFlowLayoutPanel";
             this.userAcFlowLayoutPanel.Size = new System.Drawing.Size(896, 147);
             this.userAcFlowLayoutPanel.TabIndex = 16;
+            this.userAcFlowLayoutPanel.Visible = false;
             // 
             // userAcButtonLogin
             // 
-            this.userAcButtonLogin.Location = new System.Drawing.Point(346, 86);
+            this.userAcButtonLogin.Location = new System.Drawing.Point(451, 86);
             this.userAcButtonLogin.Name = "userAcButtonLogin";
             this.userAcButtonLogin.Size = new System.Drawing.Size(99, 23);
             this.userAcButtonLogin.TabIndex = 15;
             this.userAcButtonLogin.Text = "Login";
             this.userAcButtonLogin.UseVisualStyleBackColor = true;
-            this.userAcButtonLogin.Click += new System.EventHandler(this.button4_Click);
+            this.userAcButtonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // userAcLabelCity
             // 
@@ -318,6 +313,7 @@
             this.userAcLabelCity.TabIndex = 14;
             this.userAcLabelCity.Text = "City:";
             this.userAcLabelCity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.userAcLabelCity.Visible = false;
             // 
             // userAcLabelPnbr
             // 
@@ -328,6 +324,7 @@
             this.userAcLabelPnbr.TabIndex = 12;
             this.userAcLabelPnbr.Text = "Phone number:";
             this.userAcLabelPnbr.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.userAcLabelPnbr.Visible = false;
             // 
             // userAcLabelLname
             // 
@@ -338,6 +335,7 @@
             this.userAcLabelLname.TabIndex = 11;
             this.userAcLabelLname.Text = "Last name:";
             this.userAcLabelLname.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.userAcLabelLname.Visible = false;
             this.userAcLabelLname.Click += new System.EventHandler(this.label4_Click);
             // 
             // userAcLabelFname
@@ -349,6 +347,7 @@
             this.userAcLabelFname.TabIndex = 10;
             this.userAcLabelFname.Text = "First name:";
             this.userAcLabelFname.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.userAcLabelFname.Visible = false;
             // 
             // userAcTextBoxCity
             // 
@@ -356,6 +355,7 @@
             this.userAcTextBoxCity.Name = "userAcTextBoxCity";
             this.userAcTextBoxCity.Size = new System.Drawing.Size(354, 20);
             this.userAcTextBoxCity.TabIndex = 7;
+            this.userAcTextBoxCity.Visible = false;
             // 
             // userAcTextBoxPnbr
             // 
@@ -363,6 +363,7 @@
             this.userAcTextBoxPnbr.Name = "userAcTextBoxPnbr";
             this.userAcTextBoxPnbr.Size = new System.Drawing.Size(354, 20);
             this.userAcTextBoxPnbr.TabIndex = 6;
+            this.userAcTextBoxPnbr.Visible = false;
             // 
             // userAcTextBoxLname
             // 
@@ -370,6 +371,7 @@
             this.userAcTextBoxLname.Name = "userAcTextBoxLname";
             this.userAcTextBoxLname.Size = new System.Drawing.Size(354, 20);
             this.userAcTextBoxLname.TabIndex = 5;
+            this.userAcTextBoxLname.Visible = false;
             // 
             // userAcTextBoxFname
             // 
@@ -377,6 +379,7 @@
             this.userAcTextBoxFname.Name = "userAcTextBoxFname";
             this.userAcTextBoxFname.Size = new System.Drawing.Size(354, 20);
             this.userAcTextBoxFname.TabIndex = 4;
+            this.userAcTextBoxFname.Visible = false;
             // 
             // userAcLabelPassw
             // 
@@ -403,6 +406,7 @@
             this.userAcTextBoxPassw.Name = "userAcTextBoxPassw";
             this.userAcTextBoxPassw.Size = new System.Drawing.Size(204, 20);
             this.userAcTextBoxPassw.TabIndex = 1;
+            this.userAcTextBoxPassw.UseSystemPasswordChar = true;
             // 
             // userAcTextBoxMail
             // 
@@ -449,28 +453,21 @@
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
-            // viewAdPictureTree
-            // 
-            this.viewAdPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
-            this.viewAdPictureTree.Location = new System.Drawing.Point(802, 6);
-            this.viewAdPictureTree.Name = "viewAdPictureTree";
-            this.viewAdPictureTree.Size = new System.Drawing.Size(100, 75);
-            this.viewAdPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.viewAdPictureTree.TabIndex = 76;
-            this.viewAdPictureTree.TabStop = false;
-            // 
             // viewAdComboBoxCourse
             // 
+            this.viewAdComboBoxCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.viewAdComboBoxCourse.FormattingEnabled = true;
             this.viewAdComboBoxCourse.Location = new System.Drawing.Point(276, 174);
             this.viewAdComboBoxCourse.Name = "viewAdComboBoxCourse";
             this.viewAdComboBoxCourse.Size = new System.Drawing.Size(354, 21);
+            this.viewAdComboBoxCourse.Sorted = true;
             this.viewAdComboBoxCourse.TabIndex = 48;
             // 
             // viewAdTextBoxCity
             // 
             this.viewAdTextBoxCity.Location = new System.Drawing.Point(367, 429);
             this.viewAdTextBoxCity.Name = "viewAdTextBoxCity";
+            this.viewAdTextBoxCity.ReadOnly = true;
             this.viewAdTextBoxCity.Size = new System.Drawing.Size(212, 20);
             this.viewAdTextBoxCity.TabIndex = 47;
             // 
@@ -478,6 +475,7 @@
             // 
             this.viewAdTextBoxPnbr.Location = new System.Drawing.Point(367, 403);
             this.viewAdTextBoxPnbr.Name = "viewAdTextBoxPnbr";
+            this.viewAdTextBoxPnbr.ReadOnly = true;
             this.viewAdTextBoxPnbr.Size = new System.Drawing.Size(212, 20);
             this.viewAdTextBoxPnbr.TabIndex = 46;
             // 
@@ -485,6 +483,7 @@
             // 
             this.viewAdTextBoxMail.Location = new System.Drawing.Point(367, 377);
             this.viewAdTextBoxMail.Name = "viewAdTextBoxMail";
+            this.viewAdTextBoxMail.ReadOnly = true;
             this.viewAdTextBoxMail.Size = new System.Drawing.Size(212, 20);
             this.viewAdTextBoxMail.TabIndex = 45;
             // 
@@ -522,6 +521,7 @@
             // 
             this.viewAdTextBoxDate.Location = new System.Drawing.Point(312, 70);
             this.viewAdTextBoxDate.Name = "viewAdTextBoxDate";
+            this.viewAdTextBoxDate.ReadOnly = true;
             this.viewAdTextBoxDate.Size = new System.Drawing.Size(77, 20);
             this.viewAdTextBoxDate.TabIndex = 41;
             // 
@@ -529,6 +529,7 @@
             // 
             this.viewAdTextBoxSeller.Location = new System.Drawing.Point(437, 70);
             this.viewAdTextBoxSeller.Name = "viewAdTextBoxSeller";
+            this.viewAdTextBoxSeller.ReadOnly = true;
             this.viewAdTextBoxSeller.Size = new System.Drawing.Size(193, 20);
             this.viewAdTextBoxSeller.TabIndex = 40;
             // 
@@ -537,6 +538,7 @@
             this.viewAdTextBoxText.Location = new System.Drawing.Point(276, 252);
             this.viewAdTextBoxText.Multiline = true;
             this.viewAdTextBoxText.Name = "viewAdTextBoxText";
+            this.viewAdTextBoxText.ReadOnly = true;
             this.viewAdTextBoxText.Size = new System.Drawing.Size(354, 86);
             this.viewAdTextBoxText.TabIndex = 39;
             // 
@@ -544,6 +546,7 @@
             // 
             this.viewAdTextBoxPrice.Location = new System.Drawing.Point(276, 226);
             this.viewAdTextBoxPrice.Name = "viewAdTextBoxPrice";
+            this.viewAdTextBoxPrice.ReadOnly = true;
             this.viewAdTextBoxPrice.Size = new System.Drawing.Size(354, 20);
             this.viewAdTextBoxPrice.TabIndex = 38;
             this.viewAdTextBoxPrice.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
@@ -552,6 +555,7 @@
             // 
             this.viewAdTextBoxInst.Location = new System.Drawing.Point(276, 200);
             this.viewAdTextBoxInst.Name = "viewAdTextBoxInst";
+            this.viewAdTextBoxInst.ReadOnly = true;
             this.viewAdTextBoxInst.Size = new System.Drawing.Size(354, 20);
             this.viewAdTextBoxInst.TabIndex = 37;
             this.viewAdTextBoxInst.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
@@ -668,6 +672,7 @@
             // 
             this.viewAdTextBoxIsbn.Location = new System.Drawing.Point(276, 148);
             this.viewAdTextBoxIsbn.Name = "viewAdTextBoxIsbn";
+            this.viewAdTextBoxIsbn.ReadOnly = true;
             this.viewAdTextBoxIsbn.Size = new System.Drawing.Size(354, 20);
             this.viewAdTextBoxIsbn.TabIndex = 23;
             // 
@@ -675,6 +680,7 @@
             // 
             this.viewAdTextBoxAuthor.Location = new System.Drawing.Point(276, 122);
             this.viewAdTextBoxAuthor.Name = "viewAdTextBoxAuthor";
+            this.viewAdTextBoxAuthor.ReadOnly = true;
             this.viewAdTextBoxAuthor.Size = new System.Drawing.Size(354, 20);
             this.viewAdTextBoxAuthor.TabIndex = 22;
             // 
@@ -682,6 +688,7 @@
             // 
             this.viewAdTextBoxTitle.Location = new System.Drawing.Point(276, 96);
             this.viewAdTextBoxTitle.Name = "viewAdTextBoxTitle";
+            this.viewAdTextBoxTitle.ReadOnly = true;
             this.viewAdTextBoxTitle.Size = new System.Drawing.Size(354, 20);
             this.viewAdTextBoxTitle.TabIndex = 21;
             // 
@@ -690,35 +697,57 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // bookListDataGridView
+            // bookListPictureTree
             // 
-            this.bookListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bookListDataGridView.Location = new System.Drawing.Point(6, 87);
-            this.bookListDataGridView.Name = "bookListDataGridView";
-            this.bookListDataGridView.Size = new System.Drawing.Size(896, 439);
-            this.bookListDataGridView.TabIndex = 77;
+            this.bookListPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
+            this.bookListPictureTree.Location = new System.Drawing.Point(802, 6);
+            this.bookListPictureTree.Name = "bookListPictureTree";
+            this.bookListPictureTree.Size = new System.Drawing.Size(100, 75);
+            this.bookListPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bookListPictureTree.TabIndex = 76;
+            this.bookListPictureTree.TabStop = false;
             // 
-            // Form1
+            // userAcPictureTree
+            // 
+            this.userAcPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
+            this.userAcPictureTree.Location = new System.Drawing.Point(802, 6);
+            this.userAcPictureTree.Name = "userAcPictureTree";
+            this.userAcPictureTree.Size = new System.Drawing.Size(100, 75);
+            this.userAcPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userAcPictureTree.TabIndex = 76;
+            this.userAcPictureTree.TabStop = false;
+            // 
+            // viewAdPictureTree
+            // 
+            this.viewAdPictureTree.Image = global::ConsoleApplication2.Properties.Resources.LogoTree;
+            this.viewAdPictureTree.Location = new System.Drawing.Point(802, 6);
+            this.viewAdPictureTree.Name = "viewAdPictureTree";
+            this.viewAdPictureTree.Size = new System.Drawing.Size(100, 75);
+            this.viewAdPictureTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.viewAdPictureTree.TabIndex = 76;
+            this.viewAdPictureTree.TabStop = false;
+            // 
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(940, 608);
             this.Controls.Add(this.tabControl);
-            this.Name = "Form1";
+            this.Name = "MainWindow";
             this.Text = "BookAd";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl.ResumeLayout(false);
             this.bookListTabPage.ResumeLayout(false);
             this.bookListTabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).EndInit();
             this.userActabPage.ResumeLayout(false);
             this.userActabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewAdPictureTree)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
