@@ -7,25 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace ConsoleApplication2
 {
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
-        public Form1()
+        public MainWindow()
         {
             InitializeComponent();
         }
-        static void Main()
+        static void ain()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
-            Application.Run(new Form1());
+            Application.Run(new MainWindow());
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
         
+        }
+
+        private void bookListFlowLayOutPanel(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -90,13 +96,7 @@ namespace ConsoleApplication2
 
         private void bookListFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
         {
-                  
-        }
 
-        private void viewAdTextBoxSeller_TextChanged(object sender, EventArgs e)
-        {
-            
         }
-
     }
 }

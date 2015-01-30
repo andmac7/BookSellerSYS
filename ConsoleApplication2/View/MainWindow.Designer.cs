@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApplication2
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +37,6 @@
             this.bookListBtnLogin = new System.Windows.Forms.Button();
             this.bookListBtnSearch = new System.Windows.Forms.Button();
             this.bookListSearchBox = new System.Windows.Forms.TextBox();
-            this.bookListFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.userActabPage = new System.Windows.Forms.TabPage();
             this.userAcPictureTree = new System.Windows.Forms.PictureBox();
             this.userAcButtonCreateUsr = new System.Windows.Forms.Button();
@@ -90,6 +89,7 @@
             this.viewAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.viewAdTextBoxTitle = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.bookListDataGridView = new System.Windows.Forms.DataGridView();
             this.tabControl.SuspendLayout();
             this.bookListTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).BeginInit();
@@ -97,6 +97,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewAdPictureTree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -112,13 +113,13 @@
             // 
             // bookListTabPage
             // 
+            this.bookListTabPage.Controls.Add(this.bookListDataGridView);
             this.bookListTabPage.Controls.Add(this.bookListPictureTree);
             this.bookListTabPage.Controls.Add(this.bookListBtnReset);
             this.bookListTabPage.Controls.Add(this.bookListLabelTop);
             this.bookListTabPage.Controls.Add(this.bookListBtnLogin);
             this.bookListTabPage.Controls.Add(this.bookListBtnSearch);
             this.bookListTabPage.Controls.Add(this.bookListSearchBox);
-            this.bookListTabPage.Controls.Add(this.bookListFlowLayoutPanel);
             this.bookListTabPage.Location = new System.Drawing.Point(4, 22);
             this.bookListTabPage.Name = "bookListTabPage";
             this.bookListTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -182,15 +183,6 @@
             this.bookListSearchBox.Name = "bookListSearchBox";
             this.bookListSearchBox.Size = new System.Drawing.Size(492, 20);
             this.bookListSearchBox.TabIndex = 1;
-            // 
-            // bookListFlowLayoutPanel
-            // 
-            this.bookListFlowLayoutPanel.AutoScroll = true;
-            this.bookListFlowLayoutPanel.Location = new System.Drawing.Point(6, 87);
-            this.bookListFlowLayoutPanel.Name = "bookListFlowLayoutPanel";
-            this.bookListFlowLayoutPanel.Size = new System.Drawing.Size(896, 439);
-            this.bookListFlowLayoutPanel.TabIndex = 0;
-            this.bookListFlowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.bookListFlowLayoutPanel_Paint);
             // 
             // userActabPage
             // 
@@ -530,7 +522,6 @@
             // 
             this.viewAdTextBoxDate.Location = new System.Drawing.Point(312, 70);
             this.viewAdTextBoxDate.Name = "viewAdTextBoxDate";
-            this.viewAdTextBoxDate.ReadOnly = true;
             this.viewAdTextBoxDate.Size = new System.Drawing.Size(77, 20);
             this.viewAdTextBoxDate.TabIndex = 41;
             // 
@@ -538,10 +529,8 @@
             // 
             this.viewAdTextBoxSeller.Location = new System.Drawing.Point(437, 70);
             this.viewAdTextBoxSeller.Name = "viewAdTextBoxSeller";
-            this.viewAdTextBoxSeller.ReadOnly = true;
             this.viewAdTextBoxSeller.Size = new System.Drawing.Size(193, 20);
             this.viewAdTextBoxSeller.TabIndex = 40;
-            this.viewAdTextBoxSeller.TextChanged += new System.EventHandler(this.viewAdTextBoxSeller_TextChanged);
             // 
             // viewAdTextBoxText
             // 
@@ -701,6 +690,14 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // bookListDataGridView
+            // 
+            this.bookListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bookListDataGridView.Location = new System.Drawing.Point(6, 87);
+            this.bookListDataGridView.Name = "bookListDataGridView";
+            this.bookListDataGridView.Size = new System.Drawing.Size(896, 439);
+            this.bookListDataGridView.TabIndex = 77;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -721,6 +718,7 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewAdPictureTree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -730,7 +728,6 @@
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage bookListTabPage;
         private System.Windows.Forms.TabPage userActabPage;
-        private System.Windows.Forms.FlowLayoutPanel bookListFlowLayoutPanel;
         private System.Windows.Forms.Button bookListBtnLogin;
         private System.Windows.Forms.Button bookListBtnSearch;
         private System.Windows.Forms.TextBox bookListSearchBox;
@@ -788,5 +785,6 @@
         private System.Windows.Forms.PictureBox bookListPictureTree;
         private System.Windows.Forms.PictureBox userAcPictureTree;
         private System.Windows.Forms.PictureBox viewAdPictureTree;
+        private System.Windows.Forms.DataGridView bookListDataGridView;
     }
 }
