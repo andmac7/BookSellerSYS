@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.createAdPanel = new System.Windows.Forms.Panel();
+            this.createAdButtonCancel = new System.Windows.Forms.Button();
             this.createAdPictureTree = new System.Windows.Forms.PictureBox();
             this.createAdComboBoxCourse = new System.Windows.Forms.ComboBox();
             this.createAdTextBoxCity = new System.Windows.Forms.TextBox();
@@ -56,7 +57,6 @@
             this.createAdTextBoxIsbn = new System.Windows.Forms.TextBox();
             this.createAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.createAdTextBoxTitle = new System.Windows.Forms.TextBox();
-            this.createAdButtonCancel = new System.Windows.Forms.Button();
             this.createAdPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.createAdPictureTree)).BeginInit();
             this.SuspendLayout();
@@ -96,6 +96,16 @@
             this.createAdPanel.Name = "createAdPanel";
             this.createAdPanel.Size = new System.Drawing.Size(680, 537);
             this.createAdPanel.TabIndex = 0;
+            // 
+            // createAdButtonCancel
+            // 
+            this.createAdButtonCancel.Location = new System.Drawing.Point(254, 487);
+            this.createAdButtonCancel.Name = "createAdButtonCancel";
+            this.createAdButtonCancel.Size = new System.Drawing.Size(143, 20);
+            this.createAdButtonCancel.TabIndex = 76;
+            this.createAdButtonCancel.Text = "Cancel";
+            this.createAdButtonCancel.UseVisualStyleBackColor = true;
+            this.createAdButtonCancel.Click += new System.EventHandler(this.createAdButtonCancel_Click);
             // 
             // createAdPictureTree
             // 
@@ -332,16 +342,6 @@
             this.createAdTextBoxTitle.Size = new System.Drawing.Size(354, 20);
             this.createAdTextBoxTitle.TabIndex = 49;
             // 
-            // createAdButtonCancel
-            // 
-            this.createAdButtonCancel.Location = new System.Drawing.Point(254, 487);
-            this.createAdButtonCancel.Name = "createAdButtonCancel";
-            this.createAdButtonCancel.Size = new System.Drawing.Size(143, 20);
-            this.createAdButtonCancel.TabIndex = 76;
-            this.createAdButtonCancel.Text = "Cancel";
-            this.createAdButtonCancel.UseVisualStyleBackColor = true;
-            this.createAdButtonCancel.Click += new System.EventHandler(this.createAdButtonCancel_Click);
-            // 
             // DialogNewAd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,6 +349,7 @@
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(704, 561);
             this.Controls.Add(this.createAdPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "DialogNewAd";
             this.Text = "BookAd - Create New Ad";
             this.createAdPanel.ResumeLayout(false);

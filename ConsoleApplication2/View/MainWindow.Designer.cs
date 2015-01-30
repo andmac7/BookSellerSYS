@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.bookListTabPage = new System.Windows.Forms.TabPage();
             this.bookListDataGridView = new System.Windows.Forms.DataGridView();
@@ -729,6 +730,8 @@
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(940, 608);
             this.Controls.Add(this.tabControl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainWindow";
             this.Text = "BookAd";
             this.Load += new System.EventHandler(this.Form1_Load);
