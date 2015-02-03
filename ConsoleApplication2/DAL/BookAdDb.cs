@@ -44,6 +44,12 @@ namespace BookSeller
             return bookAds;
         }
 
+        public static DataTable ReadDt(string cmd)
+        {
+            DataTable table = DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
+            return table;
+        }
+
         public static void Insert(string title, string author, string isbn, string date, string price, string adtext, string course, string mail)
         {
             string cmd = String.Format("INSERT INTO BookAd VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", title, author, isbn, date, price, adtext, course, mail);

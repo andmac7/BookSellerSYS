@@ -38,10 +38,22 @@ namespace ConsoleApplication2
             string cm = "Select * From BookAd";
             bookListDataGridView.DataSource = BookAdDb.Read(cm);*/
             //listBox1.Items.AddRange(ctrl.getAllBookAds().ToArray());
-            listBox1.DataSource = ctrl.getAllBookAds();
-            listBox1.DisplayMember = "Title";
-            listBox1.ValueMember = "Author";
-
+            /*
+            List<BookAd> l = ctrl.getAllBookAds();
+            for (int i = 0; i < l.Count; i++)
+            {
+                listBox1.Items.Add(l);
+            }*/
+            //listBox1.DataSource = l;
+            //listBox1.ValueMember = "Isbn";
+            DataTable dt = new DataTable();
+            dt = ctrl.getDataTableBookAds();
+            DataRow tempRow = null;
+            foreach (DataRow tempRowVar in dt.Rows)
+            {
+                tempRow = tempRowVar;
+                listBox1.Items.Add(tempRow["Title"] + "       |       " + tempRow["Author"] + "       |       " + tempRow["Price"] + "       |       " + tempRow["Date"]);
+            }
         }
 
 

@@ -17,10 +17,24 @@ namespace BookSeller
         {
             string cmd = "SELECT * FROM BookAd";
             List<BookAd> newList = new List<BookAd>(BookAdDb.Read(cmd));
+            newList.Find(item => item.title == "Title");
             return newList;
         }
 
+        public DataTable getDataTableBookAds()
+        {
+            string cmd = "SELECT * FROM BookAd";
+            DataTable dt = new DataTable();
+            dt = BookAdDb.ReadDt(cmd);
+            return dt;
+        }
+
         public void addBookAd()
+        {
+
+        }
+
+        public void addSeller()
         {
 
         }
