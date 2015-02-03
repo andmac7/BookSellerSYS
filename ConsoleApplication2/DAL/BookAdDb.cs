@@ -44,9 +44,15 @@ namespace BookSeller
             return bookAds;
         }
 
-        public static void Insert(string title, string author, string isbn, string date, string price, string adtext, string course, string mail)
+        public static void Insert(string Title, string Author, string Isbn, string Date, string Price, string AdText, string Course, string Mail)
         {
-            string cmd = String.Format("INSERT INTO BookAd VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", title, author, isbn, date, price, adtext, course, mail);
+            string cmd = String.Format("INSERT INTO BookAd VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", Title, Author, Isbn, Date, Price, AdText, Course, Mail);
+            DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
+        }
+
+        public static void Delete(string Title, string Author, string Isbn, string Date, string Price, string AdText, string Course, string Mail)
+        {
+            string cmd = String.Format("DELETE FROM BookAd WHERE isbn = '"+Isbn+"' ;");
             DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
         }
     }

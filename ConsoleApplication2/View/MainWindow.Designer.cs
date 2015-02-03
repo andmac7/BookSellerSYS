@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.bookListTabPage = new System.Windows.Forms.TabPage();
-            this.bookListDataGridView = new System.Windows.Forms.DataGridView();
             this.bookListPictureTree = new System.Windows.Forms.PictureBox();
             this.bookListBtnReset = new System.Windows.Forms.Button();
             this.bookListLabelTop = new System.Windows.Forms.Label();
@@ -91,9 +90,9 @@
             this.viewAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.viewAdTextBoxTitle = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabControl.SuspendLayout();
             this.bookListTabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).BeginInit();
             this.userActabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userAcPictureTree)).BeginInit();
@@ -114,7 +113,7 @@
             // 
             // bookListTabPage
             // 
-            this.bookListTabPage.Controls.Add(this.bookListDataGridView);
+            this.bookListTabPage.Controls.Add(this.listBox1);
             this.bookListTabPage.Controls.Add(this.bookListPictureTree);
             this.bookListTabPage.Controls.Add(this.bookListBtnReset);
             this.bookListTabPage.Controls.Add(this.bookListLabelTop);
@@ -128,15 +127,6 @@
             this.bookListTabPage.TabIndex = 0;
             this.bookListTabPage.Text = "List of Books";
             this.bookListTabPage.UseVisualStyleBackColor = true;
-            // 
-            // bookListDataGridView
-            // 
-            this.bookListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bookListDataGridView.Location = new System.Drawing.Point(6, 87);
-            this.bookListDataGridView.Name = "bookListDataGridView";
-            this.bookListDataGridView.ReadOnly = true;
-            this.bookListDataGridView.Size = new System.Drawing.Size(896, 439);
-            this.bookListDataGridView.TabIndex = 77;
             // 
             // bookListPictureTree
             // 
@@ -723,6 +713,14 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(3, 101);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(899, 420);
+            this.listBox1.TabIndex = 77;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -738,7 +736,6 @@
             this.tabControl.ResumeLayout(false);
             this.bookListTabPage.ResumeLayout(false);
             this.bookListTabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bookListDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).EndInit();
             this.userActabPage.ResumeLayout(false);
             this.userActabPage.PerformLayout();
@@ -811,7 +808,7 @@
         private System.Windows.Forms.PictureBox bookListPictureTree;
         private System.Windows.Forms.PictureBox userAcPictureTree;
         private System.Windows.Forms.PictureBox viewAdPictureTree;
-        private System.Windows.Forms.DataGridView bookListDataGridView;
         private System.Windows.Forms.Button userAcButtonLogin;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
