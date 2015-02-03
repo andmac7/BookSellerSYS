@@ -43,6 +43,10 @@ namespace ConsoleApplication2
 
         private void userAcButtonLogin_Click(object sender, EventArgs e)
         {
+            string username = userAcTextBoxMail.Text;
+            string password = userAcTextBoxPassw.Text;
+
+            Seller tmpSeller = new Seller();
 
             //Textrutor visas
             userAcTextBoxFname.Visible = true;
@@ -62,6 +66,12 @@ namespace ConsoleApplication2
             userAcButtonCreateAd.Visible = true;
             userAcButtonRemoveAd.Visible = true;
             userAcButtonRefresh.Visible = true;
+
+            //Textrutor fylls i
+            userAcTextBoxFname.Text += "HEJ";
+            userAcTextBoxLname.Text += ctrl.getSeller(username);
+            userAcTextBoxCity.Text += tmpSeller.city;
+
         }
 
         private void userAcButtonCreateUsr_Click(object sender, EventArgs e)
