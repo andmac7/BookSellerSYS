@@ -37,7 +37,11 @@ namespace ConsoleApplication2
             /*
             string cm = "Select * From BookAd";
             bookListDataGridView.DataSource = BookAdDb.Read(cm);*/
-            bookListDataGridView.DataSource = ctrl.getAllBookAds();
+            //listBox1.Items.AddRange(ctrl.getAllBookAds().ToArray());
+            listBox1.DataSource = ctrl.getAllBookAds();
+            listBox1.DisplayMember = "Title";
+            listBox1.ValueMember = "Author";
+
         }
 
 
