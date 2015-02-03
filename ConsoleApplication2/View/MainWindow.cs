@@ -52,6 +52,13 @@ namespace ConsoleApplication2
 
             Seller tmpSeller = new Seller();
 
+            if (username == "Test" && password == "Test") {
+            tmpSeller.fName = "Dolph";
+            tmpSeller.lName = "Lundgren";
+            tmpSeller.city = "Los Angeles";
+            tmpSeller.phoneNbr = "040412020";
+            }
+
             //Textrutor visas
             userAcTextBoxFname.Visible = true;
             userAcTextBoxLname.Visible = true; 
@@ -71,9 +78,10 @@ namespace ConsoleApplication2
             userAcButtonRemoveAd.Visible = true;
             userAcButtonRefresh.Visible = true;
 
-            //Textrutor fylls i
-            userAcTextBoxFname.Text += "HEJ";
-            userAcTextBoxLname.Text += ctrl.getSeller(username);
+            //Textrutor fylls i med tmpSellers uppgifter
+            userAcTextBoxFname.Text += tmpSeller.fName;
+            userAcTextBoxLname.Text += tmpSeller.lName;
+            userAcTextBoxPnbr.Text += tmpSeller.phoneNbr;
             userAcTextBoxCity.Text += tmpSeller.city;
 
         }
