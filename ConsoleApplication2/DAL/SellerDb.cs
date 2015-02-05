@@ -60,8 +60,11 @@ namespace BookSeller
         {
 
             string cmd = String.Format("SELECT * FROM Seller WHERE mail = '" + Mail + "'");
-            
-            List<Seller> seller = null;
+
+            Seller tmpSeller = new Seller();
+            List<Seller> seller = new List<Seller>();
+
+            seller.Insert(0, tmpSeller);
             using (DataTable table = DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text))
             {
                 if (table.Rows.Count > 0)
@@ -69,7 +72,8 @@ namespace BookSeller
                     seller = MapSellers(table.Rows);
                 }
             }
-            Seller tmpSeller = null;
+            //Seller tmpSeller = null;
+            
             tmpSeller = seller.ElementAt(0);
 
             return tmpSeller;            

@@ -65,7 +65,16 @@ namespace ConsoleApplication2
             Seller tmpSeller = new Seller();
             tmpSeller = ctrl.getSeller(username);
 
-            if (tmpSeller.password == password)
+
+
+            //Rätt användarnamn men fel lösenord
+            if (tmpSeller.mail == username && tmpSeller.password != password)
+            {
+                userAcLabelMessageBox.Text = "Wrong Password";
+            }
+
+            //Rätt användarnamn och lösenord
+            else if(tmpSeller.mail == username && tmpSeller.password == password)
             {
                 userAcLabelMessageBox.Text = "";
 
@@ -94,10 +103,10 @@ namespace ConsoleApplication2
             userAcTextBoxPnbr.Text = tmpSeller.phoneNbr;
             userAcTextBoxCity.Text = tmpSeller.city;
             }
+            //Användarnamn finns inte
             else
             {
-                Console.WriteLine("ERROR");
-                userAcLabelMessageBox.Text = "Wrong Password";
+                userAcLabelMessageBox.Text = "User does not exist";
             }
 
         }
