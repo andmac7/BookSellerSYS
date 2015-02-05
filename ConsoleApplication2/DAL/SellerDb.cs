@@ -55,5 +55,15 @@ namespace BookSeller
             string cmd = String.Format("DELETE FROM Seller WHERE Mail = '" + Mail + "' ;");
             DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
         }
+
+        public static Seller getSeller(string Mail)
+        {
+            string cmd = String.Format("SELECT * FROM Seller WHERE mail = '" + Mail + "'");
+            DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
+
+            Seller tmpSeller = new Seller();
+
+            
+        }
     }
 }
