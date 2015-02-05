@@ -59,9 +59,14 @@ namespace BookSeller
         public static Seller getSeller(string Mail)
         {
             string cmd = String.Format("SELECT * FROM Seller WHERE mail = '" + Mail + "'");
-            DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
+            Object returnValue = DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
+            
 
             Seller tmpSeller = new Seller();
+
+            Console.WriteLine("HEJ från SellerDb");
+            Console.WriteLine(returnValue.GetType());
+            return null;
 
             
         }
