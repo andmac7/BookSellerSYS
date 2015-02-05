@@ -293,7 +293,6 @@
             this.userAcButtonUpdateInfo.Text = "Update Info";
             this.userAcButtonUpdateInfo.UseVisualStyleBackColor = true;
             this.userAcButtonUpdateInfo.Visible = false;
-            this.userAcButtonUpdateInfo.Click += new System.EventHandler(this.userAcButtonUpdateInfo_Click);
             // 
             // userAcButtonCreateAd
             // 

@@ -63,13 +63,7 @@ namespace ConsoleApplication2
             string password = userAcTextBoxPassw.Text;
 
             Seller tmpSeller = new Seller();
-
-            if (username == "Test" && password == "Test") {
-            tmpSeller.fName = "Dolph";
-            tmpSeller.lName = "Lundgren";
-            tmpSeller.city = "Los Angeles";
-            tmpSeller.phoneNbr = "040412020";
-            }
+            tmpSeller = ctrl.getSeller(username);
 
             //Textrutor visas
             userAcTextBoxFname.Visible = true;
@@ -96,6 +90,7 @@ namespace ConsoleApplication2
             userAcTextBoxPnbr.Text += tmpSeller.phoneNbr;
             userAcTextBoxCity.Text += tmpSeller.city;
 
+
         }
 
         private void userAcButtonCreateUsr_Click(object sender, EventArgs e)
@@ -110,9 +105,5 @@ namespace ConsoleApplication2
             dialogNewAd.ShowDialog();
         }
 
-        private void userAcButtonUpdateInfo_Click(object sender, EventArgs e)
-        {
-            SellerDb.getSeller("thomas@thomasohlsson.com");
-        }
     }
 }
