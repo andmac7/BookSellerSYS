@@ -123,5 +123,26 @@ namespace ConsoleApplication2
             dialogNewAd.ShowDialog();
         }
 
+        private void listBox1_DoubleClick(object sender, EventArgs e)
+        {
+            BookAd book = null;
+            
+            if (listBox1.SelectedItem != null)
+            {
+                book = listBox1.SelectedItem as BookAd;
+            }
+            
+            if (book != null)
+            {
+                MessageBox.Show(book.title);
+                viewAdTextBoxTitle.Text = book.title;
+                viewAdTextBoxAuthor.Text = book.author;
+                viewAdTextBoxIsbn.Text = book.isbn;
+            }
+        }
+
+        private void viewAdTextBoxTitle_TextChanged(object sender, EventArgs e)
+        {        
+        }
     }
 }
