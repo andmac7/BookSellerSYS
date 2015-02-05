@@ -14,7 +14,7 @@ namespace BookSeller
             Seller s = new Seller();
             s.lName = r["LName"].ToString();
             s.fName = r["FName"].ToString();
-            s.phoneNbr =r["PhoneNbr"].ToString();
+            s.phoneNbr = r["PhoneNbr"].ToString();
             s.mail = r["Mail"].ToString();
             s.city = r["City"].ToString();
             s.password = r["Password"].ToString();
@@ -44,9 +44,15 @@ namespace BookSeller
             return sellers;
         }
 
-        public static void Insert(string fName, string lName, string phoneNbr, string mail, string city, string password)
+        public static void Insert(string LName, string FName, string PhoneNbr, string Mail, string City, string Password)
         {
-            string cmd = String.Format("INSERT INTO BookAd VALUES('{0}','{1}','{2}','{3}','{4}','{5}')", fName, lName, phoneNbr, phoneNbr, city, password);
+
+            string cmd = String.Format("INSERT INTO Seller VALUES('{0}','{1}','{2}','{3}','{4}','{5}')", LName, FName, PhoneNbr, Mail, City, Password);
+            DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
+        }
+        public static void Delete(string LName, string FName, string PhoneNbr, string Mail, string City, string Password)
+        {
+            string cmd = String.Format("DELETE FROM Seller WHERE Mail = '" + Mail + "' ;");
             DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
         }
     }
