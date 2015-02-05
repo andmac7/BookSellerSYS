@@ -109,5 +109,10 @@ namespace ConsoleApplication2
             DialogNewAd dialogNewAd = new DialogNewAd();
             dialogNewAd.ShowDialog();
         }
+
+        private void userAcButtonUpdateInfo_Click(object sender, EventArgs e)
+        {
+            SellerDb.getSeller("thomas@thomasohlsson.com");
+        }
     }
 }
