@@ -65,6 +65,10 @@ namespace ConsoleApplication2
             Seller tmpSeller = new Seller();
             tmpSeller = ctrl.getSeller(username);
 
+            if (tmpSeller.password == password)
+            {
+                userAcLabelMessageBox.Text = "";
+
             //Textrutor visas
             userAcTextBoxFname.Visible = true;
             userAcTextBoxLname.Visible = true; 
@@ -85,11 +89,16 @@ namespace ConsoleApplication2
             userAcButtonRefresh.Visible = true;
 
             //Textrutor fylls i med tmpSellers uppgifter
-            userAcTextBoxFname.Text += tmpSeller.fName;
-            userAcTextBoxLname.Text += tmpSeller.lName;
-            userAcTextBoxPnbr.Text += tmpSeller.phoneNbr;
-            userAcTextBoxCity.Text += tmpSeller.city;
-
+            userAcTextBoxFname.Text = tmpSeller.fName;
+            userAcTextBoxLname.Text = tmpSeller.lName;
+            userAcTextBoxPnbr.Text = tmpSeller.phoneNbr;
+            userAcTextBoxCity.Text = tmpSeller.city;
+            }
+            else
+            {
+                Console.WriteLine("ERROR");
+                userAcLabelMessageBox.Text = "Wrong Password";
+            }
 
         }
 
