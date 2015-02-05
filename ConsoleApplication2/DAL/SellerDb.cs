@@ -14,7 +14,7 @@ namespace BookSeller
             Seller s = new Seller();
             s.lName = r["LName"].ToString();
             s.fName = r["FName"].ToString();
-            s.phoneNbr =r["PhoneNbr"].ToString();
+            s.phoneNbr = r["PhoneNbr"].ToString();
             s.mail = r["Mail"].ToString();
             s.city = r["City"].ToString();
             s.password = r["Password"].ToString();

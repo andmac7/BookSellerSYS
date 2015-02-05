@@ -13,43 +13,28 @@ namespace BookSeller
 {
     class Controller
     {
-        //BookAdDb
         public List<BookAd> getAllBookAds()
         {
             string cmd = "SELECT * FROM BookAd";
             List<BookAd> newList = new List<BookAd>(BookAdDb.Read(cmd));
+            newList.Find(item => item.title == "Title");
             return newList;
         }
 
-        //CourseDb
-
-
-
-        //InstDb
-
-
-
-        //SellerDb
-        public List<Seller> getSeller(String username)
+        public DataTable getDataTableBookAds()
         {
-            if (username == "")
-            {
-                List<Seller> empty = new List<Seller>();
-                return empty;
-            }
-            else
-            {
-                string cmd = "SELECT * FROM Seller WHERE mail = '" + username + "'";
-                List<Seller> newList = new List<Seller>(SellerDb.Read(cmd));
-                return newList;
-            }
-
-                  
+            string cmd = "SELECT * FROM BookAd";
+            DataTable dt = new DataTable();
+            dt = BookAdDb.ReadDt(cmd);
+            return dt;
         }
 
-
-
         public void addBookAd()
+        {
+
+        }
+
+        public void addSeller()
         {
 
         }
