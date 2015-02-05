@@ -38,5 +38,13 @@ namespace BookSeller
         {
 
         }
+
+        public Seller getSeller(string Mail)
+        {
+            Seller tmpSeller = new Seller();
+            tmpSeller = SellerDb.getSeller(Mail);
+            return tmpSeller;
+        }
+
     }
 }
