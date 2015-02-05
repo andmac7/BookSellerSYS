@@ -68,8 +68,8 @@ namespace BookSeller
                     seller = MapSellers(table.Rows);
                 }
             }
-            Seller tmpSeller = null;
-            tmpSeller = seller.ElementAt(0);
+            Seller tmpSeller = seller.ElementAt(0);
+            
             return tmpSeller;
 
             //DataTable tmpTable = DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
