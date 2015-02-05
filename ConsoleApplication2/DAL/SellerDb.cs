@@ -58,6 +58,7 @@ namespace BookSeller
 
         public static Seller getSeller(string Mail)
         {
+
             string cmd = String.Format("SELECT * FROM Seller WHERE mail = '" + Mail + "'");
             
             List<Seller> seller = null;
@@ -68,15 +69,10 @@ namespace BookSeller
                     seller = MapSellers(table.Rows);
                 }
             }
-            Seller tmpSeller = seller.ElementAt(0);
-            
-            return tmpSeller;
+            Seller tmpSeller = null;
+            tmpSeller = seller.ElementAt(0);
 
-            //DataTable tmpTable = DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
-            //Seller tmpSeller = new Seller();
-           
-            //tmpList.Find(delegate(Item i) { return i.Property == someValue; });
-            
+            return tmpSeller;            
         }
     }
 }

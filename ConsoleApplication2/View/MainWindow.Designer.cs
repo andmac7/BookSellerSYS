@@ -91,6 +91,7 @@
             this.viewAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.viewAdTextBoxTitle = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.userAcLabelMessageBox = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.bookListTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).BeginInit();
@@ -194,6 +195,7 @@
             // 
             // userActabPage
             // 
+            this.userActabPage.Controls.Add(this.userAcLabelMessageBox);
             this.userActabPage.Controls.Add(this.userAcButtonLogin);
             this.userActabPage.Controls.Add(this.userAcPictureTree);
             this.userActabPage.Controls.Add(this.userAcButtonCreateUsr);
@@ -723,6 +725,17 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // userAcLabelMessageBox
+            // 
+            this.userAcLabelMessageBox.AutoSize = true;
+            this.userAcLabelMessageBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userAcLabelMessageBox.ForeColor = System.Drawing.Color.Red;
+            this.userAcLabelMessageBox.Location = new System.Drawing.Point(258, 19);
+            this.userAcLabelMessageBox.Name = "userAcLabelMessageBox";
+            this.userAcLabelMessageBox.Size = new System.Drawing.Size(0, 13);
+            this.userAcLabelMessageBox.TabIndex = 78;
+            this.userAcLabelMessageBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -812,5 +825,6 @@
         private System.Windows.Forms.PictureBox viewAdPictureTree;
         private System.Windows.Forms.Button userAcButtonLogin;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label userAcLabelMessageBox;
     }
 }
