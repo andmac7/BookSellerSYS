@@ -47,19 +47,18 @@ namespace BookSeller
         public static void Insert(string LName, string FName, string PhoneNbr, string Mail, string City, string Password)
         {
 
-            string cmd = String.Format("INSERT INTO Seller VALUES('{0}','{1}','{2}','{3}','{4}','{5}')", LName, FName, PhoneNbr, Mail, City, Password);
+            string cmd = String.Format("INSERT INTO Seller VALUES('{0}','{1}','{2}','{3}','{4}','{5}')", LName, FName, PhoneNbr, Mail, City, Password); //String.Format för att underlätta inmatning
             DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
         }
         public static void Delete(string LName, string FName, string PhoneNbr, string Mail, string City, string Password)
         {
-            string cmd = String.Format("DELETE FROM Seller WHERE Mail = '" + Mail + "' ;");
+            string cmd = String.Format("DELETE FROM Seller WHERE Mail = '{0}'", Mail); //String.Format för att underlätta inmatning
             DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
         }
 
         public static Seller getSeller(string Mail)
         {
-
-            string cmd = String.Format("SELECT * FROM Seller WHERE mail = '{0}'", Mail);
+            string cmd = String.Format("SELECT * FROM Seller WHERE Mail = '{0}'", Mail); //String.Format för att underlätta inmatning
 
             Seller tmpSeller = new Seller();
             List<Seller> seller = new List<Seller>();

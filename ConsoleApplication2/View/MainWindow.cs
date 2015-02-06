@@ -70,14 +70,16 @@ namespace ConsoleApplication2
             //Rätt användarnamn men fel lösenord
             if (tmpSeller.mail == username && tmpSeller.password != password)
             {
+                userAcLabelMessageBox.ForeColor = System.Drawing.Color.Red; //Röd färg för negativ feedback
                 userAcLabelMessageBox.Text = "Wrong Password";
             }
 
             //Rätt användarnamn och lösenord
             else if(tmpSeller.mail == username && tmpSeller.password == password)
             {
-                userAcLabelMessageBox.Text = "";
-                //userAcLabelMessageBox.Text = "ACCESS GRANTED";
+                //userAcLabelMessageBox.Text = "";
+                userAcLabelMessageBox.ForeColor = System.Drawing.Color.Green; //Grön färg för negativ feedback
+                userAcLabelMessageBox.Text = "ACCESS GRANTED";
 
             //Textrutor visas
             userAcTextBoxFname.Visible = true;
@@ -107,6 +109,7 @@ namespace ConsoleApplication2
             //Användarnamn finns inte
             else
             {
+                userAcLabelMessageBox.ForeColor = System.Drawing.Color.Red; //Röd färg för negativ feedback
                 userAcLabelMessageBox.Text = "User does not exist";
             }
 
