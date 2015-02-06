@@ -45,6 +45,7 @@
             this.newUserTextBoxCity = new System.Windows.Forms.TextBox();
             this.newUserTextBoxPnbr = new System.Windows.Forms.TextBox();
             this.newUserPictureTree = new System.Windows.Forms.PictureBox();
+            this.newUserLabelMessageBox = new System.Windows.Forms.Label();
             this.newUserPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.newUserPictureTree)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +53,7 @@
             // newUserPanel
             // 
             this.newUserPanel.BackColor = System.Drawing.SystemColors.Window;
+            this.newUserPanel.Controls.Add(this.newUserLabelMessageBox);
             this.newUserPanel.Controls.Add(this.newUserLabelPassw);
             this.newUserPanel.Controls.Add(this.newUserTextBoxPassw);
             this.newUserPanel.Controls.Add(this.newUserLabelMail);
@@ -203,6 +205,17 @@
             this.newUserPictureTree.TabIndex = 77;
             this.newUserPictureTree.TabStop = false;
             // 
+            // newUserLabelMessageBox
+            // 
+            this.newUserLabelMessageBox.AutoSize = true;
+            this.newUserLabelMessageBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newUserLabelMessageBox.ForeColor = System.Drawing.Color.Red;
+            this.newUserLabelMessageBox.Location = new System.Drawing.Point(176, 123);
+            this.newUserLabelMessageBox.Name = "newUserLabelMessageBox";
+            this.newUserLabelMessageBox.Size = new System.Drawing.Size(0, 13);
+            this.newUserLabelMessageBox.TabIndex = 92;
+            this.newUserLabelMessageBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // DialogRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -240,5 +253,6 @@
         private System.Windows.Forms.TextBox newUserTextBoxMail;
         private System.Windows.Forms.Label newUserLabelPassw;
         private System.Windows.Forms.TextBox newUserTextBoxPassw;
+        private System.Windows.Forms.Label newUserLabelMessageBox;
     }
 }

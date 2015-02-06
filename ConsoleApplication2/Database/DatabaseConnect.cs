@@ -87,9 +87,7 @@ namespace BookSeller
                             con.Open();
                         }
                         
-                        //command.Connection.Open();
                         rowsAffected = command.ExecuteNonQuery();
-
                 }
             }
             return rowsAffected;

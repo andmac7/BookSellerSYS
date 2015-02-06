@@ -226,6 +226,7 @@
             this.userActabPage.TabIndex = 1;
             this.userActabPage.Text = "User Account";
             this.userActabPage.UseVisualStyleBackColor = true;
+            this.userActabPage.Click += new System.EventHandler(this.userActabPage_Click);
             // 
             // userAcLabelMessageBox
             // 
