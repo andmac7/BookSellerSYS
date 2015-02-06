@@ -126,20 +126,20 @@ namespace ConsoleApplication2
 
         private void listBox1_DoubleClick(object sender, EventArgs e)
         {
-            BookAd book = null;
-            
+            /*
             if (listBox1.SelectedItem != null)
             {
-                book = listBox1.SelectedItem as BookAd;
+                viewAdTextBoxTitle.Text = listBox1.Items[0].ToString();
+                viewAdTextBoxAuthor.Text = listBox1.Items[1].ToString();
+                viewAdTextBoxIsbn.Text = listBox1.Items[2].ToString();
+            }*/
+
+            foreach (var item in listBox1.SelectedItems)
+            {
+                MessageBox.Show(item.ToString());
+                viewAdTextBoxTitle.Text = item.ToString();
             }
             
-            if (book != null)
-            {
-                MessageBox.Show(book.title);
-                viewAdTextBoxTitle.Text = book.title;
-                viewAdTextBoxAuthor.Text = book.author;
-                viewAdTextBoxIsbn.Text = book.isbn;
-            }
         }
 
         private void viewAdTextBoxTitle_TextChanged(object sender, EventArgs e)
