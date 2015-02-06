@@ -77,6 +77,7 @@ namespace ConsoleApplication2
             else if(tmpSeller.mail == username && tmpSeller.password == password)
             {
                 userAcLabelMessageBox.Text = "";
+                //userAcLabelMessageBox.Text = "ACCESS GRANTED";
 
             //Textrutor visas
             userAcTextBoxFname.Visible = true;

@@ -59,7 +59,7 @@ namespace BookSeller
         public static Seller getSeller(string Mail)
         {
 
-            string cmd = String.Format("SELECT * FROM Seller WHERE mail = '" + Mail + "'");
+            string cmd = String.Format("SELECT * FROM Seller WHERE mail = '{0}'", Mail);
 
             Seller tmpSeller = new Seller();
             List<Seller> seller = new List<Seller>();
