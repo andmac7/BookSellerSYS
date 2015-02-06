@@ -77,10 +77,10 @@ namespace ConsoleApplication2
             //Rätt användarnamn och lösenord
             else if(tmpSeller.mail == username && tmpSeller.password == password)
             {
-                //userAcLabelMessageBox.Text = "";
+                                               
                 userAcLabelMessageBox.ForeColor = System.Drawing.Color.Green; //Grön färg för negativ feedback
                 userAcLabelMessageBox.Text = "ACCESS GRANTED";
-
+                                
             //Textrutor visas
             userAcTextBoxFname.Visible = true;
             userAcTextBoxLname.Visible = true; 
@@ -115,6 +115,7 @@ namespace ConsoleApplication2
 
         }
 
+
         private void userAcButtonCreateUsr_Click(object sender, EventArgs e)
         {
             DialogRegister dialogRegister = new DialogRegister();
@@ -146,7 +147,9 @@ namespace ConsoleApplication2
         }
 
         private void viewAdTextBoxTitle_TextChanged(object sender, EventArgs e)
-        {        
+        {
+        
         }
+
     }
 }

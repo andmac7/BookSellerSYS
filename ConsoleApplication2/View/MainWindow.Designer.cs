@@ -40,6 +40,7 @@
             this.bookListBtnSearch = new System.Windows.Forms.Button();
             this.bookListSearchBox = new System.Windows.Forms.TextBox();
             this.userActabPage = new System.Windows.Forms.TabPage();
+            this.userAcLabelMessageBox = new System.Windows.Forms.Label();
             this.userAcButtonLogin = new System.Windows.Forms.Button();
             this.userAcPictureTree = new System.Windows.Forms.PictureBox();
             this.userAcButtonCreateUsr = new System.Windows.Forms.Button();
@@ -91,7 +92,7 @@
             this.viewAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.viewAdTextBoxTitle = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.userAcLabelMessageBox = new System.Windows.Forms.Label();
+            this.userAcTimer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl.SuspendLayout();
             this.bookListTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).BeginInit();
@@ -172,7 +173,7 @@
             this.bookListBtnLogin.Location = new System.Drawing.Point(653, 6);
             this.bookListBtnLogin.Name = "bookListBtnLogin";
             this.bookListBtnLogin.Size = new System.Drawing.Size(143, 20);
-            this.bookListBtnLogin.TabIndex = 4;
+            this.bookListBtnLogin.TabIndex = 3;
             this.bookListBtnLogin.Text = "Login";
             this.bookListBtnLogin.UseVisualStyleBackColor = true;
             // 
@@ -226,12 +227,23 @@
             this.userActabPage.Text = "User Account";
             this.userActabPage.UseVisualStyleBackColor = true;
             // 
+            // userAcLabelMessageBox
+            // 
+            this.userAcLabelMessageBox.AutoSize = true;
+            this.userAcLabelMessageBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userAcLabelMessageBox.ForeColor = System.Drawing.Color.Red;
+            this.userAcLabelMessageBox.Location = new System.Drawing.Point(258, 19);
+            this.userAcLabelMessageBox.Name = "userAcLabelMessageBox";
+            this.userAcLabelMessageBox.Size = new System.Drawing.Size(0, 13);
+            this.userAcLabelMessageBox.TabIndex = 78;
+            this.userAcLabelMessageBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // userAcButtonLogin
             // 
             this.userAcButtonLogin.Location = new System.Drawing.Point(446, 97);
             this.userAcButtonLogin.Name = "userAcButtonLogin";
             this.userAcButtonLogin.Size = new System.Drawing.Size(98, 23);
-            this.userAcButtonLogin.TabIndex = 77;
+            this.userAcButtonLogin.TabIndex = 14;
             this.userAcButtonLogin.Text = "Login";
             this.userAcButtonLogin.UseVisualStyleBackColor = true;
             this.userAcButtonLogin.Click += new System.EventHandler(this.userAcButtonLogin_Click);
@@ -251,7 +263,7 @@
             this.userAcButtonCreateUsr.Location = new System.Drawing.Point(340, 96);
             this.userAcButtonCreateUsr.Name = "userAcButtonCreateUsr";
             this.userAcButtonCreateUsr.Size = new System.Drawing.Size(99, 23);
-            this.userAcButtonCreateUsr.TabIndex = 23;
+            this.userAcButtonCreateUsr.TabIndex = 13;
             this.userAcButtonCreateUsr.Text = "Register";
             this.userAcButtonCreateUsr.UseVisualStyleBackColor = true;
             this.userAcButtonCreateUsr.Click += new System.EventHandler(this.userAcButtonCreateUsr_Click);
@@ -261,7 +273,7 @@
             this.userAcButtonRefresh.Location = new System.Drawing.Point(493, 509);
             this.userAcButtonRefresh.Name = "userAcButtonRefresh";
             this.userAcButtonRefresh.Size = new System.Drawing.Size(143, 20);
-            this.userAcButtonRefresh.TabIndex = 22;
+            this.userAcButtonRefresh.TabIndex = 34;
             this.userAcButtonRefresh.Text = "Refresh";
             this.userAcButtonRefresh.UseVisualStyleBackColor = true;
             this.userAcButtonRefresh.Visible = false;
@@ -282,7 +294,7 @@
             this.userAcButtonRemoveAc.Location = new System.Drawing.Point(445, 259);
             this.userAcButtonRemoveAc.Name = "userAcButtonRemoveAc";
             this.userAcButtonRemoveAc.Size = new System.Drawing.Size(143, 20);
-            this.userAcButtonRemoveAc.TabIndex = 20;
+            this.userAcButtonRemoveAc.TabIndex = 26;
             this.userAcButtonRemoveAc.Text = "Remove Account";
             this.userAcButtonRemoveAc.UseVisualStyleBackColor = true;
             this.userAcButtonRemoveAc.Visible = false;
@@ -292,7 +304,7 @@
             this.userAcButtonUpdateInfo.Location = new System.Drawing.Point(296, 259);
             this.userAcButtonUpdateInfo.Name = "userAcButtonUpdateInfo";
             this.userAcButtonUpdateInfo.Size = new System.Drawing.Size(143, 20);
-            this.userAcButtonUpdateInfo.TabIndex = 19;
+            this.userAcButtonUpdateInfo.TabIndex = 25;
             this.userAcButtonUpdateInfo.Text = "Update Info";
             this.userAcButtonUpdateInfo.UseVisualStyleBackColor = true;
             this.userAcButtonUpdateInfo.Visible = false;
@@ -302,7 +314,7 @@
             this.userAcButtonCreateAd.Location = new System.Drawing.Point(195, 509);
             this.userAcButtonCreateAd.Name = "userAcButtonCreateAd";
             this.userAcButtonCreateAd.Size = new System.Drawing.Size(143, 20);
-            this.userAcButtonCreateAd.TabIndex = 18;
+            this.userAcButtonCreateAd.TabIndex = 32;
             this.userAcButtonCreateAd.Text = "Create New Ad";
             this.userAcButtonCreateAd.UseVisualStyleBackColor = true;
             this.userAcButtonCreateAd.Visible = false;
@@ -313,7 +325,7 @@
             this.userAcButtonRemoveAd.Location = new System.Drawing.Point(344, 509);
             this.userAcButtonRemoveAd.Name = "userAcButtonRemoveAd";
             this.userAcButtonRemoveAd.Size = new System.Drawing.Size(143, 20);
-            this.userAcButtonRemoveAd.TabIndex = 17;
+            this.userAcButtonRemoveAd.TabIndex = 33;
             this.userAcButtonRemoveAd.Text = "Remove Ad";
             this.userAcButtonRemoveAd.UseVisualStyleBackColor = true;
             this.userAcButtonRemoveAd.Visible = false;
@@ -375,7 +387,7 @@
             this.userAcTextBoxCity.Location = new System.Drawing.Point(261, 233);
             this.userAcTextBoxCity.Name = "userAcTextBoxCity";
             this.userAcTextBoxCity.Size = new System.Drawing.Size(354, 20);
-            this.userAcTextBoxCity.TabIndex = 7;
+            this.userAcTextBoxCity.TabIndex = 24;
             this.userAcTextBoxCity.Visible = false;
             // 
             // userAcTextBoxPnbr
@@ -383,7 +395,7 @@
             this.userAcTextBoxPnbr.Location = new System.Drawing.Point(261, 207);
             this.userAcTextBoxPnbr.Name = "userAcTextBoxPnbr";
             this.userAcTextBoxPnbr.Size = new System.Drawing.Size(354, 20);
-            this.userAcTextBoxPnbr.TabIndex = 6;
+            this.userAcTextBoxPnbr.TabIndex = 23;
             this.userAcTextBoxPnbr.Visible = false;
             // 
             // userAcTextBoxLname
@@ -391,7 +403,7 @@
             this.userAcTextBoxLname.Location = new System.Drawing.Point(261, 181);
             this.userAcTextBoxLname.Name = "userAcTextBoxLname";
             this.userAcTextBoxLname.Size = new System.Drawing.Size(354, 20);
-            this.userAcTextBoxLname.TabIndex = 5;
+            this.userAcTextBoxLname.TabIndex = 22;
             this.userAcTextBoxLname.Visible = false;
             // 
             // userAcTextBoxFname
@@ -399,7 +411,7 @@
             this.userAcTextBoxFname.Location = new System.Drawing.Point(261, 155);
             this.userAcTextBoxFname.Name = "userAcTextBoxFname";
             this.userAcTextBoxFname.Size = new System.Drawing.Size(354, 20);
-            this.userAcTextBoxFname.TabIndex = 4;
+            this.userAcTextBoxFname.TabIndex = 21;
             this.userAcTextBoxFname.Visible = false;
             // 
             // userAcLabelPassw
@@ -425,7 +437,7 @@
             this.userAcTextBoxPassw.Location = new System.Drawing.Point(261, 70);
             this.userAcTextBoxPassw.Name = "userAcTextBoxPassw";
             this.userAcTextBoxPassw.Size = new System.Drawing.Size(354, 20);
-            this.userAcTextBoxPassw.TabIndex = 1;
+            this.userAcTextBoxPassw.TabIndex = 12;
             this.userAcTextBoxPassw.UseSystemPasswordChar = true;
             // 
             // userAcTextBoxMail
@@ -433,7 +445,7 @@
             this.userAcTextBoxMail.Location = new System.Drawing.Point(261, 44);
             this.userAcTextBoxMail.Name = "userAcTextBoxMail";
             this.userAcTextBoxMail.Size = new System.Drawing.Size(354, 20);
-            this.userAcTextBoxMail.TabIndex = 0;
+            this.userAcTextBoxMail.TabIndex = 11;
             // 
             // tabPage3
             // 
@@ -725,16 +737,9 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // userAcLabelMessageBox
+            // userAcTimer1
             // 
-            this.userAcLabelMessageBox.AutoSize = true;
-            this.userAcLabelMessageBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userAcLabelMessageBox.ForeColor = System.Drawing.Color.Red;
-            this.userAcLabelMessageBox.Location = new System.Drawing.Point(258, 19);
-            this.userAcLabelMessageBox.Name = "userAcLabelMessageBox";
-            this.userAcLabelMessageBox.Size = new System.Drawing.Size(0, 13);
-            this.userAcLabelMessageBox.TabIndex = 78;
-            this.userAcLabelMessageBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.userAcTimer1.Interval = 2000;
             // 
             // MainWindow
             // 
@@ -826,5 +831,7 @@
         private System.Windows.Forms.Button userAcButtonLogin;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label userAcLabelMessageBox;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer userAcTimer1;
     }
 }

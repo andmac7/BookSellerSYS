@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookSeller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ namespace ConsoleApplication2.View
 {
     public partial class DialogRegister : Form
     {
+
+        private Controller ctrl = new Controller();
+
         public DialogRegister()
         {
             InitializeComponent();
@@ -19,8 +23,21 @@ namespace ConsoleApplication2.View
 
         private void newUserButtonCancel_Click(object sender, EventArgs e)
         {
-            //Cancel knapp stänger fönster
-            this.Close();
+            this.Close(); //Cancel knapp stänger fönster
+        }
+
+        private void newUserButtonRegister_Click(object sender, EventArgs e)
+        {
+
+            String LName = newUserTextBoxLname.Text;
+            String FName = newUserTextBoxFname.Text;
+            String PhoneNbr = newUserTextBoxPnbr.Text;
+            String Mail = newUserTextBoxMail.Text;
+            String City = newUserTextBoxCity.Text;
+            String Password = newUserTextBoxPassw.Text;  
+
+            ctrl.addSeller(LName, FName, PhoneNbr, Mail, City, Password); //Skickar inmatning från textrutorna till controller
+
         }
     }
 }

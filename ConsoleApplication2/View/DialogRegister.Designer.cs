@@ -86,7 +86,7 @@
             this.newUserTextBoxPassw.Location = new System.Drawing.Point(174, 177);
             this.newUserTextBoxPassw.Name = "newUserTextBoxPassw";
             this.newUserTextBoxPassw.Size = new System.Drawing.Size(354, 20);
-            this.newUserTextBoxPassw.TabIndex = 90;
+            this.newUserTextBoxPassw.TabIndex = 2;
             this.newUserTextBoxPassw.UseSystemPasswordChar = true;
             // 
             // newUserLabelMail
@@ -103,23 +103,24 @@
             this.newUserTextBoxMail.Location = new System.Drawing.Point(174, 151);
             this.newUserTextBoxMail.Name = "newUserTextBoxMail";
             this.newUserTextBoxMail.Size = new System.Drawing.Size(354, 20);
-            this.newUserTextBoxMail.TabIndex = 88;
+            this.newUserTextBoxMail.TabIndex = 1;
             // 
             // newUserButtonRegister
             // 
             this.newUserButtonRegister.Location = new System.Drawing.Point(201, 348);
             this.newUserButtonRegister.Name = "newUserButtonRegister";
             this.newUserButtonRegister.Size = new System.Drawing.Size(143, 20);
-            this.newUserButtonRegister.TabIndex = 87;
+            this.newUserButtonRegister.TabIndex = 7;
             this.newUserButtonRegister.Text = "Register";
             this.newUserButtonRegister.UseVisualStyleBackColor = true;
+            this.newUserButtonRegister.Click += new System.EventHandler(this.newUserButtonRegister_Click);
             // 
             // newUserButtonCancel
             // 
             this.newUserButtonCancel.Location = new System.Drawing.Point(350, 348);
             this.newUserButtonCancel.Name = "newUserButtonCancel";
             this.newUserButtonCancel.Size = new System.Drawing.Size(143, 20);
-            this.newUserButtonCancel.TabIndex = 86;
+            this.newUserButtonCancel.TabIndex = 8;
             this.newUserButtonCancel.Text = "Cancel";
             this.newUserButtonCancel.UseVisualStyleBackColor = true;
             this.newUserButtonCancel.Click += new System.EventHandler(this.newUserButtonCancel_Click);
@@ -149,14 +150,14 @@
             this.newUserTextBoxLname.Location = new System.Drawing.Point(174, 250);
             this.newUserTextBoxLname.Name = "newUserTextBoxLname";
             this.newUserTextBoxLname.Size = new System.Drawing.Size(354, 20);
-            this.newUserTextBoxLname.TabIndex = 83;
+            this.newUserTextBoxLname.TabIndex = 4;
             // 
             // newUserTextBoxFname
             // 
             this.newUserTextBoxFname.Location = new System.Drawing.Point(174, 223);
             this.newUserTextBoxFname.Name = "newUserTextBoxFname";
             this.newUserTextBoxFname.Size = new System.Drawing.Size(354, 20);
-            this.newUserTextBoxFname.TabIndex = 82;
+            this.newUserTextBoxFname.TabIndex = 3;
             // 
             // newUserLabelCity
             // 
@@ -183,14 +184,14 @@
             this.newUserTextBoxCity.Location = new System.Drawing.Point(174, 302);
             this.newUserTextBoxCity.Name = "newUserTextBoxCity";
             this.newUserTextBoxCity.Size = new System.Drawing.Size(354, 20);
-            this.newUserTextBoxCity.TabIndex = 79;
+            this.newUserTextBoxCity.TabIndex = 6;
             // 
             // newUserTextBoxPnbr
             // 
             this.newUserTextBoxPnbr.Location = new System.Drawing.Point(174, 276);
             this.newUserTextBoxPnbr.Name = "newUserTextBoxPnbr";
             this.newUserTextBoxPnbr.Size = new System.Drawing.Size(354, 20);
-            this.newUserTextBoxPnbr.TabIndex = 78;
+            this.newUserTextBoxPnbr.TabIndex = 5;
             // 
             // newUserPictureTree
             // 

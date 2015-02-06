@@ -70,5 +70,29 @@ namespace BookSeller
                 System.Console.Read();
             }
         }*/
+
+        public static int ExecuteNonQuery(string cmdName, CommandType cmdType)
+        {
+            int rowsAffected = 0;
+
+            using (SqlConnection con = new SqlConnection(conString[i]))
+            {
+                using (SqlCommand command = new SqlCommand(cmdName, con))
+                {
+                    command.CommandType = cmdType;
+                    command.CommandText = cmdName;
+
+                        if (con.State != ConnectionState.Open)
+                        {
+                            con.Open();
+                        }
+                        
+                        //command.Connection.Open();
+                        rowsAffected = command.ExecuteNonQuery();
+
+                }
+            }
+            return rowsAffected;
+        }
     }
 }

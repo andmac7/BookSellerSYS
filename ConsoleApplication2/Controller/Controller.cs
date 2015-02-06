@@ -34,9 +34,9 @@ namespace BookSeller
 
         }
 
-        public void addSeller()
+        public void addSeller(string LName, string FName, string PhoneNbr, string Mail, string City, string Password)
         {
-        
+            SellerDb.Insert(LName, FName, PhoneNbr, Mail, City, Password);
         }
 
         public Seller getSeller(string Mail)
