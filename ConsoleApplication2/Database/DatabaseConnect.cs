@@ -15,7 +15,7 @@ namespace BookSeller
             "user id=ramy; password=123456; server=Ramy; Trusted_Connection=yes; database=BookAd; connection timeout=5",
             "user id=SverkerJerker; password=; server=ANDREAS-PC\\SQLEXPRESS; Trusted_Connection=yes; database=BookSeller; connection timeout=5",
             "user id=Robin; password=; server=WIN-FQSEFO9B1JF; Trusted_Connection=yes; database=BookAd; connection timeout=5"};
-        static int i = 0; // 0 = Thomas, 1 = Ramy, 2 = Andreas, 3 = Robin
+        static int i = 1; // 0 = Thomas, 1 = Ramy, 2 = Andreas, 3 = Robin
   
         public static SqlConnection conn = null;
 
@@ -74,29 +74,18 @@ namespace BookSeller
         public static int ExecuteNonQuery(string cmdName, CommandType cmdType)
         {
             int rowsAffected = 0;
-
             using (SqlConnection con = new SqlConnection(conString[i]))
             {
                 using (SqlCommand command = new SqlCommand(cmdName, con))
                 {
                     command.CommandType = cmdType;
                     command.CommandText = cmdName;
-                    try
-                    {
+
                         if (con.State != ConnectionState.Open)
                         {
                             con.Open();
-                        }
-
+                        }                   
                         rowsAffected = command.ExecuteNonQuery();
-                    }
-                    catch (SqlException ex)
-                    {
-
-                        throw ex;
-                    }
-
-                        
                 }
             }
             return rowsAffected;

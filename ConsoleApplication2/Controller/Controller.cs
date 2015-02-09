@@ -36,11 +36,8 @@ namespace BookSeller
 
         public int addSeller(string LName, string FName, string PhoneNbr, string Mail, string City, string Password)
         {
-
             int rowsAffected = 0;
-
             rowsAffected = SellerDb.Insert(LName, FName, PhoneNbr, Mail, City, Password);
-
             return rowsAffected;
         }
 
@@ -50,11 +47,5 @@ namespace BookSeller
             tmpSeller = SellerDb.getSeller(Mail);
             return tmpSeller;
         }
-
-        public List<string> getAllSellerMail(){
-            List<string> allsellers = SellerDb.getAllSellerMail();
-            return allsellers;
-        }
-
     }
 }

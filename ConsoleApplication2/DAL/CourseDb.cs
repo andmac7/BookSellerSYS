@@ -14,7 +14,6 @@ namespace BookSeller
             Course c = new Course();
             c.cName = r["CName"].ToString();
             c.cCode = r["CCode"].ToString();
-
             return c;
         }
         public static List<Course> MapCourses(DataRowCollection rows)
