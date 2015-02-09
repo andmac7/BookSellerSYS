@@ -48,7 +48,7 @@
             this.userAcButtonRefresh = new System.Windows.Forms.Button();
             this.userAcLabelAds = new System.Windows.Forms.Label();
             this.userAcButtonRemoveAc = new System.Windows.Forms.Button();
-            this.userAcButtonUpdateInfo = new System.Windows.Forms.Button();
+            this.userAcButtonEditInfo = new System.Windows.Forms.Button();
             this.userAcButtonCreateAd = new System.Windows.Forms.Button();
             this.userAcButtonRemoveAd = new System.Windows.Forms.Button();
             this.userAcFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -205,7 +205,7 @@
             this.userActabPage.Controls.Add(this.userAcButtonRefresh);
             this.userActabPage.Controls.Add(this.userAcLabelAds);
             this.userActabPage.Controls.Add(this.userAcButtonRemoveAc);
-            this.userActabPage.Controls.Add(this.userAcButtonUpdateInfo);
+            this.userActabPage.Controls.Add(this.userAcButtonEditInfo);
             this.userActabPage.Controls.Add(this.userAcButtonCreateAd);
             this.userActabPage.Controls.Add(this.userAcButtonRemoveAd);
             this.userActabPage.Controls.Add(this.userAcFlowLayoutPanel);
@@ -313,15 +313,15 @@
             this.userAcButtonRemoveAc.UseVisualStyleBackColor = true;
             this.userAcButtonRemoveAc.Visible = false;
             // 
-            // userAcButtonUpdateInfo
+            // userAcButtonEditInfo
             // 
-            this.userAcButtonUpdateInfo.Location = new System.Drawing.Point(296, 259);
-            this.userAcButtonUpdateInfo.Name = "userAcButtonUpdateInfo";
-            this.userAcButtonUpdateInfo.Size = new System.Drawing.Size(143, 20);
-            this.userAcButtonUpdateInfo.TabIndex = 25;
-            this.userAcButtonUpdateInfo.Text = "Update Info";
-            this.userAcButtonUpdateInfo.UseVisualStyleBackColor = true;
-            this.userAcButtonUpdateInfo.Visible = false;
+            this.userAcButtonEditInfo.Location = new System.Drawing.Point(296, 259);
+            this.userAcButtonEditInfo.Name = "userAcButtonEditInfo";
+            this.userAcButtonEditInfo.Size = new System.Drawing.Size(143, 20);
+            this.userAcButtonEditInfo.TabIndex = 25;
+            this.userAcButtonEditInfo.Text = "Edit Info";
+            this.userAcButtonEditInfo.UseVisualStyleBackColor = true;
+            this.userAcButtonEditInfo.Visible = false;
             // 
             // userAcButtonCreateAd
             // 
@@ -351,6 +351,7 @@
             this.userAcFlowLayoutPanel.Size = new System.Drawing.Size(896, 147);
             this.userAcFlowLayoutPanel.TabIndex = 16;
             this.userAcFlowLayoutPanel.Visible = false;
+            this.userAcFlowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.userAcFlowLayoutPanel_Paint);
             // 
             // userAcLabelCity
             // 
@@ -816,7 +817,7 @@
         private System.Windows.Forms.Button userAcButtonCreateAd;
         private System.Windows.Forms.Button userAcButtonRemoveAd;
         private System.Windows.Forms.Button userAcButtonRemoveAc;
-        private System.Windows.Forms.Button userAcButtonUpdateInfo;
+        private System.Windows.Forms.Button userAcButtonEditInfo;
         private System.Windows.Forms.Button userAcButtonRefresh;
         private System.Windows.Forms.Button userAcButtonCreateUsr;
         private System.Windows.Forms.Button userAcButtonLogin;

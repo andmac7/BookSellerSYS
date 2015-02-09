@@ -84,6 +84,14 @@ namespace ConsoleApplication2
             userAcTextBoxLname.Visible = true; 
             userAcTextBoxPnbr.Visible = true;
             userAcTextBoxCity.Visible = true;
+
+            //Textrutor görs ej redigerbara
+            userAcTextBoxMail.Enabled = false;
+            userAcTextBoxPassw.Enabled = false;
+            userAcTextBoxFname.Enabled = false;
+            userAcTextBoxLname.Enabled = false;
+            userAcTextBoxPnbr.Enabled = false;
+            userAcTextBoxCity.Enabled = false;
             
             //Labels visas
             userAcLabelFname.Visible = true;
@@ -92,7 +100,7 @@ namespace ConsoleApplication2
             userAcLabelCity.Visible = true;
            
             //Knappar och annat visas
-            userAcButtonUpdateInfo.Visible = true;
+            userAcButtonEditInfo.Visible = true;
             userAcButtonRemoveAc.Visible = true;
             userAcLabelAds.Visible = true;
             userAcFlowLayoutPanel.Visible = true;
@@ -120,6 +128,45 @@ namespace ConsoleApplication2
 
         private void userAcButtonLogout_Click(object sender, EventArgs e)
         {
+            userAcTextBoxMail.Text = null;
+            userAcTextBoxPassw.Text = null;
+
+            userAcTextBoxMail.Visible = true;
+            userAcTextBoxPassw.Visible = true;
+            userAcTextBoxFname.Visible = false;
+            userAcTextBoxLname.Visible = false;
+            userAcTextBoxPnbr.Visible = false;
+            userAcTextBoxCity.Visible = false;
+
+            //Gör 2 rutor redigerbara
+            userAcTextBoxMail.Enabled = true;
+            userAcTextBoxPassw.Enabled = true;
+
+            //Labels döljs
+            userAcLabelFname.Visible = false;
+            userAcLabelLname.Visible = false;
+            userAcLabelPnbr.Visible = false;
+            userAcLabelCity.Visible = false;
+
+           
+
+            //Knappar och annat visas respektive döljs
+            userAcButtonEditInfo.Visible = false;
+            userAcButtonRemoveAc.Visible = false;
+            userAcLabelAds.Visible = false;
+
+            userAcFlowLayoutPanel.Visible = false;
+            userAcFlowLayoutPanel.Text = null;          //OBS VET EJ OM DENNA FUNGERAR!
+
+            userAcButtonCreateAd.Visible = false;
+            userAcButtonRemoveAd.Visible = false;
+            userAcButtonRefresh.Visible = false;
+            userAcButtonLogout.Visible = false;
+            userAcButtonCreateUsr.Visible = true;
+            userAcButtonLogin.Visible = true;
+
+            userAcLabelMessageBox.ForeColor = System.Drawing.Color.Green; //Grön färg för positiv feedback
+            userAcLabelMessageBox.Text = "Successful logout!";
         }
 
         private void userAcButtonCreateUsr_Click(object sender, EventArgs e)
@@ -161,7 +208,13 @@ namespace ConsoleApplication2
 
         private void bookListBtnLogin_Click(object sender, EventArgs e)
         {
-            tabControl.SelectTab(userActabPage);
+            //Hoppar till fliken User Account
+            tabControl.SelectTab(userActabPage);        
+        }
+
+        private void userAcFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
