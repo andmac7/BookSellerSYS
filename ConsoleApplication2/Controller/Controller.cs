@@ -51,5 +51,10 @@ namespace BookSeller
             return tmpSeller;
         }
 
+        public List<string> getAllSellerMail(){
+            List<string> allsellers = SellerDb.getAllSellerMail();
+            return allsellers;
+        }
+
     }
 }

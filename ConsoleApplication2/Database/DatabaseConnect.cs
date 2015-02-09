@@ -81,13 +81,22 @@ namespace BookSeller
                 {
                     command.CommandType = cmdType;
                     command.CommandText = cmdName;
-
+                    try
+                    {
                         if (con.State != ConnectionState.Open)
                         {
                             con.Open();
                         }
-                        
+
                         rowsAffected = command.ExecuteNonQuery();
+                    }
+                    catch (SqlException ex)
+                    {
+
+                        throw ex;
+                    }
+
+                        
                 }
             }
             return rowsAffected;

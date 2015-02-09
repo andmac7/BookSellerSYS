@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace BookSeller
 {
@@ -84,5 +85,40 @@ namespace BookSeller
 
             return tmpSeller;            
         }
+
+        public static List<string> getAllSellerMail()
+        {
+            List<string> allsellers = new List<string>();
+            string cmd = "SELECT mail FROM Seller";
+
+            //Seller tmpSeller = new Seller();
+            //List<Seller> seller = new List<Seller>();
+
+            using (DataTable table = DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text))
+            {
+                if (table.Rows.Count > 0)
+                {
+                    //seller = MapSellers(table.Rows);
+                    //List<DataRow> rows = table.Rows.Cast<DataRow>().ToList();
+                    //IEnumerable<DataRow> sequence = table.AsEnumerable();
+
+                    allsellers = table.AsEnumerable().Select(x => x[0].ToString()).ToList();
+
+                    //List<DataRow> list = table.AsEnumerable().ToList();
+
+                    //allsellers = table.AsEnumerable()
+                      //     .Select(r=> r.Field<string>("UserCode"))
+                        //   .ToList();
+                }
+            }
+           
+            
+
+            return allsellers;
+
+            }
+            
+
+        }
     }
-}
+
