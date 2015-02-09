@@ -81,7 +81,6 @@ namespace BookSeller
             }
            
             tmpSeller = seller.ElementAt(0);
-
             return tmpSeller;            
         }
     }

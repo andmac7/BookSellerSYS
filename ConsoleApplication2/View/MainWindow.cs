@@ -37,25 +37,24 @@ namespace ConsoleApplication2
             /*
             string cm = "Select * From BookAd";
             bookListDataGridView.DataSource = BookAdDb.Read(cm);*/
-            //listBox1.Items.AddRange(ctrl.getAllBookAds().ToArray());
+            //bookListBox.Items.AddRange(ctrl.getAllBookAds().ToArray());
             /*
             List<BookAd> l = ctrl.getAllBookAds();
             for (int i = 0; i < l.Count; i++)
             {
-                listBox1.Items.Add(l);
+                bookListBox.Items.Add(l);
             }*/
-            //listBox1.DataSource = l;
-            //listBox1.ValueMember = "Isbn";
+            //bookListBox.DataSource = l;
+            //bookListBox.ValueMember = "Isbn";
             DataTable dt = new DataTable();
             dt = ctrl.getDataTableBookAds();
             DataRow tempRow = null;
             foreach (DataRow tempRowVar in dt.Rows)
             {
                 tempRow = tempRowVar;
-                listBox1.Items.Add(tempRow["Title"] + "       |       " + tempRow["Author"] + "       |       " + tempRow["Price"] + "       |       " + tempRow["Date"]);
+                bookListBox.Items.Add(tempRow["Title"] + "       |       " + tempRow["Author"] + "       |       " + tempRow["Price"] + "       |       " + tempRow["Date"]);
             }
         }
-
 
         private void userAcButtonLogin_Click(object sender, EventArgs e)
         {
@@ -64,7 +63,6 @@ namespace ConsoleApplication2
 
             Seller tmpSeller = new Seller();
             tmpSeller = ctrl.getSeller(username);
-
 
 
             //Rätt användarnamn men fel lösenord
@@ -78,7 +76,7 @@ namespace ConsoleApplication2
             else if(tmpSeller.mail == username && tmpSeller.password == password)
             {
                                                
-                userAcLabelMessageBox.ForeColor = System.Drawing.Color.Green; //Grön färg för negativ feedback
+                userAcLabelMessageBox.ForeColor = System.Drawing.Color.Green; //Grön färg för positiv feedback
                 userAcLabelMessageBox.Text = "ACCESS GRANTED";
                                 
             //Textrutor visas
@@ -86,11 +84,13 @@ namespace ConsoleApplication2
             userAcTextBoxLname.Visible = true; 
             userAcTextBoxPnbr.Visible = true;
             userAcTextBoxCity.Visible = true;
+            
             //Labels visas
             userAcLabelFname.Visible = true;
             userAcLabelLname.Visible = true;
             userAcLabelPnbr.Visible = true;
             userAcLabelCity.Visible = true;
+           
             //Knappar och annat visas
             userAcButtonUpdateInfo.Visible = true;
             userAcButtonRemoveAc.Visible = true;
@@ -99,6 +99,9 @@ namespace ConsoleApplication2
             userAcButtonCreateAd.Visible = true;
             userAcButtonRemoveAd.Visible = true;
             userAcButtonRefresh.Visible = true;
+            userAcButtonLogout.Visible = true;
+            userAcButtonCreateUsr.Visible = false;
+            userAcButtonLogin.Visible = false;
 
             //Textrutor fylls i med tmpSellers uppgifter
             userAcTextBoxFname.Text = tmpSeller.fName;
@@ -106,15 +109,18 @@ namespace ConsoleApplication2
             userAcTextBoxPnbr.Text = tmpSeller.phoneNbr;
             userAcTextBoxCity.Text = tmpSeller.city;
             }
+            
             //Användarnamn finns inte
             else
             {
                 userAcLabelMessageBox.ForeColor = System.Drawing.Color.Red; //Röd färg för negativ feedback
                 userAcLabelMessageBox.Text = "User does not exist";
             }
-
         }
 
+        private void userAcButtonLogout_Click(object sender, EventArgs e)
+        {
+        }
 
         private void userAcButtonCreateUsr_Click(object sender, EventArgs e)
         {
@@ -128,33 +134,34 @@ namespace ConsoleApplication2
             dialogNewAd.ShowDialog();
         }
 
-        private void listBox1_DoubleClick(object sender, EventArgs e)
+        private void bookListBox_DoubleClick(object sender, EventArgs e)
         {
             /*
-            if (listBox1.SelectedItem != null)
+            if (bookListBox.SelectedItem != null)
             {
-                viewAdTextBoxTitle.Text = listBox1.Items[0].ToString();
-                viewAdTextBoxAuthor.Text = listBox1.Items[1].ToString();
-                viewAdTextBoxIsbn.Text = listBox1.Items[2].ToString();
+                viewAdTextBoxTitle.Text = bookListBox.Items[0].ToString();
+                viewAdTextBoxAuthor.Text = bookListBox.Items[1].ToString();
+                viewAdTextBoxIsbn.Text = bookListBox.Items[2].ToString();
             }*/
 
-            foreach (var item in listBox1.SelectedItems)
+            foreach (var item in bookListBox.SelectedItems)
             {
                 MessageBox.Show(item.ToString());
                 viewAdTextBoxTitle.Text = item.ToString();
             }
-            
         }
 
         private void viewAdTextBoxTitle_TextChanged(object sender, EventArgs e)
         {
-        
         }
 
         private void userActabPage_Click(object sender, EventArgs e)
         {
-
         }
 
+        private void bookListBtnLogin_Click(object sender, EventArgs e)
+        {
+            tabControl.SelectTab(userActabPage);
+        }
     }
 }
