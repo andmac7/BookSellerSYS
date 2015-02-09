@@ -36,9 +36,9 @@ namespace BookSeller
             return dt;
         }
 
-        public void addBookAd()
+        public void addBookAd(string title, string author, string isbn, string date, int price, string adtext, string course, string mail)
         {
-
+            BookAdDb.Insert(title, author, isbn, date, price, adtext, course, mail);
         }
 
         public void addSeller()

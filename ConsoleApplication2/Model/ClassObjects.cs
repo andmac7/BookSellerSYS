@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookSeller
 {
-    class Seller
+    public class Seller
     {
         public String fName { get; set; } 
         public String lName { get; set; }
@@ -23,6 +23,7 @@ namespace BookSeller
         public String date { get; set; }
         public int price { get; set; }
         public String adText { get; set; }
+        public String mail { get; set; }
     }
 
     public class Course

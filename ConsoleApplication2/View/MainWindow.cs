@@ -20,6 +20,7 @@ namespace ConsoleApplication2
         private BindingSource bindingSource1 = new BindingSource();
         private SqlDataAdapter dataAdapter = new SqlDataAdapter();
         private Controller ctrl = new Controller();
+        private Seller user = new Seller();
 
         public MainWindow()
         {
@@ -58,10 +59,18 @@ namespace ConsoleApplication2
             List<BookAd> tmpList = ctrl.getAllBookAds();
             foreach(BookAd tmpBookAd in tmpList)
             {
-                ListViewItem tmpLwi = new ListViewItem();
-                tmpLwi.Text = tmpBookAd.title;
+                ListViewItem tmpLwi = new ListViewItem("Title");
+                tmpLwi.SubItems.Add("Author");
+                tmpLwi.SubItems.Add("Price");
+                tmpLwi.SubItems.Add("Comment");
+                tmpLwi.SubItems[0].Text = tmpBookAd.title;
+                tmpLwi.SubItems[1].Text = tmpBookAd.author;
+                tmpLwi.SubItems[2].Text = tmpBookAd.price.ToString();
+                tmpLwi.SubItems[3].Text = tmpBookAd.adText;
+                //tmpLwi.Text = tmpBookAd.title;
                 tmpLwi.Tag = tmpBookAd;
                 listView1.Items.Add(tmpLwi);
+                listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             }
         }
 
@@ -77,6 +86,7 @@ namespace ConsoleApplication2
                 viewAdTextBoxPrice.Text = book.price.ToString();
                 viewAdTextBoxIsbn.Text = book.isbn;
                 viewAdTextBoxText.Text = book.adText;
+                viewAdTextBoxSeller.Text = String.Format("{0} {1}",ctrl.getSeller(book.mail).fName, ctrl.getSeller(book.mail).lName);
             }
         }
 
@@ -84,10 +94,12 @@ namespace ConsoleApplication2
         {
             string username = userAcTextBoxMail.Text;
             string password = userAcTextBoxPassw.Text;
+            
+            //Spara användaruppgifter
+            user = ctrl.getSeller(username);
 
             Seller tmpSeller = new Seller();
             tmpSeller = ctrl.getSeller(username);
-
 
 
             //Rätt användarnamn men fel lösenord
@@ -143,6 +155,7 @@ namespace ConsoleApplication2
         private void userAcButtonCreateAd_Click(object sender, EventArgs e)
         {
             DialogNewAd dialogNewAd = new DialogNewAd();
+            dialogNewAd.user = this.user;
             dialogNewAd.ShowDialog();
         }
 

@@ -140,6 +140,8 @@
             this.listView1.Columns.Add("Title");
             this.listView1.Columns.Add("Author");
             this.listView1.Columns.Add("Price");
+            this.listView1.Columns.Add("Comment");
+            this.listView1.FullRowSelect = true;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_DoubleClick);
             // 
             // bookListPictureTree
