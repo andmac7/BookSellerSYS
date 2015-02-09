@@ -46,16 +46,39 @@ namespace ConsoleApplication2
             }*/
             //listBox1.DataSource = l;
             //listBox1.ValueMember = "Isbn";
-            DataTable dt = new DataTable();
+            /*DataTable dt = new DataTable();
             dt = ctrl.getDataTableBookAds();
             DataRow tempRow = null;
             foreach (DataRow tempRowVar in dt.Rows)
             {
                 tempRow = tempRowVar;
                 listBox1.Items.Add(tempRow["Title"] + "       |       " + tempRow["Author"] + "       |       " + tempRow["Price"] + "       |       " + tempRow["Date"]);
+            }*/
+
+            List<BookAd> tmpList = ctrl.getAllBookAds();
+            foreach(BookAd tmpBookAd in tmpList)
+            {
+                ListViewItem tmpLwi = new ListViewItem();
+                tmpLwi.Text = tmpBookAd.title;
+                tmpLwi.Tag = tmpBookAd;
+                listView1.Items.Add(tmpLwi);
             }
         }
 
+        private void listView1_DoubleClick(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count == 1)
+            {
+                BookAd book = ctrl.getBookAd(listView1.SelectedItems[0].Text.ToString());
+                //List<BookAd> tmpBookAds = ctrl.getAllBookAds();
+                //MessageBox.Show(listView1.SelectedItems[0].Text.ToString());
+                viewAdTextBoxTitle.Text = book.title;
+                viewAdTextBoxAuthor.Text = book.author;
+                viewAdTextBoxPrice.Text = book.price.ToString();
+                viewAdTextBoxIsbn.Text = book.isbn;
+                viewAdTextBoxText.Text = book.adText;
+            }
+        }
 
         private void userAcButtonLogin_Click(object sender, EventArgs e)
         {
@@ -131,14 +154,14 @@ namespace ConsoleApplication2
                 viewAdTextBoxTitle.Text = listBox1.Items[0].ToString();
                 viewAdTextBoxAuthor.Text = listBox1.Items[1].ToString();
                 viewAdTextBoxIsbn.Text = listBox1.Items[2].ToString();
-            }*/
+            }
 
             foreach (var item in listBox1.SelectedItems)
             {
                 MessageBox.Show(item.ToString());
                 viewAdTextBoxTitle.Text = item.ToString();
-            }
-            
+            }*/
+
         }
 
         private void viewAdTextBoxTitle_TextChanged(object sender, EventArgs e)

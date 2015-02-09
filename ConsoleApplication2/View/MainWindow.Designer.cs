@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.bookListTabPage = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.bookListPictureTree = new System.Windows.Forms.PictureBox();
             this.bookListBtnReset = new System.Windows.Forms.Button();
             this.bookListLabelTop = new System.Windows.Forms.Label();
@@ -40,6 +40,7 @@
             this.bookListBtnSearch = new System.Windows.Forms.Button();
             this.bookListSearchBox = new System.Windows.Forms.TextBox();
             this.userActabPage = new System.Windows.Forms.TabPage();
+            this.userAcLabelMessageBox = new System.Windows.Forms.Label();
             this.userAcButtonLogin = new System.Windows.Forms.Button();
             this.userAcPictureTree = new System.Windows.Forms.PictureBox();
             this.userAcButtonCreateUsr = new System.Windows.Forms.Button();
@@ -91,7 +92,6 @@
             this.viewAdTextBoxAuthor = new System.Windows.Forms.TextBox();
             this.viewAdTextBoxTitle = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.userAcLabelMessageBox = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.bookListTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookListPictureTree)).BeginInit();
@@ -114,7 +114,7 @@
             // 
             // bookListTabPage
             // 
-            this.bookListTabPage.Controls.Add(this.listBox1);
+            this.bookListTabPage.Controls.Add(this.listView1);
             this.bookListTabPage.Controls.Add(this.bookListPictureTree);
             this.bookListTabPage.Controls.Add(this.bookListBtnReset);
             this.bookListTabPage.Controls.Add(this.bookListLabelTop);
@@ -129,14 +129,18 @@
             this.bookListTabPage.Text = "List of Books";
             this.bookListTabPage.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // listView1
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(3, 101);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(899, 420);
-            this.listBox1.TabIndex = 77;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_DoubleClick);
+            this.listView1.Location = new System.Drawing.Point(7, 83);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(895, 443);
+            this.listView1.TabIndex = 77;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.Columns.Add("Title");
+            this.listView1.Columns.Add("Author");
+            this.listView1.Columns.Add("Price");
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_DoubleClick);
             // 
             // bookListPictureTree
             // 
@@ -225,6 +229,17 @@
             this.userActabPage.TabIndex = 1;
             this.userActabPage.Text = "User Account";
             this.userActabPage.UseVisualStyleBackColor = true;
+            // 
+            // userAcLabelMessageBox
+            // 
+            this.userAcLabelMessageBox.AutoSize = true;
+            this.userAcLabelMessageBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userAcLabelMessageBox.ForeColor = System.Drawing.Color.Red;
+            this.userAcLabelMessageBox.Location = new System.Drawing.Point(258, 19);
+            this.userAcLabelMessageBox.Name = "userAcLabelMessageBox";
+            this.userAcLabelMessageBox.Size = new System.Drawing.Size(0, 13);
+            this.userAcLabelMessageBox.TabIndex = 78;
+            this.userAcLabelMessageBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // userAcButtonLogin
             // 
@@ -725,17 +740,6 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // userAcLabelMessageBox
-            // 
-            this.userAcLabelMessageBox.AutoSize = true;
-            this.userAcLabelMessageBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userAcLabelMessageBox.ForeColor = System.Drawing.Color.Red;
-            this.userAcLabelMessageBox.Location = new System.Drawing.Point(258, 19);
-            this.userAcLabelMessageBox.Name = "userAcLabelMessageBox";
-            this.userAcLabelMessageBox.Size = new System.Drawing.Size(0, 13);
-            this.userAcLabelMessageBox.TabIndex = 78;
-            this.userAcLabelMessageBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -824,7 +828,7 @@
         private System.Windows.Forms.PictureBox userAcPictureTree;
         private System.Windows.Forms.PictureBox viewAdPictureTree;
         private System.Windows.Forms.Button userAcButtonLogin;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label userAcLabelMessageBox;
+        private System.Windows.Forms.ListView listView1;
     }
 }

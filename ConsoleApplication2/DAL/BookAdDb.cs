@@ -44,6 +44,17 @@ namespace BookSeller
             return bookAds;
         }
 
+        public static BookAd getBookAd(string cmd)
+        {
+            List<BookAd> tmpBookAds = Read(String.Format("SELECT * FROM BookAd WHERE title = '{0}'",cmd));
+            if (tmpBookAds.Count > 0)
+            {
+                BookAd book = tmpBookAds[0];
+                return book;
+            }
+            else return null;
+        }
+
         public static DataTable ReadDt(string cmd)
         {
             DataTable table = DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);

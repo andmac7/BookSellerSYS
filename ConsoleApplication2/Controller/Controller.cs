@@ -8,6 +8,7 @@ using BookSeller;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace BookSeller
 {
@@ -17,8 +18,14 @@ namespace BookSeller
         {
             string cmd = "SELECT * FROM BookAd";
             List<BookAd> newList = new List<BookAd>(BookAdDb.Read(cmd));
-            newList.Find(item => item.title == "Title");
+            //newList.Find(item => item.title == "Title");
             return newList;
+        }
+
+        public BookAd getBookAd(string cmd)
+        {
+            BookAd book = BookAdDb.getBookAd(cmd);
+            return book;
         }
 
         public DataTable getDataTableBookAds()
@@ -45,6 +52,5 @@ namespace BookSeller
             tmpSeller = SellerDb.getSeller(Mail);
             return tmpSeller;
         }
-
     }
 }
