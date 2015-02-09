@@ -29,30 +29,31 @@ namespace ConsoleApplication2.View
         private void newUserButtonRegister_Click(object sender, EventArgs e)
         {
 
+            Console.WriteLine("HEJ FRÅN DR");
+            Console.WriteLine(ctrl.getAllSellerMail().ToString());
+
+            String LName = newUserTextBoxLname.Text;
+            String FName = newUserTextBoxFname.Text;
+            String PhoneNbr = newUserTextBoxPnbr.Text;
+            String Mail = newUserTextBoxMail.Text;
+            String City = newUserTextBoxCity.Text;
+            String Password = newUserTextBoxPassw.Text;
+
+            int rowsAffected = 0;
+
+            rowsAffected = ctrl.addSeller(LName, FName, PhoneNbr, Mail, City, Password); //Skickar inmatning från textrutorna till controller
+
             if (newUserTextBoxMail.Text == "")
             {
-                newUserLabelMessageBox.Text = "You must enter E-mail adress";
+                newUserLabelMessageBox.Text = "Field can not be empty";
             }
-            else if(newUserTextBoxMail.Text == "thomas@thomasohlsson.com")
+            else if(rowsAffected == 0)
             {
-                newUserLabelMessageBox.Text = "E-mail already exists";
+                newUserLabelMessageBox.Text = ("E-mail already exists. Rows affected: " + rowsAffected);
             }
-            else
+            else if (rowsAffected <= 1)
             {
-                String LName = newUserTextBoxLname.Text;
-                String FName = newUserTextBoxFname.Text;
-                String PhoneNbr = newUserTextBoxPnbr.Text;
-                String Mail = newUserTextBoxMail.Text;
-                String City = newUserTextBoxCity.Text;
-                String Password = newUserTextBoxPassw.Text;
-
-                int rowsAffected = 0;
-
-                rowsAffected = ctrl.addSeller(LName, FName, PhoneNbr, Mail, City, Password); //Skickar inmatning från textrutorna till controller
-
-                newUserLabelMessageBox.Text = ("Number of rows affected = " + rowsAffected);
-
-                Console.WriteLine("Number of rows affected: " + rowsAffected);
+                newUserLabelMessageBox.Text = ("Successfully added! Rows affected: " + rowsAffected);
             }
 
             

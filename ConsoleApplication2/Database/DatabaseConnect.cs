@@ -15,14 +15,14 @@ namespace BookSeller
             "user id=ramy; password=123456; server=Ramy; Trusted_Connection=yes; database=BookAd; connection timeout=5",
             "user id=SverkerJerker; password=; server=ANDREAS-PC\\SQLEXPRESS; Trusted_Connection=yes; database=BookSeller; connection timeout=5",
             "user id=Robin; password=; server=WIN-FQSEFO9B1JF; Trusted_Connection=yes; database=BookAd; connection timeout=5"};
-        static int i = 1; // 0 = Thomas, 1 = Ramy, 2 = Andreas, 3 = Robin
+        static int i = 2; // 0 = Thomas, 1 = Ramy, 2 = Andreas, 3 = Robin
   
         public static SqlConnection conn = null;
 
         public static DataTable ExecuteSelectCommand(string cmdName, CommandType cmdType)
         {
             DataTable table = null;
-            using (SqlConnection con = new SqlConnection(conString[i]))
+            using (SqlConnection con = new SqlConnection(conString[i])) // Skapar ett temporärt SqlConnection-objekt som slängs i slutet av funktionen, när den hämtat data från databasen.
             {
                 using (SqlCommand cmd = con.CreateCommand())
                 {
@@ -42,8 +42,10 @@ namespace BookSeller
                             da.Fill(table);
                         }
                     }
-                    catch
+                    catch (Exception e)
                     {
+
+                        System.Windows.Forms.MessageBox.Show("Could not connect to the database.\nPlease try again later.\n\n" + e);
                         //throw;
                     }
                 }
@@ -81,11 +83,11 @@ namespace BookSeller
                     command.CommandType = cmdType;
                     command.CommandText = cmdName;
 
-                        if (con.State != ConnectionState.Open)
-                        {
-                            con.Open();
-                        }                   
-                        rowsAffected = command.ExecuteNonQuery();
+                    if (con.State != ConnectionState.Open)
+                    {
+                        con.Open();
+                    }
+                    rowsAffected = command.ExecuteNonQuery();
                 }
             }
             return rowsAffected;

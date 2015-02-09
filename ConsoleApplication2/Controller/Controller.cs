@@ -8,6 +8,7 @@ using BookSeller;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace BookSeller
 {
@@ -17,8 +18,14 @@ namespace BookSeller
         {
             string cmd = "SELECT * FROM BookAd";
             List<BookAd> newList = new List<BookAd>(BookAdDb.Read(cmd));
-            newList.Find(item => item.title == "Title");
+            //newList.Find(item => item.title == "Title");
             return newList;
+        }
+
+        public BookAd getBookAd(string cmd)
+        {
+            BookAd book = BookAdDb.getBookAd(cmd);
+            return book;
         }
 
         public DataTable getDataTableBookAds()
@@ -29,9 +36,9 @@ namespace BookSeller
             return dt;
         }
 
-        public void addBookAd()
+        public void addBookAd(string title, string author, string isbn, string date, int price, string adtext, string course, string mail)
         {
-
+            BookAdDb.Insert(title, author, isbn, date, price, adtext, course, mail);
         }
 
         public int addSeller(string LName, string FName, string PhoneNbr, string Mail, string City, string Password)

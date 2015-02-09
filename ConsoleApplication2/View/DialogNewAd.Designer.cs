@@ -270,6 +270,7 @@
             this.createAdButtonAnotherAd.TabIndex = 57;
             this.createAdButtonAnotherAd.Text = "Create Another Ad ->";
             this.createAdButtonAnotherAd.UseVisualStyleBackColor = true;
+            this.createAdButtonAnotherAd.Click += new System.EventHandler(this.createAdButtonAnotherAd_Click);
             // 
             // createAdButtonCreateAd
             // 
@@ -352,6 +353,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "DialogNewAd";
             this.Text = "BookAd - Create New Ad";
+            this.Load += new System.EventHandler(this.DialogNewAd_Load);
             this.createAdPanel.ResumeLayout(false);
             this.createAdPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.createAdPictureTree)).EndInit();
