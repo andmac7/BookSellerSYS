@@ -44,22 +44,28 @@ namespace BookSeller
             return sellers;
         }
 
-        public static void Insert(string LName, string FName, string PhoneNbr, string Mail, string City, string Password)
+        //Lägger till en ny användare i databasen
+        public static int Insert(string LName, string FName, string PhoneNbr, string Mail, string City, string Password)
         {
+            string cmd = String.Format("INSERT INTO Seller VALUES('{0}','{1}','{2}','{3}','{4}','{5}')", LName, FName, PhoneNbr, Mail, City, Password); //String.Format för att underlätta inmatning
 
-            string cmd = String.Format("INSERT INTO Seller VALUES('{0}','{1}','{2}','{3}','{4}','{5}')", LName, FName, PhoneNbr, Mail, City, Password);
-            DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
+            int rowsAffected = 0;
+
+            rowsAffected = DataBaseConnect.ExecuteNonQuery(cmd, CommandType.Text);
+
+            return rowsAffected;
         }
+
         public static void Delete(string LName, string FName, string PhoneNbr, string Mail, string City, string Password)
         {
             string cmd = String.Format("DELETE FROM Seller WHERE Mail = '" + Mail + "' ;");
             DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text);
         }
 
+        //Hämtar säljare från databasen (mail nyckel)
         public static Seller getSeller(string Mail)
         {
-
-            string cmd = String.Format("SELECT * FROM Seller WHERE mail = '" + Mail + "'");
+            string cmd = String.Format("SELECT * FROM Seller WHERE Mail = '{0}'", Mail); //String.Format för att underlätta inmatning
 
             Seller tmpSeller = new Seller();
             List<Seller> seller = new List<Seller>();
@@ -72,11 +78,38 @@ namespace BookSeller
                     seller = MapSellers(table.Rows);
                 }
             }
-            //Seller tmpSeller = null;
-            
-            tmpSeller = seller.ElementAt(0);
 
-            return tmpSeller;            
+            tmpSeller = seller.ElementAt(0);
+            return tmpSeller;
+        }
+
+
+        public static List<string> getAllSellerMail()
+        {
+            List<string> allsellers = new List<string>();
+            string cmd = "SELECT mail FROM Seller";
+
+            //Seller tmpSeller = new Seller();
+            //List<Seller> seller = new List<Seller>();
+
+            using (DataTable table = DataBaseConnect.ExecuteSelectCommand(cmd, CommandType.Text))
+            {
+                if (table.Rows.Count > 0)
+                {
+                    //seller = MapSellers(table.Rows);
+                    //List<DataRow> rows = table.Rows.Cast<DataRow>().ToList();
+                    //IEnumerable<DataRow> sequence = table.AsEnumerable();
+
+                    allsellers = table.AsEnumerable().Select(x => x[0].ToString()).ToList();
+
+                    //List<DataRow> list = table.AsEnumerable().ToList();
+
+                    //allsellers = table.AsEnumerable()
+                    //     .Select(r=> r.Field<string>("UserCode"))
+                    //   .ToList();
+                }
+            }
+            return allsellers;
         }
     }
 }

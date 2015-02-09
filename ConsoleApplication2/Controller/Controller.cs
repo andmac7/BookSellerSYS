@@ -41,9 +41,11 @@ namespace BookSeller
             BookAdDb.Insert(title, author, isbn, date, price, adtext, course, mail);
         }
 
-        public void addSeller()
+        public int addSeller(string LName, string FName, string PhoneNbr, string Mail, string City, string Password)
         {
-        
+            int rowsAffected = 0;
+            rowsAffected = SellerDb.Insert(LName, FName, PhoneNbr, Mail, City, Password);
+            return rowsAffected;
         }
 
         public Seller getSeller(string Mail)
